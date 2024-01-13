@@ -1,0 +1,836 @@
+
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr" class="loaded">
+<head>
+    <!-- Meta Information -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+
+
+    <title>Security &amp; Compliance | CloudConvert</title>
+    <meta name="description" content=">File converter service - more than 200 different audio, video, document, ebook, archive, image, spreadsheet and presentation formats supported.">
+
+
+    <link rel="shortcut icon" href="/images/logo_flat_32.png">
+    <link rel="preconnect" href="https://api.cloudconvert.com">
+
+    
+
+
+
+<!-- CSS -->
+    <link href="/css/app.css?id=f0355e3da082a3efd8cb6c87576778b3" rel="stylesheet">
+
+
+    <script nonce="U90zAWESsBLHsRi3">
+        window.app = {
+            env: 'production',
+            url: 'https://cloudconvert.com',
+            apiUrl: 'https://api.cloudconvert.com',
+            liveUrl: 'https://cloudconvert.com',
+            sandboxUrl: 'https://sandbox.cloudconvert.com',
+            socketioUrl: 'https://socketio.cloudconvert.com',
+            routeName: 'security'
+        };
+    </script>
+
+
+
+
+            <script defer data-domain="cloudconvert.com" src="/js/script.js" nonce="U90zAWESsBLHsRi3"></script>
+        <script nonce="U90zAWESsBLHsRi3">window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    
+    
+
+</head>
+
+
+
+    <body data-open="click" data-menu="horizontal-menu"
+          class="horizontal-layout horizontal-menu menu-expanded fixed-navbar">
+
+    <div id="app">
+
+
+        <!-- navbar-fixed-top-->
+        <nav class="header-navbar  navbar-expand-md  navbar navbar-with-menu fixed-top navbar-dark  bg-gradient-navbar">
+            <div class="navbar-wrapper container">
+                <div class="navbar-header">
+                    <ul class="nav navbar-nav  flex-row">
+                        <li class="nav-item mobile-menu d-md-none mr-auto"></li>
+                        <li class="nav-item"><a href="/" class="navbar-brand"><img alt="" width="51" height="32" src="/images/logo_flat_110_borderless.png" class="brand-logo hidden-xs-down">
+        <h2 class="brand-text">cloud<strong>convert</strong></h2></a></li>                        <li class="nav-item d-md-none"><a data-toggle="collapse" data-target="#navbar-mobile"
+                                                          class="nav-link open-navbar-container"><i
+                                        class="fa fa-ellipsis-v"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-container content container">
+                    <div id="navbar-mobile" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav mr-auto float-left">
+                                                        <li class="dropdown nav-item mega-dropdown tools"><a href="/" data-toggle="dropdown"
+                                                     class="nav-link dropdown-toggle">Tools</a>
+
+    <div class="mega-dropdown-menu dropdown-menu bg-gradient-navbar">
+
+        <div class="container">
+            <ul class="row w-100">
+                <li class="col-lg-6 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-sync-alt"></i> Convert Files</h6>
+
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul class="list-2-columns">
+                                <li><a class="dropdown-item" href="/archive-converter">Archive Converter</a></li>
+                                <li><a class="dropdown-item" href="/audio-converter">Audio Converter</a></li>
+                                <li><a class="dropdown-item" href="/cad-converter">CAD Converter</a></li>
+                                <li><a class="dropdown-item" href="/document-converter">Document Converter</a></li>
+                                <li><a class="dropdown-item" href="/ebook-converter">Ebook Converter</a></li>
+                                <li><a class="dropdown-item" href="/font-converter">Font Converter</a></li>
+                                <li><a class="dropdown-item" href="/image-converter">Image Converter</a></li>
+                                <li><a class="dropdown-item" href="/presentation-converter">Presentation Converter</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/spreadsheet-converter">Spreadsheet Converter</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/vector-converter">Vector Converter</a></li>
+                                <li><a class="dropdown-item" href="/video-converter">Video Converter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </li>
+
+                <li class="col-lg-3 col-sm-12">
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress"></i> Optimize Files</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/compress-pdf">Compress PDF</a></li>
+                                <li><a class="dropdown-item" href="/compress-png">Compress PNG</a></li>
+                                <li><a class="dropdown-item" href="/compress-jpg">Compress JPG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-file-archive"></i> Archives</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/create-zip-archive">Create Archive</a></li>
+                                <li><a class="dropdown-item" href="/extract-zip-archive">Extract Archive</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-browser"></i> Capture Websites</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/save-website-pdf">Save Website as PDF</a></li>
+                                <li><a class="dropdown-item" href="/website-png-screenshot">Website PNG Screenshot</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/website-jpg-screenshot">Website JPG Screenshot</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress-alt"></i> Merge Files</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/merge-pdf">Merge PDF</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+</li>
+
+
+<li class="dropdown nav-item mega-dropdown"><a href="https://cloudconvert.com/api/v2" data-toggle="dropdown"
+                                               class="nav-link dropdown-toggle">API</a>
+
+
+    <div class="mega-dropdown-menu dropdown-menu bg-gradient-navbar">
+
+        <div class="container">
+            <ul class="row w-100">
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-sync-alt"></i>Convert Files</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/file-conversion">File Conversion
+                                        API</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/office-to-pdf">Office to PDF
+                                        API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/iwork-to-pdf">iWork to PDF
+                                        API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/pdf-to-office">PDF to Office
+                                        API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-browser"></i>Capture Websites</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/html-to-pdf">HTML to PDF API</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/website-screenshot">Website
+                                        Screenshot
+                                        API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress"></i>Optimize Files</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/compress-pdf">Compress PDF
+                                        API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/compress-images">Compress Images
+                                        API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-cubes"></i>Other APIs</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/merge-pdf">Merge PDF API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/thumbnails">Thumbnail API</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/watermark">Watermark API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-robot"></i>Automate</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/integrations">Integrations</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+                <li class="col-lg-3 col-sm-12">
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-book"></i> Documentation</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/api/v2">API
+                                        Documentation</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/api/v2/quickstart">Quickstart
+                                        Guide</a></li>
+
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/api/v2/jobs/builder">Job Builder</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+
+
+
+                </li>
+
+
+            </ul>
+
+        </div>
+    </div>
+
+</li>
+
+
+<li class="nav-item"><a href="https://cloudconvert.com/pricing" class="nav-link">Pricing</a></li>
+
+
+
+                        </ul>
+                        <ul class="nav navbar-nav float-right">
+                            <li class="nav-item">
+        <a class="nav-link" href="https://cloudconvert.com/register">Sign Up</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="https://cloudconvert.com/login">Login</a>
+    </li>
+
+
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="content  center-layout">
+            <div class="content-wrapper container pt-4">
+
+
+
+                <h1 class="content-header-title">
+
+                    Security and Compliance
+
+
+                </h1>
+
+
+                <p class="lead">
+
+                    CloudConvert is committed to maintaining an extensive security program that includes both technical
+                    and
+                    organizational security measures. CloudConvert is ISO 27001 certified and has developed an ISMS to
+                    fully support
+                    the Trust Service Principles (TSP) of security,
+                    availability, processing integrity,
+                    confidentiality and privacy. Learn more about our security principles and measures below.
+                </p>
+
+
+                <div class="card mt-3 mx-auto ">
+
+                    <div class="card-content">
+                        <div class="card-body">
+
+                            <div class="row align-items-center justify-content-center">
+
+                                <div class="col-md-5">
+                                    <img src="https://cloudconvert.com/images/iso27001.png" style="width: 100%" alt="ISO 27001">
+                                </div>
+
+                                <div class="col-md-7">
+
+                                    <p class="lead">
+                                        CloudConvert has received ISO 27001 certification from TÜV Süd, highlighting our
+                                        strong
+                                        commitment to data security and secure management principles. This certification
+                                        means we
+                                        follow
+                                        top-notch international standards for keeping your data safe and secure.
+                                    </p>
+
+                                    <div class="text-center">
+                                        <a class="btn btn-success btn-lg "
+                                           href="https://cloudconvert.com/security/certificate" target="_blank">
+                                            <i class="fa fa-file-certificate mr-1"></i>
+                                            Show ISO 27001 certificate
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="app-content content  center-layout">
+            <div class="content-wrapper container">
+
+
+
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+
+                        <div class="row mt-2">
+
+                            <div class="col-auto">
+
+                                <i class="fa fa-2x fa-shield-check text-success"></i>
+
+                            </div>
+
+                            <div class="col">
+
+                                <h3>Certified Data Centers</h3>
+
+                                <p>
+                                    CloudConvert relies on trusted cloud service providers with the highest security
+                                    standards such
+                                    as AWS. All our cloud providers and data centers are ISO 27001 certified. Our cloud
+                                    services are
+                                    hosted in the selected geographical processing region exclusively.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-6">
+
+
+                        <div class="row mt-2">
+
+                            <div class="col-auto">
+
+                                <i class="fa fa-2x fa-shield-check text-success"></i>
+
+                            </div>
+
+                            <div class="col">
+
+
+                                <h3>Data Isolation</h3>
+
+                                <p>
+                                    Our software and infrastructure were designed from the ground up with customer data
+                                    isolation in
+                                    mind. Each conversion runs in a separate, isolated container. This means that even
+                                    the
+                                    CloudConvert team technically can’t access your files. If we need access to your
+                                    files for
+                                    support purposes, we’ll ask you to send them over manually.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+
+                        <div class="row mt-2">
+
+                            <div class="col-auto">
+
+                                <i class="fa fa-2x fa-shield-check text-success"></i>
+
+                            </div>
+
+                            <div class="col">
+
+
+                                <h3>Storage Security</h3>
+
+                                <p>
+                                    Files are kept only for processing and deleted immediately afterwards. CloudConvert
+                                    intentionally does not provide any permanent storage. Instead, we are integrated
+                                    with your
+                                    existing and trusted storage system such as Amazon S3 or many other services.
+                                </p>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-6">
+
+
+                        <div class="row mt-2">
+
+                            <div class="col-auto">
+
+                                <i class="fa fa-2x fa-shield-check text-success"></i>
+
+                            </div>
+
+                            <div class="col">
+
+                                <h3>Scalability</h3>
+
+                                <p>
+                                    CloudConvert automatically scales with increasing load. By strictly separating
+                                    available
+                                    resources, we make sure the load peaks of one customer don’t affect other customers.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+
+                        <div class="row mt-2">
+
+                            <div class="col-auto">
+
+                                <i class="fa fa-2x fa-shield-check text-success"></i>
+
+                            </div>
+
+                            <div class="col">
+
+
+                                <h3>Network Security</h3>
+
+                                <p>
+                                    All transfers from and to CloudConvert are SSL encrypted. We ensure the use of
+                                    up-to-date
+                                    ciphers. The network is actively monitored and protected by firewalls from our cloud
+                                    provider.
+                                </p>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-6">
+
+
+                        <div class="row mt-2">
+
+                            <div class="col-auto">
+
+                                <i class="fa fa-2x fa-shield-check text-success"></i>
+
+                            </div>
+
+                            <div class="col">
+
+                                <h3>Access Control</h3>
+
+                                <p>
+
+                                    Access to the CloudConvert web interface is governed by two-factor authentication
+                                    and access
+                                    rights. All access is logged and can be reviewed by the customer through detailed
+                                    activity logs.
+                                    API authentication relies on the OAuth 2.0 standard and can be restricted by fine
+                                    granular
+                                    access scopes.
+
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+
+                        <div class="row mt-2">
+
+                            <div class="col-auto">
+
+                                <i class="fa fa-2x fa-shield-check text-success"></i>
+
+                            </div>
+
+                            <div class="col">
+
+
+                                <h3>Organizational Principles</h3>
+
+                                <p>
+
+                                    The CloudConvert staff is trained to expertly handle your data. We follow documented
+                                    processes
+                                    regarding Vulnerability Management, Incident Management, and Human Resources
+                                    Security. We do
+                                    regular security trainings to strengthen our understanding of the security
+                                    processes.
+
+                                </p>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-6">
+
+
+                        <div class="row mt-2">
+
+                            <div class="col-auto">
+
+                                <i class="fa fa-2x fa-shield-check text-success"></i>
+
+                            </div>
+
+                            <div class="col">
+
+                                <h3>Development Principles</h3>
+
+                                <p>
+                                    Our team follows industry best practices to build and maintain secure code and
+                                    infrastructure
+                                    including regular code reviews and vulnerability testing. Our software,
+                                    infrastructure, and
+                                    security measures are constantly adjusted to technical progress.
+
+
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+
+                        <div class="row mt-2">
+
+                            <div class="col-auto">
+
+                                <i class="fa fa-2x fa-shield-check text-success"></i>
+
+                            </div>
+
+                            <div class="col">
+
+
+                                <h3>Availability & Fault Tolerance</h3>
+
+                                <p>
+
+                                    Our infrastructure is set up in a fully redundant way and distributed across
+                                    multiple
+                                    availability zones. Since our founding in 2012, we’ve learned how to offer a
+                                    reliable service,
+                                    even in the case of load peaks or data center downtimes.
+
+                                </p>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-6">
+
+
+                        <div class="row mt-2">
+
+                            <div class="col-auto">
+
+                                <i class="fa fa-2x fa-shield-check text-success"></i>
+
+                            </div>
+
+                            <div class="col">
+
+                                <h3>Privacy & GDPR Compliance</h3>
+
+                                <p>
+
+                                    As a German company, we’re bound to strict European data protection laws, and we’re
+                                    committed to
+                                    comply with the General Data Protection Regulation (GDPR). If you’d like to sign a
+                                    data
+                                    processing agreement (DPA) with us, please contact us. Read more about our privacy
+                                    principles
+                                    and the GDPR in our <a href="https://cloudconvert.com/privacy">Privacy
+                                        Policy</a>.
+
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <p class="text-center mt-2">
+                    If you have any further questions or concerns about our security statement, please do not hesitate
+                    to <a
+                            href="https://cloudconvert.com/contact">contact us</a>.
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="container">
+
+    <footer class="footer mb-0">
+
+        <div>
+            <div class="row">
+
+                <div class="col-md align-self-center">
+
+                    <div class="row">
+
+                        <div class="col-6 col-md-auto mr-md-3 mt-1">
+                            <h6 class="text-bold-600">Company</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://cloudconvert.com/about">About Us</a></li>
+                                <li><a href="https://cloudconvert.com/security">Security</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-auto mr-md-3 mt-1">
+                            <h6 class="text-bold-600">Resources</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://cloudconvert.com/blog">Blog</a></li>
+                                <li>
+                                    <a href="https://status.cloudconvert.com" target="_blank" rel="noopener">Status</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-auto mr-md-3 mt-1">
+                            <h6 class="text-bold-600">Legal</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://cloudconvert.com/privacy">Privacy</a></li>
+                                <li ><a href="https://cloudconvert.com/terms">Terms</a></li>
+                                <li><a href="https://cloudconvert.com/about#imprint">Imprint</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-auto mr-md-3 mt-1">
+                            <h6 class="text-bold-600">Contact</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://cloudconvert.com/contact">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-auto text-center text-md-right mt-2 mt-md-2">
+
+
+                    <p>
+                        © 2024 Lunaweb GmbH <br><span class="text-muted d-none d-lg-inline d-xl-inline d-md-inline mt-1">Made in Munich, Germany  </span>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <footer-stats
+                :initial-files="1814402549"
+                :initial-bytes="15562958705858019"
+                :diff-files="24"
+                :diff-bytes="93746026"
+                :interval="5"
+        ></footer-stats>
+
+    </footer>
+
+</div>
+
+    </div>
+
+
+    
+            <script src="/js/app.js?id=0b1b08800f264bc46859c1a43fe1a13c"></script>
+    
+
+</body>
+</html>
+
+
+
+
