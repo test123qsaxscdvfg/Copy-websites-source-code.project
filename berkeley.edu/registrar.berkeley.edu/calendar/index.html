@@ -1,0 +1,1049 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1120037665",accountID:"3406677",trustKey:"66686",xpid:"VwIHV1BUDxAJU1FXAgECVVQ=",licenseKey:"NRJS-c379f09e81f0dcc0114",applicationID:"970550530"};;/*! For license information please see nr-loader-spa-1.250.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>m,Mt:()=>b,C5:()=>s,DL:()=>A,OP:()=>D,lF:()=>O,Yu:()=>E,Dg:()=>v,CX:()=>c,GE:()=>x,sU:()=>N});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",h=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},g="All configuration objects require an agent identifier!";function m(e){if(!e)throw new Error(g);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function v(e,t){if(!e)throw new Error(g);p[e]=(0,i.D)(t,h());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(g);var r=m(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},w={};function A(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!w[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return w[e]}function x(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");w[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=w[e])}const E=(0,n.mF)().o;var _=r(385),T=r(6818);const S={buildEnv:T.Re,customTransaction:void 0,disabled:!1,distMethod:T.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(_._A?.performance?.timeOrigin||_._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+_._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof _._A.XMLHttpRequest?.prototype?.addEventListener,version:T.q4,denyList:void 0},R={};function D(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!R[e])throw new Error("Runtime for ".concat(e," was never set"));return R[e]}function N(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");R[e]=(0,i.D)(t,S);const r=(0,n.ek)(e);r&&(r.runtime=R[e])}function O(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,lF:()=>a,q4:()=>n});const n="1.250.0",i="PROD",o="CDN",a="2.0.0-alpha.11"},385:(e,t,r)=>{"use strict";r.d(t,{FN:()=>c,IF:()=>l,LW:()=>a,Nk:()=>h,Tt:()=>u,_A:()=>o,cv:()=>p,iS:()=>s,il:()=>n,ux:()=>d,v6:()=>i,w1:()=>f});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a="complete"===o?.document?.readyState,s=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=(()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),f=Boolean(n&&window.document.documentMode),h=!!o.navigator?.sendBeacon,p=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const r=[...s[e]];function a(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((t=>{let[r]=t;s[e].delete(r),a(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var h={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=m(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([h,e,r,a]);return a},get:v,listeners:m,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",h.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function g(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function v(t){return d[t]=d[t]||e(h,t)}function b(){return h.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,u.backlog={}}d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Ht:()=>u,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>o,IK:()=>c,oD:()=>i,uT:()=>s,wO:()=>a});const n="NRBA",i=144e5,o=18e5,a={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},s={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},c={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{"use strict";r.d(t,{e:()=>i});var n=r(385);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n._A?.location?.protocol&&t.host===n._A?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>d,T:()=>l});var n=r(8325),i=r(5546),o=r(3325),a=r(385);const s="newrelic";const c={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},u=new Set;function d(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{a._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},1214:(e,t,r)=>{"use strict";r.d(t,{em:()=>b,u5:()=>R,QU:()=>O,_L:()=>P,Gm:()=>H,Lg:()=>L,BV:()=>G,Kf:()=>Y});var n=r(8325),i=r(3117);const o="nr@original:".concat(i.a);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}var l=r(2210),f=r(385);const h={},p=f._A.XMLHttpRequest,g="addEventListener",m="removeEventListener",v="nr@wrapped:".concat(n.A);function b(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=c(t,!0);function i(e){r.inPlace(e,[g,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&y(document,i),y(f._A,i),y(p.prototype,i)),t.on(g+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,v,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function y(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,g);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var w="fetch-",A=w+"body-",x=["arrayBuffer","blob","json","text","formData"],E=f._A.Request,_=f._A.Response,T="prototype";const S={};function R(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(E&&_&&f._A.fetch))return t;if(S[t.debugId]++)return t;function r(e,r,i){var o=e[r];"function"==typeof o&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(i+"before-start",[r],a),a[n.A]&&a[n.A].dt&&(e=a[n.A].dt);var s=o.apply(this,r);return t.emit(i+"start",[r,e],s),s.then((function(e){return t.emit(i+"end",[null,e],s),e}),(function(e){throw t.emit(i+"end",[e],s),e}))})}return S[t.debugId]=1,x.forEach((e=>{r(E[T],e,A),r(_[T],e,A)})),r(f._A,"fetch",w),t.on(w+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(w+"done",[null,r],n)}else t.emit(w+"done",[e],n)})),t}const D={},N=["pushState","replaceState"];function O(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||D[t.debugId]++||(D[t.debugId]=1,c(t).inPlace(window.history,N,"-")),t}var I=r(3239);const C={},j=["appendChild","insertBefore","replaceChild"];function P(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!f.il||C[t.debugId])return t;C[t.debugId]=!0;var r=c(t),i=/[?&](?:callback|cb)=([^&#]+)/,o=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function s(e,t){if(!e)return t;const r=e.match(a),n=r[1];return s(r[3],t[n])}return r.inPlace(Node.prototype,j,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,c=a.match(i),c?c[1]:null);var a,c;if(!n)return;var u=function(e){var t=e.match(o);if(t&&t.length>=3)return{key:t[2],parent:s(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,I.m$)(!1)),e.removeEventListener("error",f,(0,I.m$)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,I.m$)(!1)),e.removeEventListener("error",f,(0,I.m$)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,I.m$)(!1)),e.addEventListener("error",f,(0,I.m$)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const k={};function H(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!f.il||k[t.debugId])return t;k[t.debugId]=!0;var r=c(t),i=f._A.MutationObserver;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(r(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),t}const M={};function L(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(M[t.debugId])return t;M[t.debugId]=!0;var r=t.context,i=c(t),a=f._A.Promise;return a&&function(){function e(r){var n=t.context(),o=i(r,"executor-",n,null,!1);const s=Reflect.construct(a,[o],e);return t.context(s).getCtx=function(){return n},s}f._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,o=r(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const u=n.apply(this,s);return o.nextPromise=u,t.emit("propagate",[e,!0],u,!1,!1),u},a.prototype.then[o]=n,t.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const z={},F="setTimeout",B="setInterval",U="clearTimeout",Z="-start",V="-",q=[F,"setImmediate",B,U,"clearImmediate"];function G(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(z[t.debugId]++)return t;z[t.debugId]=1;var r=c(t);return r.inPlace(f._A,q.slice(0,2),F+V),r.inPlace(f._A,q.slice(2,3),B+V),r.inPlace(f._A,q.slice(3),U+V),t.on(B+Z,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(F+Z,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var W=r(50);const X={},K=["open","send"];function Y(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(X[r.debugId]++)return r;X[r.debugId]=1,b(t);var i=c(r),o=f._A.XMLHttpRequest,a=f._A.MutationObserver,s=f._A.Promise,u=f._A.setInterval,d="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=f._A.XMLHttpRequest=function(e){const t=new o(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(d,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",A)}),(0,I.m$)(!1))}catch(e){(0,W.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",A)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,K,"-xhr-",A),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(m?m.then(w):u?u(w):(v=-v,y.data=v))}(t)})),r.on("open-xhr-start",g),a){var m=s&&s.resolve();if(!u&&!s){var v=1,y=document.createTextNode(v);new a(w).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===d||w()}));function w(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function A(e,t){return t}return r}},7825:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{J0:()=>l,Mi:()=>d,Vb:()=>o,Ye:()=>s,fm:()=>c,i9:()=>a,t9:()=>i,u0:()=>u});var n=r(7056);const i=r(3325).D.sessionReplay,o=.12,a={DomContentLoaded:0,Load:1,FullSnapshot:2,IncrementalSnapshot:3,Meta:4,Custom:5},s=1e6,c=64e3,u={[n.IK.ERROR]:15e3,[n.IK.FULL]:3e5,[n.IK.OFF]:0},d={RESET:{message:"Session was reset",sm:"Reset"},IMPORT:{message:"Recorder failed to import",sm:"Import"},TOO_MANY:{message:"429: Too Many Requests",sm:"Too-Many"},TOO_BIG:{message:"Payload was too large",sm:"Too-Big"},CROSS_TAB:{message:"Session Entity was set to OFF on another tab",sm:"Cross-Tab"},ENTITLEMENTS:{message:"Session Replay is not allowed and will not be started",sm:"Entitlement"}},l=5e3},3614:(e,t,r)=>{"use strict";r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>u,FN_START:()=>c,PUSH_STATE:()=>d,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState"},7836:(e,t,r)=>{"use strict";r.d(t,{BODY:()=>x,CB_END:()=>E,CB_START:()=>u,END:()=>A,FEATURE_NAME:()=>i,FETCH:()=>T,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>d,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>_,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>w,originalSetTimeout:()=>y});var n=r(234);const i=r(3325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,w="-start",A="-end",x="-body",E="cb"+A,_="jsTime",T="fetch"},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7530:(e,t,r)=>{"use strict";r.d(t,{j:()=>b});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),h=r(8632);function p(){const e=(0,h.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var g=r(2825);const m=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let v=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:x,runtime:E={loaderType:b},exposed:_=!0}=t;const T=(0,h.gG)();A||(w=T.init,A=T.info,x=T.loader_config),(0,i.Dg)(e.agentIdentifier,w||{}),(0,i.GE)(e.agentIdentifier,x||{}),A.jsAttributes??={},d.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,A);const S=(0,i.P_)(e.agentIdentifier),R=[A.beacon,A.errorBeacon];v||(S.proxy.assets&&(m(S.proxy.assets),R.push(S.proxy.assets)),S.proxy.beacon&&R.push(S.proxy.beacon),p(),(0,h.EZ)("activatedFeatures",g.T)),E.denyList=[...S.ajax.deny_list||[],...S.ajax.block_internal?R:[]],(0,i.sU)(e.agentIdentifier,E),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const h={};var p=a.ee.get(e),g=p.get("tracer"),m="api-",v=m+"ixn-";function b(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),A(m,n,!0,o||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{h[e]=A(m,e,!0,"api")})),h.addPageAction=A(m,"addPageAction",!0,n.D.pageAction),h.setCurrentRouteName=A(m,"routeName",!0,n.D.spa),h.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,A(m,"setPageViewName",!0)()},h.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},h.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},h.recordReplay=function(){(0,o.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,p),(0,o.p)("recordReplay",[],void 0,n.D.sessionReplay,p)},h.pauseReplay=function(){(0,o.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,p),(0,o.p)("pauseReplay",[],void 0,n.D.sessionReplay,p)},h.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,p),(0,o.p)(v+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(g.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw g.emit("fn-err",[arguments,this,e],r),e}finally{g.emit("fn-end",[(0,s.z)()],r)}}}};function A(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function x(){r.e(111).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(v,e,void 0,n.D.spa)})),h.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b2)((()=>x()),!0):x(),h}(e.agentIdentifier,y)),void 0===e.exposed&&(e.exposed=_),v=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({111:"nr-spa",164:"nr-spa-compressor",433:"nr-spa-recorder"}[e]+"-1.250.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.250.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={111:"sha512-VzAAF1LCxsuK2besFoBGhujeJumhOrBrIjFLbkx79lpNPBgfRM8NQ+zxV3oVtbIpclKSEEjI6LWGBzLivoqDqw==",433:"sha512-6vufZOcF6JBu12rByPpOGR7WV+Teena/OA0N+oEmjbl6Du9C1s7Zc8XPaDY9WqZ7EgtUtDyeRLd8FEukA4mphQ==",164:"sha512-TACjgebgisQKqnowbjt0Zs1hS1HnCJnGEdI68dZ39nHU9g1LAb6er7eSNibSGDFBPBwhgKsBkEcteWtHRKc3Cw=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={801:0,92:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.250.0.PROD"]=self["webpackChunk:NRBA-1.250.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(1926);var e=i(50);class t{#e(e){return"Call to agent api ".concat(e," failed. The agent is not currently initialized.")}addPageAction(t,r){(0,e.Z)(this.#e("addPageAction"))}setPageViewName(t,r){(0,e.Z)(this.#e("setPageViewName"))}setCustomAttribute(t,r,n){(0,e.Z)(this.#e("setCustomAttribute"))}noticeError(t,r){(0,e.Z)(this.#e("noticeError"))}setUserId(t){(0,e.Z)(this.#e("setUserId"))}setApplicationVersion(t){(0,e.Z)(this.#e("setApplicationVersion"))}setErrorHandler(t){(0,e.Z)(this.#e("setErrorHandler"))}finished(t){(0,e.Z)(this.#e("finished"))}addRelease(t,r){(0,e.Z)(this.#e("addRelease"))}start(t){(0,e.Z)(this.#e("start"))}recordReplay(){(0,e.Z)(this.#e("recordReplay"))}pauseReplay(){(0,e.Z)(this.#e("pauseReplay"))}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(111).then(i.bind(i,1656));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(111).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),o(!1)}};l.il?(0,d.b2)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var h=i(7633);class p extends f{static featureName=h.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,h.t,r),this.importAggregator()}}var g=i(1117),m=i(1284);class v extends g.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,m.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,m.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=w(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,m.D)(e,A)}function A(e,t){return t}var x=i(8632),E=i(4402),_=i(4351);var T=i(5546),S=i(7956),R=i(3239),D=i(7894),N=i(9251);class O extends f{static featureName=N.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,N.t,r),l.il&&((0,S.N)((()=>(0,T.p)("docHidden",[(0,D.z)()],void 0,N.t,this.ee)),!0),(0,R.bP)("pagehide",(()=>(0,T.p)("winPagehide",[(0,D.z)()],void 0,N.t,this.ee))),this.importAggregator())}}var I=i(3081);class C extends f{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}var j=i(6660);class P{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class k extends f{static featureName=j.t;#t=new Set;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,j.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,n)=>{this.abortHandler&&!this.#t.has(n)&&(this.#t.add(n),(0,T.p)("err",[this.#r(n),(0,D.z)()],void 0,r.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,T.p)("ierr",[this.#r(e),(0,D.z)(),!0],void 0,r.D.jserrors,this.ee)})),l._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,T.p)("err",[this.#n(e),(0,D.z)(),!1,{unhandledPromiseRejection:1}],void 0,r.D.jserrors,this.ee)}),(0,R.m$)(!1,this.removeOnAbort?.signal)),l._A.addEventListener("error",(e=>{this.abortHandler&&(this.#t.has(e.error)?this.#t.delete(e.error):(0,T.p)("err",[this.#i(e),(0,D.z)()],void 0,r.D.jserrors,this.ee))}),(0,R.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.#t.clear(),this.abortHandler=void 0}#r(e){return e instanceof Error?e:void 0!==e?.message?new P(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new P("string"==typeof e?e:(0,_.P)(e))}#n(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new P(t);const r=this.#r(e.reason);return r.message=t+r.message,r}#i(e){return e.error instanceof Error?e.error:new P(e.message,e.filename,e.lineno,e.colno)}}var H=i(2210);let M=1;const L="nr@id";function z(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===l._A?0:(0,H.X)(e,L,(function(){return M++}))}function F(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,_.P)(e).length}catch(e){return}}}var B=i(1214),U=i(7243);class Z{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,n.DL)(this.agentIdentifier);if(!t)return null;var r=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!r||!i)return null;var a=(0,E.M)(),s=(0,E.Ht)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,r,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,r,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof l._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,_.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,n.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,n.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var i=0;i<r.allowed_origins.length;i++){var o=(0,U.e)(r.allowed_origins[i]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){t=!0;break}}return t}isDtEnabled(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var V=i(7825),q=["load","error","abort","timeout"],G=q.length,W=n.Yu.REQ,X=n.Yu.XHR;class K extends f{static featureName=V.t;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,V.t,i),(0,n.OP)(e).xhrWrappable){this.dt=new Z(e),this.handler=(e,t,r,n)=>(0,T.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};l._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const n={status:t.responseStatus},i={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};Y(n,t.name),this.handler("xhr",[n,i,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,r.D.ajax)}}))}catch(e){}(0,B.u5)(this.ee),(0,B.Kf)(this.ee),function(e,t,i,o){function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=x,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){E(t,e)}),(0,R.m$)(!1)),l.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,R.m$)(!1))}function s(e){this.params={method:e[0]},Y(this,e[1]),this.metrics={}}function c(t,r){var i=(0,n.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var a=o.generateTracePayload(this.parsedOrigin);if(a){var s=!1;a.newrelicHeader&&(r.setRequestHeader("newrelic",a.newrelicHeader),s=!0),a.traceContextParentHeader&&(r.setRequestHeader("traceparent",a.traceContextParentHeader),a.traceContextStateHeader&&r.setRequestHeader("tracestate",a.traceContextStateHeader),s=!0),s&&(this.dt=a)}}function u(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=F(i);a&&(n.txSize=a)}this.startTime=(0,D.z)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<G;s++)r.addEventListener(q[s],this.listener,(0,R.m$)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function f(e,t){var r=""+z(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function h(e,t){var r=""+z(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function p(){this.endTime=(0,D.z)()}function g(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function v(e,t,r){t instanceof X&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,D.z)()))}function b(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,D.z)()-this.xhrCbStart,this.onload,r],r)}function y(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&l.il&&(t=""+l._A.location.href):e[0]&&e[0].url?t=e[0].url:l._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,U.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=o.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,n)&&(this.dt=n);else{var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function w(e,t){this.params={},this.metrics={},this.startTime=(0,D.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:l._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),Y(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=F(n.body)||0}function A(e,t){var n;this.endTime=(0,D.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,D.z)()-this.startTime};i("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,r.D.ajax)}function x(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<G;o++)e.removeEventListener(q[o],this.listener,!1);t.aborted||(n.duration=(0,D.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):E(this,e),n.cbTime=this.cbTime,i("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,r.D.ajax))}}function E(e,t){e.params.status=t.status;var r=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?F(e.response):"text"===r||""===r||void 0===r?F(e.responseText):void 0}(t,e.lastSize);if(r&&(e.metrics.rxSize=r),e.sameOrigin){var n=t.getResponseHeader("X-NewRelic-App-Data");n&&(e.params.cat=n.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",a),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",u),t.on("xhr-cb-time",d),t.on("xhr-load-added",f),t.on("xhr-load-removed",h),t.on("xhr-resolved",p),t.on("addEventListener-end",g),t.on("removeEventListener-end",m),t.on("fn-end",b),t.on("fetch-before-start",y),t.on("fetch-start",w),t.on("fn-start",v),t.on("fetch-done",A)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function Y(e,t){var r=(0,U.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var J=i(3614);const{BST_RESOURCE:Q,RESOURCE:ee,START:te,END:re,FEATURE_NAME:ne,FN_END:ie,FN_START:oe,PUSH_STATE:ae}=J;var se=i(7056),ce=i(7144);class ue extends f{static featureName=ce.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,ce.t9,r);try{const e=JSON.parse(localStorage.getItem("NRBA_SESSION"));e.sessionReplayMode!==se.IK.OFF?this.#a(e.sessionReplayMode):this.importAggregator({})}catch(e){this.importAggregator({})}}async#a(e){const{Recorder:t}=await i.e(433).then(i.bind(i,4136));this.recorder=new t({mode:e,agentIdentifier:this.agentIdentifier}),this.recorder.startRecording(),this.importAggregator({recorder:this.recorder})}}var de=i(7836);const{FEATURE_NAME:le,START:fe,END:he,BODY:pe,CB_END:ge,JS_TIME:me,FETCH:ve,FN_START:be,CB_START:ye,FN_END:we}=de;var Ae=i(4649);class xe extends f{static featureName=Ae.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,Ae.t,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,E.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new v({agentIdentifier:this.agentIdentifier}),this.features={},(0,x.h5)(r,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){try{const t=a(this.agentIdentifier),n=[...this.desiredFeatures];n.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),n.forEach((n=>{if(t[n.featureName]||n.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(n.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(n.featureName," is enabled but one or more dependent features has been disabled (").concat((0,_.P)(i),"). This may cause unintended consequences or missing data...")),this.features[n.featureName]=new n(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,x.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The session trace feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[K,p,O,class extends f{static featureName=ne;constructor(e,t){if(super(e,t,ne,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;const n=this.ee;let i;(0,B.QU)(n),this.eventsEE=(0,B.em)(n),this.eventsEE.on(oe,(function(e,t){this.bstStart=(0,D.z)()})),this.eventsEE.on(ie,(function(e,t){(0,T.p)("bst",[e[0],t,this.bstStart,(0,D.z)()],void 0,r.D.sessionTrace,n)})),n.on(ae+te,(function(e){this.time=(0,D.z)(),this.startPath=location.pathname+location.hash})),n.on(ae+re,(function(e){(0,T.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,r.D.sessionTrace,n)}));try{i=new PerformanceObserver((e=>{const t=e.getEntries();(0,T.p)(Q,[t],void 0,r.D.sessionTrace,n)})),i.observe({type:ee,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:i})}},ue,C,xe,k,class extends f{static featureName=le;constructor(e,t){if(super(e,t,le,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;if(!(0,n.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,i=0;const o=this.ee.get("tracer"),a=(0,B._L)(this.ee),s=(0,B.Lg)(this.ee),c=(0,B.BV)(this.ee),u=(0,B.Kf)(this.ee),d=this.ee.get("events"),f=(0,B.u5)(this.ee),h=(0,B.QU)(this.ee),p=(0,B.Gm)(this.ee);function g(e,t){h.emit("newURL",[""+window.location,t])}function m(){i++,r=window.location.hash,this[be]=(0,D.z)()}function v(){i--,window.location.hash!==r&&g(0,!0);var e=(0,D.z)();this[me]=~~this[me]+e-this[be],this[we]=e}function b(e,t){e.on(t,(function(){this[t]=(0,D.z)()}))}this.ee.on(be,m),s.on(ye,m),a.on(ye,m),this.ee.on(we,v),s.on(ge,v),a.on(ge,v),this.ee.buffer([be,we,"xhr-resolved"],this.featureName),d.buffer([be],this.featureName),c.buffer(["setTimeout"+he,"clearTimeout"+fe,be],this.featureName),u.buffer([be,"new-xhr","send-xhr"+fe],this.featureName),f.buffer([ve+fe,ve+"-done",ve+pe+fe,ve+pe+he],this.featureName),h.buffer(["newURL"],this.featureName),p.buffer([be],this.featureName),s.buffer(["propagate",ye,ge,"executor-err","resolve"+fe],this.featureName),o.buffer([be,"no-"+be],this.featureName),a.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),b(f,ve+fe),b(f,ve+"-done"),b(a,"new-jsonp"),b(a,"jsonp-end"),b(a,"cb-start"),h.on("pushState-end",g),h.on("replaceState-end",g),window.addEventListener("hashchange",g,(0,R.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",g,(0,R.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){g(0,i>1)}),(0,R.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})()})();</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Calendar - Office of the Registrar</title>
+<!--[if lt IE 9]><script src="https://registrar.berkeley.edu/wp-content/themes/berkeley_brand/js/html5shiv.js" type="text/javascript"></script><![endif]-->
+<script type="text/javascript" src="//use.typekit.net/ixk1zbq.js"></script>
+	  <script type="text/javascript">try{Typekit.load();}catch(e){}</script><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700'>
+<script>!function(e,c){e[c]=e[c]+(e[c]&&" ")+"quform-js"}(document.documentElement,"className");</script><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v21.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<link rel="canonical" href="https://registrar.berkeley.edu/calendar/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Calendar - Office of the Registrar" />
+	<meta property="og:description" content="Current Student Enrollment Calendar Includes important student deadlines and is updated periodically. Current and Upcoming Academic Calendars Academic Calendar: 2023-24 (PDF) Academic Calendar: 2024-25 (PDF) Academic Calendar: 2025-26 (PDF) Academic Calendar:" />
+	<meta property="og:url" content="https://registrar.berkeley.edu/calendar/" />
+	<meta property="og:site_name" content="Office of the Registrar" />
+	<meta property="article:modified_time" content="2024-01-08T22:00:43+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="1 minute" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://registrar.berkeley.edu/calendar/","url":"https://registrar.berkeley.edu/calendar/","name":"Calendar - Office of the Registrar","isPartOf":{"@id":"https://registrar.berkeley.edu/#website"},"datePublished":"2021-03-02T00:12:59+00:00","dateModified":"2024-01-08T22:00:43+00:00","breadcrumb":{"@id":"https://registrar.berkeley.edu/calendar/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://registrar.berkeley.edu/calendar/"]}]},{"@type":"BreadcrumbList","@id":"https://registrar.berkeley.edu/calendar/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://registrar.berkeley.edu/"},{"@type":"ListItem","position":2,"name":"Calendar"}]},{"@type":"WebSite","@id":"https://registrar.berkeley.edu/#website","url":"https://registrar.berkeley.edu/","name":"Office of the Registrar","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://registrar.berkeley.edu/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+
+<script>
+dataLayer = [{"title":"Calendar","author":"matthew sun","wordcount":68,"logged_in":"false","page_id":2999,"post_date":"2021-03-01 16:12:59"}];
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N86J6JQ');</script>
+<!-- End Google Tag Manager --><link rel='dns-prefetch' href='//registrar.berkeley.edu' />
+<link rel="alternate" type="application/rss+xml" title="Office of the Registrar &raquo; Feed" href="https://registrar.berkeley.edu/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Office of the Registrar &raquo; Comments Feed" href="https://registrar.berkeley.edu/comments/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/registrar.berkeley.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='bs_shortcodes-css' href='https://registrar.berkeley.edu/wp-content/plugins/bootstrap-shortcodes/css/shortcodes.css?ver=6.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='otw_grid_manager-css' href='https://registrar.berkeley.edu/wp-content/plugins/otw-sidebar-widget-manager/include/otw_components/otw_content_sidebars/css/otw-grid.css?ver=1.13' type='text/css' media='all' />
+<link rel='stylesheet' id='otw_sbm.css-css' href='https://registrar.berkeley.edu/wp-content/plugins/otw-sidebar-widget-manager/css/otw_sbm.css?ver=6.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-block-style-css' href='https://registrar.berkeley.edu/wp-content/plugins/social-icons-widget-by-wpzoom/block/dist/style-wpzoom-social-icons.css?ver=4.2.14' type='text/css' media='all' />
+<link rel='stylesheet' id='esg-plugin-settings-css' href='https://registrar.berkeley.edu/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=3.0.15' type='text/css' media='all' />
+<link rel='stylesheet' id='quform-css' href='https://registrar.berkeley.edu/wp-content/plugins/quform/cache/quform.css?ver=1538693205' type='text/css' media='all' />
+<link rel='stylesheet' id='materialize_accordions-css' href='https://registrar.berkeley.edu/wp-content/plugins/materialize-accordions/public/css/materialize-accordions.css?ver=1.5.10' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css' href='https://registrar.berkeley.edu/wp-content/themes/berkeley_brand/css/bootstrap.min.css?ver=1.0.0.1527029829' type='text/css' media='all' />
+<link rel='stylesheet' id='legacy-css' href='https://registrar.berkeley.edu/wp-content/themes/berkeley_brand/css/legacy-alienship.css?ver=all' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css' href='https://registrar.berkeley.edu/wp-content/themes/berkeley_brand/style.css?ver=6.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='chld_thm_cfg_separate-css' href='https://registrar.berkeley.edu/wp-content/themes/berkeley_brand-child/ctc-style.css?ver=6.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='pscrollbar-css' href='https://registrar.berkeley.edu/wp-content/plugins/quadmenu/assets/frontend/pscrollbar/perfect-scrollbar.min.css?ver=3.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='owlcarousel-css' href='https://registrar.berkeley.edu/wp-content/plugins/quadmenu/assets/frontend/owlcarousel/owl.carousel.min.css?ver=3.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='quadmenu-normalize-css' href='https://registrar.berkeley.edu/wp-content/plugins/quadmenu/assets/frontend/css/quadmenu-normalize.css?ver=3.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='quadmenu-widgets-css' href='https://registrar.berkeley.edu/wp-content/uploads/berkeley_brand-child/quadmenu-widgets.css?ver=1615402593' type='text/css' media='all' />
+<link rel='stylesheet' id='quadmenu-css' href='https://registrar.berkeley.edu/wp-content/plugins/quadmenu/build/frontend/style.css?ver=3.0.6' type='text/css' media='all' />
+<link rel='stylesheet' id='quadmenu-locations-css' href='https://registrar.berkeley.edu/wp-content/uploads/berkeley_brand-child/quadmenu-locations.css?ver=1615402593' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://registrar.berkeley.edu/wp-includes/css/dashicons.min.css?ver=6.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-socicon-css' href='https://registrar.berkeley.edu/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/wpzoom-socicon.css?ver=1705031042' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-genericons-css' href='https://registrar.berkeley.edu/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/genericons.css?ver=1705031042' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-academicons-css' href='https://registrar.berkeley.edu/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/academicons.min.css?ver=1705031042' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-font-awesome-3-css' href='https://registrar.berkeley.edu/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/font-awesome-3.min.css?ver=1705031042' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-styles-css' href='https://registrar.berkeley.edu/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/wpzoom-social-icons-styles.css?ver=1705031042' type='text/css' media='all' />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-academicons-woff2-css' href='https://registrar.berkeley.edu/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/academicons.woff2?v=1.9.2'  type='font/woff2' crossorigin />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-fontawesome-3-woff2-css' href='https://registrar.berkeley.edu/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/fontawesome-webfont.woff2?v=4.7.0'  type='font/woff2' crossorigin />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-genericons-woff-css' href='https://registrar.berkeley.edu/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/Genericons.woff'  type='font/woff' crossorigin />
+<link rel='preload' as='font'  id='wpzoom-social-icons-font-socicon-woff2-css' href='https://registrar.berkeley.edu/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/socicon.woff2?v=4.2.14'  type='font/woff2' crossorigin />
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/plugins/bootstrap-shortcodes/js/bootstrap.js?ver=6.3.1' id='bs_bootstrap-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/plugins/bootstrap-shortcodes/js/init.js?ver=6.3.1' id='bs_init-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/plugins/otw-sidebar-widget-manager/js/jquery.sticky.js?ver=6.3.1' id='jquery_sticky.js-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/plugins/otw-sidebar-widget-manager/js/otw_sticky_sidebars.js?ver=6.3.1' id='otw_sticky_sbm.js-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.6.12' async id='tp-tools-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.12' async id='revmin-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/plugins/materialize-accordions/public/js/materialize-accordions.js?ver=1.5.10' id='material-js-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/plugins/otw-sidebar-widget-manager/include/otw_components/otw_grid_manager/js/otw_grid_manager.js?ver=1.13' id='otw_grid_manager-js'></script>
+<link rel="https://api.w.org/" href="https://registrar.berkeley.edu/wp-json/" /><link rel="alternate" type="application/json" href="https://registrar.berkeley.edu/wp-json/wp/v2/pages/2999" /><link rel="alternate" type="application/json+oembed" href="https://registrar.berkeley.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fregistrar.berkeley.edu%2Fcalendar%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://registrar.berkeley.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fregistrar.berkeley.edu%2Fcalendar%2F&#038;format=xml" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style><meta name="generator" content="Powered by Slider Revolution 6.6.12 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://registrar.berkeley.edu/wp-content/uploads/2018/11/Cal-calgold-bblue-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://registrar.berkeley.edu/wp-content/uploads/2018/11/Cal-calgold-bblue.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://registrar.berkeley.edu/wp-content/uploads/2018/11/Cal-calgold-bblue.png" />
+<meta name="msapplication-TileImage" content="https://registrar.berkeley.edu/wp-content/uploads/2018/11/Cal-calgold-bblue.png" />
+<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+</head>
+
+<body class="page-template page-template-templates page-template-page-band-berkeley1-sb page-template-templatespage-band-berkeley1-sb-php page page-id-2999 page-parent">
+	<!--[if lt IE 9]><p class="browsehappy alert alert-danger">You are using an outdated browser. Please <a class="alert-link" href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+
+	<a class="sr-only sr-only-focusable skip-to-content" href="#content">Skip to main content</a>
+	<!--<div id="page" class="container hfeed site">-->
+
+		
+				<header id="site-header" class="light nav-right">
+			 
+<div class="navbar navbar-default navbar-static-top yamm" role="navigation">
+	<div class="container">
+     <a href="http://berkeley.edu" class="home-link">UC Berkeley</a>
+
+		<div class="navbar-header one-line"><a href="/" rel="home"><span class="b-wordmark" aria-hidden="true"></span><span class="dept-title one-line">Office of the Registrar</span></a>	        
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex2-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<!-- MAIN MENU -->
+	<div id="main-nav" class="collapse navbar-collapse navbar-ex2-collapse">
+			<nav id="primary-nav" role="navigation">
+				<span class="visible-xs header-menu-title">Main navigation</span>
+				<nav id="quadmenu" class="quadmenu-default_theme quadmenu-v3.0.6 quadmenu-align-left quadmenu-divider-hide quadmenu-carets-show quadmenu-background-color quadmenu-mobile-shadow-show quadmenu-dropdown-shadow-show quadmenu-is-embed" data-template="embed" data-theme="default_theme" data-unwrap="1" data-breakpoint="768">
+  <div class="quadmenu-container">
+    <div id="quadmenu_0" class="quadmenu-navbar-collapse collapsed in">
+      <ul class="quadmenu-navbar-nav"><li id="menu-item-1620" class="quadmenu-item-1620 quadmenu-item quadmenu-item-object-page quadmenu-item-has-children quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-0 quadmenu-dropdown quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/academic-records/" class="quadmenu-dropdown-toggle hoverintent">
+			<span class="quadmenu-item-content">
+											<span class="quadmenu-caret"></span>
+										<span class="quadmenu-text  hover t_1000">Academic Records</span>
+																	</span>
+		</a>
+						<div id="dropdown-1620" class="quadmenu_fadeIn t_100 quadmenu-dropdown-menu">
+				<ul>
+		<li id="menu-item-1289" class="quadmenu-item-1289 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/academic-records/grades/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Grades</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-1339" class="quadmenu-item-1339 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/academic-records/transferring-credit/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Transferring Credit</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-1342" class="quadmenu-item-1342 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/academic-records/transcripts-diplomas/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Transcripts &#038; Diplomas</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2771" class="quadmenu-item-2771 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/academic-records/your-name-on-records-rosters/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Your Name on Records &#038; Rosters</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2758" class="quadmenu-item-2758 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/academic-records/verification-of-enrollment-degrees/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Verification of Enrollment/Degrees</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-4683" class="quadmenu-item-4683 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/academic-records/undergraduate-classifications/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Undergraduate Classifications</span>
+																	</span>
+		</a>
+				</li>		</ul>
+	</div>
+	</li><li id="menu-item-1624" class="quadmenu-item-1624 quadmenu-item quadmenu-item-object-page quadmenu-item-has-children quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-0 quadmenu-dropdown quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/tuition-fees-residency/" class="quadmenu-dropdown-toggle hoverintent">
+			<span class="quadmenu-item-content">
+											<span class="quadmenu-caret"></span>
+										<span class="quadmenu-text  hover t_1000">Tuition, Fees, &#038; Residency</span>
+																	</span>
+		</a>
+						<div id="dropdown-1624" class="quadmenu_fadeIn t_100 quadmenu-dropdown-menu">
+				<ul>
+		<li id="menu-item-458" class="quadmenu-item-458 quadmenu-item quadmenu-item-object-page quadmenu-item-has-children quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-dropdown quadmenu-dropdown-submenu quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/" class="quadmenu-dropdown-toggle hoverintent">
+			<span class="quadmenu-item-content">
+											<span class="quadmenu-caret"></span>
+										<span class="quadmenu-text  hover t_1000">Tuition &#038; Fees</span>
+																	</span>
+		</a>
+						<div id="dropdown-458" class="quadmenu_fadeIn t_100 quadmenu-dropdown-menu">
+				<ul>
+		<li id="menu-item-2821" class="quadmenu-item-2821 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/fee-schedule/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Fee Schedule</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2829" class="quadmenu-item-2829 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/fee-schedule-archive/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Fee Schedule Archive</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2833" class="quadmenu-item-2833 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/refunds-after-withdrawal-archive/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Refunds After Withdrawal Archive</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-4195" class="quadmenu-item-4195 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/tuition-stability-plan/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Tuition Stability Plan</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-4381" class="quadmenu-item-4381 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/instructional-resilience-and-enhancement-fee/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Instructional Resilience and Enhancement Fee</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-4332" class="quadmenu-item-4332 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/ucsa-systemwide-fee/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">UCSA Systemwide Fee</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-4610" class="quadmenu-item-4610 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/uc-graduate-and-professional-council-ucgpc-fee/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">UC Graduate and Professional Council (UCGPC) Fee</span>
+																	</span>
+		</a>
+				</li>		</ul>
+	</div>
+	</li><li id="menu-item-2837" class="quadmenu-item-2837 quadmenu-item quadmenu-item-object-page quadmenu-item-has-children quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-dropdown quadmenu-dropdown-submenu quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/tuition-fees-residency/residency-for-tuition-purposes/" class="quadmenu-dropdown-toggle hoverintent">
+			<span class="quadmenu-item-content">
+											<span class="quadmenu-caret"></span>
+										<span class="quadmenu-text  hover t_1000">Residency (for Tuition Purposes)</span>
+																	</span>
+		</a>
+						<div id="dropdown-2837" class="quadmenu_fadeIn t_100 quadmenu-dropdown-menu">
+				<ul>
+		<li id="menu-item-2852" class="quadmenu-item-2852 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/tuition-fees-residency/residency-for-tuition-purposes/how-to-apply-for-residency-for-tuition-purposes/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">How to Apply for Residency (for Tuition Purposes)</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2853" class="quadmenu-item-2853 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/tuition-fees-residency/residency-for-tuition-purposes/residency-requirements-undergraduates/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Residency Requirements: Undergraduates</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2854" class="quadmenu-item-2854 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/tuition-fees-residency/residency-for-tuition-purposes/residency-requirements-graduate-students/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Residency Requirements: Graduate Students</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2855" class="quadmenu-item-2855 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/tuition-fees-residency/residency-for-tuition-purposes/immigration/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Immigration</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2856" class="quadmenu-item-2856 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/tuition-fees-residency/residency-for-tuition-purposes/exceptions-exemptions/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Exceptions &#038; Exemptions</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2857" class="quadmenu-item-2857 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/tuition-fees-residency/residency-for-tuition-purposes/inquiries-and-appeals/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Inquiries and Appeals</span>
+																	</span>
+		</a>
+				</li>		</ul>
+	</div>
+	</li>		</ul>
+	</div>
+	</li><li id="menu-item-1631" class="quadmenu-item-1631 quadmenu-item quadmenu-item-object-page quadmenu-item-has-children quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-0 quadmenu-dropdown quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/registration/" class="quadmenu-dropdown-toggle hoverintent">
+			<span class="quadmenu-item-content">
+											<span class="quadmenu-caret"></span>
+										<span class="quadmenu-text  hover t_1000">Registration</span>
+																	</span>
+		</a>
+						<div id="dropdown-1631" class="quadmenu_fadeIn t_100 quadmenu-dropdown-menu">
+				<ul>
+		<li id="menu-item-2869" class="quadmenu-item-2869 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/registration/using-class-schedule/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Using the Class Schedule</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-461" class="quadmenu-item-461 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/registration/enrollment/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Enrollment</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2912" class="quadmenu-item-2912 quadmenu-item quadmenu-item-object-page quadmenu-item-has-children quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-dropdown quadmenu-dropdown-submenu quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/registration/cancellation-withdrawal/" class="quadmenu-dropdown-toggle hoverintent">
+			<span class="quadmenu-item-content">
+											<span class="quadmenu-caret"></span>
+										<span class="quadmenu-text  hover t_1000">Cancellation &#038; Withdrawal</span>
+																	</span>
+		</a>
+						<div id="dropdown-2912" class="quadmenu_fadeIn t_100 quadmenu-dropdown-menu">
+				<ul>
+		<li id="menu-item-2914" class="quadmenu-item-2914 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/registration/cancellation-withdrawal/cancel-for-non-payment-policy/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Cancel for Non-Payment Policy</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2913" class="quadmenu-item-2913 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/registration/cancellation-withdrawal/refunds-after-withdrawal/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Refunds After Withdrawal</span>
+																	</span>
+		</a>
+				</li>		</ul>
+	</div>
+	</li><li id="menu-item-2911" class="quadmenu-item-2911 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/registration/visitor-and-exchange-programs/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Visitor and Exchange Programs</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2910" class="quadmenu-item-2910 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/registration/readmission/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Readmission</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2909" class="quadmenu-item-2909 quadmenu-item quadmenu-item-object-page quadmenu-item-has-children quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-dropdown quadmenu-dropdown-submenu quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/registration/suggested-classes/" class="quadmenu-dropdown-toggle hoverintent">
+			<span class="quadmenu-item-content">
+											<span class="quadmenu-caret"></span>
+										<span class="quadmenu-text  hover t_1000">Suggested Classes</span>
+																	</span>
+		</a>
+						<div id="dropdown-2909" class="quadmenu_fadeIn t_100 quadmenu-dropdown-menu">
+				<ul>
+		<li id="menu-item-2908" class="quadmenu-item-2908 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/registration/suggested-classes/fall/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Fall</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2907" class="quadmenu-item-2907 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/registration/suggested-classes/spring/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Spring</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2906" class="quadmenu-item-2906 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/registration/suggested-classes/summer/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Summer</span>
+																	</span>
+		</a>
+				</li>		</ul>
+	</div>
+	</li>		</ul>
+	</div>
+	</li><li id="menu-item-1637" class="quadmenu-item-1637 quadmenu-item quadmenu-item-object-page quadmenu-item-has-children quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-0 quadmenu-dropdown quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/veterans-benefits/" class="quadmenu-dropdown-toggle hoverintent">
+			<span class="quadmenu-item-content">
+											<span class="quadmenu-caret"></span>
+										<span class="quadmenu-text  hover t_1000">Veterans Benefits</span>
+																	</span>
+		</a>
+						<div id="dropdown-1637" class="quadmenu_fadeIn t_100 quadmenu-dropdown-menu">
+				<ul>
+		<li id="menu-item-2938" class="quadmenu-item-2938 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/veterans-benefits/va-educational-benefits/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">VA Educational Benefits</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2936" class="quadmenu-item-2936 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/veterans-benefits/checklist-for-initiating-benefits-at-uc-berkeley/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Checklist for Initiating Benefits at UC Berkeley</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2935" class="quadmenu-item-2935 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/veterans-benefits/what-to-expect-after-certification/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">What to Expect After Certification</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2934" class="quadmenu-item-2934 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/veterans-benefits/cal-vet-college-fee-waiver/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Cal-Vet College Fee Waiver</span>
+																	</span>
+		</a>
+				</li>		</ul>
+	</div>
+	</li><li id="menu-item-1937" class="quadmenu-item-1937 quadmenu-item quadmenu-item-object-page quadmenu-item-has-children quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-0 quadmenu-dropdown quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/scheduling/" class="quadmenu-dropdown-toggle hoverintent">
+			<span class="quadmenu-item-content">
+											<span class="quadmenu-caret"></span>
+										<span class="quadmenu-text  hover t_1000">Scheduling</span>
+																	</span>
+		</a>
+						<div id="dropdown-1937" class="quadmenu_fadeIn t_100 quadmenu-dropdown-menu">
+				<ul>
+		<li id="menu-item-1953" class="quadmenu-item-1953 quadmenu-item quadmenu-item-object-page quadmenu-item-has-children quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-dropdown quadmenu-dropdown-submenu quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/scheduling/academic-scheduling/" class="quadmenu-dropdown-toggle hoverintent">
+			<span class="quadmenu-item-content">
+											<span class="quadmenu-caret"></span>
+										<span class="quadmenu-text  hover t_1000">Academic Scheduling</span>
+																	</span>
+		</a>
+						<div id="dropdown-1953" class="quadmenu_fadeIn t_100 quadmenu-dropdown-menu">
+				<ul>
+		<li id="menu-item-2753" class="quadmenu-item-2753 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/scheduling/academic-scheduling/academic-scheduling-final-exam-guide-and-schedules/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Final Exam Guide and Schedules</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2754" class="quadmenu-item-2754 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/scheduling/academic-scheduling/academic-scheduling-policies/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Academic Scheduling: Policies</span>
+																	</span>
+		</a>
+				</li>		</ul>
+	</div>
+	</li><li id="menu-item-1964" class="quadmenu-item-1964 quadmenu-item quadmenu-item-object-page quadmenu-item-has-children quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-dropdown quadmenu-dropdown-submenu quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/scheduling/classroom-reservations/" class="quadmenu-dropdown-toggle hoverintent">
+			<span class="quadmenu-item-content">
+											<span class="quadmenu-caret"></span>
+										<span class="quadmenu-text  hover t_1000">Classroom Reservations</span>
+																	</span>
+		</a>
+						<div id="dropdown-1964" class="quadmenu_fadeIn t_100 quadmenu-dropdown-menu">
+				<ul>
+		<li id="menu-item-1973" class="quadmenu-item-1973 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/scheduling/classroom-reservations/registered-student-organizations/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Registered Student Organizations</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2951" class="quadmenu-item-2951 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/scheduling/faculty-and-staff/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Faculty and Staff</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2952" class="quadmenu-item-2952 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/scheduling/classroom-reservations/classroom-reservations-weekend-reservations/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Weekend Reservations</span>
+																	</span>
+		</a>
+				</li>		</ul>
+	</div>
+	</li><li id="menu-item-2950" class="quadmenu-item-2950 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/scheduling/schedulers-toolbox/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Scheduler’s Toolbox</span>
+																	</span>
+		</a>
+				</li>		</ul>
+	</div>
+	</li><li id="menu-item-2653" class="quadmenu-item-2653 quadmenu-item quadmenu-item-object-page quadmenu-item-has-children quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-0 quadmenu-dropdown quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/faculty-staff/" class="quadmenu-dropdown-toggle hoverintent">
+			<span class="quadmenu-item-content">
+											<span class="quadmenu-caret"></span>
+										<span class="quadmenu-text  hover t_1000">Faculty &#038; Staff</span>
+																	</span>
+		</a>
+						<div id="dropdown-2653" class="quadmenu_fadeIn t_100 quadmenu-dropdown-menu">
+				<ul>
+		<li id="menu-item-2987" class="quadmenu-item-2987 quadmenu-item quadmenu-item-object-page quadmenu-item-has-children quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-1 quadmenu-dropdown quadmenu-dropdown-submenu quadmenu-has-caret quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/faculty-staff/grading/" class="quadmenu-dropdown-toggle hoverintent">
+			<span class="quadmenu-item-content">
+											<span class="quadmenu-caret"></span>
+										<span class="quadmenu-text  hover t_1000">Grading</span>
+																	</span>
+		</a>
+						<div id="dropdown-2987" class="quadmenu_fadeIn t_100 quadmenu-dropdown-menu">
+				<ul>
+		<li id="menu-item-2986" class="quadmenu-item-2986 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/faculty-staff/grading/submitting-midterm-deficient-grades/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Submitting Midterm Deficient Grades</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2985" class="quadmenu-item-2985 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/faculty-staff/grading/submitting-final-grades/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Submitting Final Grades</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2984" class="quadmenu-item-2984 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/faculty-staff/grading/grade-changes-and-corrections/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Grade Changes and Corrections</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2983" class="quadmenu-item-2983 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/faculty-staff/grading/incomplete-grades/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Incomplete Grades</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2982" class="quadmenu-item-2982 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/faculty-staff/grading/how-students-see-grades/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">How Students See Grades</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2981" class="quadmenu-item-2981 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/faculty-staff/grading/instructor-responsibility-for-student-privacy/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Instructor Responsibility for Student Privacy</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2980" class="quadmenu-item-2980 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/faculty-staff/grading/grading-policies-reports/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Grading Policies &#038; Reports</span>
+																	</span>
+		</a>
+				</li><li id="menu-item-2979" class="quadmenu-item-2979 quadmenu-item quadmenu-item-object-page quadmenu-item-type-post_type quadmenu-item-type-post_type quadmenu-item-level-2 quadmenu-has-title quadmenu-has-link quadmenu-has-background quadmenu-dropdown-right">				<a  href="https://registrar.berkeley.edu/faculty-staff/grading/training-documentation/">
+			<span class="quadmenu-item-content">
+																	<span class="quadmenu-text  hover t_1000">Training &#038; Documentation</span>
+																	</span>
+		</a>
+				</li>		</ul>
+	</div>
+	</li>		</ul>
+	</div>
+	</li></ul>    </div>
+  </div>
+</nav>			</nav> 
+	</div>
+	<!-- SECONDARY MENU -->
+	<div id="tools-nav" class="navbar-collapse navbar-ex2-collapse collapse secondary">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<span class="visible-xs header-menu-title">Secondary navigation</span>
+		      <ul id="menu-2nd-menu" class="nav navbar-nav secondary-nav"><li id="menu-item-2764" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2764 col-xs-6 col-md-3"><a title="Berkeley Academic Guide" href="http://guide.berkeley.edu/">Berkeley Academic Guide</a></li>
+<li id="menu-item-2765" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2765 col-xs-6 col-md-3"><a title="Class Schedule" href="https://classes.berkeley.edu/">Class Schedule</a></li>
+<li id="menu-item-3002" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2999 current_page_item menu-item-3002 col-xs-6 col-md-3 active"><a title="Academic Calendar" href="https://registrar.berkeley.edu/calendar/">Academic Calendar</a></li>
+<li class="menu-search">   <form id='searchform' class='navbar-form navbar-right' role='search' action='https://registrar.berkeley.edu' method='get'>
+        <div class='form-group'>
+            <input id='s' name='s' type='search' class='form-control' title='search term' placeholder='Search &hellip;' value='' aria-label='search term'>
+        </div>
+        <button id='searchsubmit' type='submit' name='submit' class='btn btn-default' aria-label='search'><span class='entypo search'></span></button>
+    </form></li></ul>
+		  </nav>
+  	</div>
+</div>		</header><!-- #masthead -->
+		
+	<div id="content" class="site-content" role="main">
+             
+        
+        <div class="container">
+                    <div class="row">
+     <section class="page-header  berkeley1" >
+          <div class="container">
+    		<h1>Calendar</h1>          </div>
+        </section>
+			
+		<div class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb"><span class="trail-begin"><a href="https://registrar.berkeley.edu" title="Office of the Registrar">Home</a></span>
+			 <span class="sep">/</span> <span class="trail-end">Calendar</span>
+		</div>	<div id="primary" class="content-area col-sm-8">
+
+				<main id="main" class="site-main">
+
+		<article role="article" id="post-2999" class="post-2999 page type-page status-publish hentry">
+	<header class="entry-header"></header>	<div class="entry-content">
+		<h2>Current Student Enrollment Calendar</h2>
+<p>Includes important student deadlines and is updated periodically.</p>
+<p><iframe style="border: solid 1px #777;" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=Y19sdWJscHFxaWdmaWpsYmMxbDRydWRjcGk1c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23EF6C00&amp;mode=AGENDA" width="800" height="600" frameborder="0" scrolling="no"></iframe></p>
+<h2>Current and Upcoming Academic Calendars</h2>
+<ul>
+<li><a href="/wp-content/uploads/UCB_AcademicCalendar_2023-24.pdf">Academic Calendar: 2023-24</a> (PDF)</li>
+<li><a href="https://registrar.berkeley.edu/wp-content/uploads/UCB_AcademicCalendar_2024-25.pdf">Academic Calendar: 2024-25 </a>(PDF)</li>
+<li><a href="https://registrar.berkeley.edu/wp-content/uploads/UCB_AcademicCalendar_2025-26.pdf">Academic Calendar: 2025-26</a> (PDF)</li>
+<li><a href="https://registrar.berkeley.edu/wp-content/uploads/UCB_AcademicCalendar_2026-27.pdf">Academic Calendar: 2026-27</a> (PDF)</li>
+<li><a href="https://registrar.berkeley.edu/wp-content/uploads/UCB_AcademicCalendar_2027-28.pdf">Academic Calendar: 2027-28 </a>(PDF)</li>
+<li><a href="https://registrar.berkeley.edu/wp-content/uploads/UCB_AcademicCalendar_2028-29.pdf">Academic Calendar: 2028-29</a> (PDF)</li>
+</ul>
+<p>For questions about the Academic Calendar, please <a href="mailto:guide@berkeley.edu?subject=Academic%20Calendar">contact us</a>.</p>
+<h2>Final Exam Schedules</h2>
+<p><a href="/scheduling/academic-scheduling/academic-scheduling-final-exam-guide-and-schedules/">Final exam schedules and information</a> can be found here on our website.</p>
+<div class="materialize-wrapper"><div class="post-wrap" ><div class="btn-container">
+								     	<button class="btn bk-bkg-text open-button" type="button"> Show All</button><button class="btn bk-bkg-text close-button" type="button"> Hide All</button>
+						   				</div><ul class="collapsible expandable" data-collapsible="expandable"><li class="single-section"><div class="collapsible-head" tabindex="0" style="background-color: " ><div class="title-wrap" style="color:  ">Academic Calendar: More Information</div><span class="material-icons add">add</span></div><div class="collapsible-body" style="background-color: ;color:  "><div><ul>
+	<li>Answers to Frequently Asked Questions about <a href="/wp-content/uploads/2021/03/050714_Campus-Policies-and-Guidelines-Concerning-the-Academic-Calendar.pdf">Campus Policies and Guidelines Concerning the Academic Calendar, RRR Week, Exams and Commencement</a> (PDF)</li>
+	<li><a href="https://events.berkeley.edu">UC Berkeley Campus Events</a></li>
+	<li><a href="https://homecoming.berkeley.edu">Homecoming and Parents' Weekend</a></li>
+	<li><a href="https://commencement.berkeley.edu">Commencement Information</a></li>
+</ul>
+<p>For comments or questions about the Academic Calendar, please <a href="/about">contact us</a>.</p></div></div></li></ul><ul class="collapsible expandable" data-collapsible="expandable"><li class="single-section"><div class="collapsible-head" tabindex="0" style="background-color: " ><div class="title-wrap" style="color:  ">Previous Academic Calendars</div><span class="material-icons add">add</span></div><div class="collapsible-body" style="background-color: ;color:  "><div><ul>
+	<li><a href="/wp-content/uploads/UCB_AcademicCalendar_2022-23.pdf">Academic Calendar: 2022-23</a> (PDF)</li>
+
+        
+	<li><a href="https://registrar.berkeley.edu/wp-content/uploads/UCB_AcademicCalendar_2021-22.pdf">Academic Calendar: 2021-22</a> (PDF)</li>
+	<li><a href="https://registrar.berkeley.edu/wp-content/uploads/2021/03/UCB_AcademicCalendar_2020-21_V3.pdf">Academic Calendar: 2020-21</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2019-20_V5.pdf">Academic Calendar: 2019-20</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2018-19_V4.pdf">Academic Calendar: 2018-19</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2017-18_V3.pdf">Academic Calendar: 2017-18</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2016-17_V7.pdf">Academic Calendar: 2016-17</a><a href="/sites/default/files/pdf/UCB_AcademicCalendar_2016-17_V6.pdf"> </a>(PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2015-16.pdf">Academic Calendar: 2015-16</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2014-15.pdf">Academic Calendar: 2014-15</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2013-14.pdf">Academic Calendar: 2013-14</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2012-13.pdf">Academic Calendar: 2012-13</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2011-12.pdf">Academic Calendar: 2011-12</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2010-11.pdf">Academic Calendar: 2010-11</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2009-10.pdf">Academic Calendar: 2009-10</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2008-09.pdf">Academic Calendar: 2008-09</a> (PDF)<a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2007-08.pdf"></a></li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2007-08.pdf">Academic Calendar: 2007-08</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2006-07.pdf">Academic Calendar: 2006-07</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2005-06.pdf">Academic Calendar: 2005-06</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2004-05.pdf">Academic Calendar: 2004-05</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2003-04.pdf">Academic Calendar: 2003-04</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2002-03.pdf">Academic Calendar: 2002-03</a> (PDF)<a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2001-02.pdf"></a></li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2001-02.pdf">Academic Calendar: 2001-02</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_2000-01.pdf">Academic Calendar: 2000-01</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_1999-2000.pdf">Academic Calendar: 1999-00</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_1998-99.pdf">Academic Calendar: 1998-99</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_1997-98.pdf">Academic Calendar: 1997-98</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_1996-97.pdf">Academic Calendar: 1996-97</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_AcademicCalendar_1995-96.pdf">Academic Calendar: 1995-96</a> (PDF)</li>
+</ul></div></div></li></ul><ul class="collapsible expandable" data-collapsible="expandable"><li class="single-section"><div class="collapsible-head" tabindex="0" style="background-color: " ><div class="title-wrap" style="color:  ">Previous Enrollment Calendars</div><span class="material-icons add">add</span></div><div class="collapsible-body" style="background-color: ;color:  "><div><ul>
+	<li><a href="https://registrar.berkeley.edu/wp-content/uploads/2021/03/Student-Enrollment-Calendar-2020-21-V7.pdf">Student Enrollment Calendar: 2020-21 (PDF)</a></li>
+	<li><a href="/wp-content/uploads/2021/04/StudentEnrollmentCalendar_2019-20-v4.pdf">Student Enrollment Calendar: 2019-20</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_StudentEnrollmentCalendar_2018-19_V14.pdf">Student Enrollment Calendar: 2018-19</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_StudentEnrollmentCalendar_2017-18_V5.pdf">Student Enrollment Calendar: 2017-18</a> (PDF)</li>
+	<li><a href="/wp-content/uploads/2021/04/UCB_StudentEnrollmentCalendar_2016-17_V6.pdf">Student Enrollment Calendar: 2016-17</a> (PDF)</li>
+</ul></div></div></li></ul><ul class="collapsible expandable" data-collapsible="expandable"><li class="single-section"><div class="collapsible-head" tabindex="0" style="background-color: " ><div class="title-wrap" style="color:  ">Religious Holidays & Religious Creed Policy</div><span class="material-icons add">add</span></div><div class="collapsible-body" style="background-color: ;color:  "><div><h5>Religious Holidays: 2022–2023 Academic Year</h5>
+<p>View UC Berkeley's list of <a href="/calendar/religious-holidays-religious-creed-policy/">religious and cultural holidays for the 2022–23 Academic Year</a>.</p></div></div></li></ul><ul class="collapsible expandable" data-collapsible="expandable"><li class="single-section"><div class="collapsible-head" tabindex="0" style="background-color: " ><div class="title-wrap" style="color:  ">Add a Calendar to Your bCal</div><span class="material-icons add">add</span></div><div class="collapsible-body" style="background-color: ;color:  "><div><p>It's easy to add the Academic Calendar and/or the Religious Holidays Calendar to your bCal. Just click the link below to add. If that doesn't work, try logging in to your Google calendar and then copying and pasting the link into the browser window. </p>
+<p><strong><a href="https://calendar.google.com/calendar?cid=YmVya2VsZXkuZWR1X2xycGFnY3ZvdnU0N3JhajcyZG1wYXRqb3U0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">Academic Calendar</a>:</strong></p>
+<p><a href="https://calendar.google.com/calendar?cid=YmVya2VsZXkuZWR1X2xycGFnY3ZvdnU0N3JhajcyZG1wYXRqb3U0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">https://calendar.google.com/calendar?cid=YmVya2VsZXkuZWR1X2xycGFnY3ZvdnU0N3JhajcyZG1wYXRqb3U0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20</a></p>
+<p><strong><a href="https://calendar.google.com/calendar/u/0?cid=Y19sdWJscHFxaWdmaWpsYmMxbDRydWRjcGk1c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">Student Enrollment Calendar:</a> </strong></p>
+<p><a href="https://calendar.google.com/calendar/u/0?cid=Y19sdWJscHFxaWdmaWpsYmMxbDRydWRjcGk1c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">https://calendar.google.com/calendar/u/0?cid=Y19sdWJscHFxaWdmaWpsYmMxbDRydWRjcGk1c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t</a></p>
+<p><strong><a href="https://calendar.google.com/calendar?cid=YmVya2VsZXkuZWR1X2Nkb2lkajEzaHJkdm0yajNoc3E3bnV0dTZnQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">Religious Holidays Calendar</a>:</strong></p>
+<p><a href="https://calendar.google.com/calendar/u/0?cid=YmVya2VsZXkuZWR1X2Nkb2lkajEzaHJkdm0yajNoc3E3bnV0dTZnQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">https://calendar.google.com/calendar?cid=YmVya2VsZXkuZWR1X2Nkb2lkajEzaHJkdm0yajNoc3E3bnV0dTZnQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20</a></p></div></div></li></ul></div></div><script>jQuery(document).ready(function(jQuery){})</script><style></style>
+   	</div><!-- .entry-content -->
+	</article><!-- #post-3634 -->
+
+		</main><!-- #main -->
+		
+	</div><!-- #primary -->
+	<div id="secondary" class="col-sm-4">
+
+				<div id="sidebar" class="widget-area" role="complementary">
+			<aside id="nav_menu-2" class="widget widget_nav_menu"><div class="menu-sidebar-conditional-menu-container"><ul id="menu-sidebar-conditional-menu" class="menu"><li id="menu-item-1928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1928"><a href="https://registrar.berkeley.edu/academic-records/">Academic Records</a>
+<ul class="sub-menu">
+	<li id="menu-item-1828" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1828"><a href="https://registrar.berkeley.edu/academic-records/grades/">Grades</a></li>
+	<li id="menu-item-1826" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1826"><a href="https://registrar.berkeley.edu/academic-records/transferring-credit/">Transferring Credit</a></li>
+	<li id="menu-item-1825" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1825"><a href="https://registrar.berkeley.edu/academic-records/transcripts-diplomas/">Transcripts &#038; Diplomas</a></li>
+	<li id="menu-item-2772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2772"><a href="https://registrar.berkeley.edu/academic-records/your-name-on-records-rosters/">Your Name on Records &#038; Rosters</a></li>
+	<li id="menu-item-2759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2759"><a href="https://registrar.berkeley.edu/academic-records/verification-of-enrollment-degrees/">Verification of Enrollment/Degrees</a></li>
+	<li id="menu-item-4684" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4684"><a href="https://registrar.berkeley.edu/academic-records/undergraduate-classifications/">Undergraduate Classifications</a></li>
+</ul>
+</li>
+<li id="menu-item-1803" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1803"><a href="https://registrar.berkeley.edu/tuition-fees-residency/">Tuition, Fees, &#038; Residency</a>
+<ul class="sub-menu">
+	<li id="menu-item-2814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2814"><a href="https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/">Tuition &#038; Fees</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2820"><a href="https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/fee-schedule/">Fee Schedule</a></li>
+		<li id="menu-item-2830" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2830"><a href="https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/fee-schedule-archive/">Fee Schedule Archive</a></li>
+		<li id="menu-item-2834" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2834"><a href="https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/refunds-after-withdrawal-archive/">Refunds After Withdrawal Archive</a></li>
+		<li id="menu-item-4185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4185"><a href="https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/tuition-stability-plan/">Tuition Stability Plan</a></li>
+		<li id="menu-item-4382" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4382"><a href="https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/instructional-resilience-and-enhancement-fee/">Instructional Resilience and Enhancement Fee</a></li>
+		<li id="menu-item-4331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4331"><a href="https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/ucsa-systemwide-fee/">UCSA Systemwide Fee</a></li>
+		<li id="menu-item-4609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4609"><a href="https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/uc-graduate-and-professional-council-ucgpc-fee/">UC Graduate and Professional Council (UCGPC) Fee</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2838" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2838"><a href="https://registrar.berkeley.edu/tuition-fees-residency/residency-for-tuition-purposes/">Residency (for Tuition Purposes)</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2858"><a href="https://registrar.berkeley.edu/tuition-fees-residency/residency-for-tuition-purposes/how-to-apply-for-residency-for-tuition-purposes/">How to Apply for Residency (for Tuition Purposes)</a></li>
+		<li id="menu-item-2859" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2859"><a href="https://registrar.berkeley.edu/tuition-fees-residency/residency-for-tuition-purposes/residency-requirements-undergraduates/">Residency Requirements: Undergraduates</a></li>
+		<li id="menu-item-2860" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2860"><a href="https://registrar.berkeley.edu/tuition-fees-residency/residency-for-tuition-purposes/residency-requirements-graduate-students/">Residency Requirements: Graduate Students</a></li>
+		<li id="menu-item-2861" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2861"><a href="https://registrar.berkeley.edu/tuition-fees-residency/residency-for-tuition-purposes/immigration/">Immigration</a></li>
+		<li id="menu-item-2862" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2862"><a href="https://registrar.berkeley.edu/tuition-fees-residency/residency-for-tuition-purposes/exceptions-exemptions/">Exceptions &#038; Exemptions</a></li>
+		<li id="menu-item-2863" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2863"><a href="https://registrar.berkeley.edu/tuition-fees-residency/residency-for-tuition-purposes/inquiries-and-appeals/">Inquiries and Appeals</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-1796" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1796"><a href="https://registrar.berkeley.edu/registration/">Registration</a>
+<ul class="sub-menu">
+	<li id="menu-item-2868" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2868"><a href="https://registrar.berkeley.edu/registration/using-class-schedule/">Using the Class Schedule</a></li>
+	<li id="menu-item-1797" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1797"><a href="https://registrar.berkeley.edu/registration/enrollment/">Enrollment</a></li>
+	<li id="menu-item-2921" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2921"><a href="https://registrar.berkeley.edu/registration/cancellation-withdrawal/">Cancellation &#038; Withdrawal</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2923"><a href="https://registrar.berkeley.edu/registration/cancellation-withdrawal/cancel-for-non-payment-policy/">Cancel for Non-Payment Policy</a></li>
+		<li id="menu-item-2922" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2922"><a href="https://registrar.berkeley.edu/registration/cancellation-withdrawal/refunds-after-withdrawal/">Refunds After Withdrawal</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2920" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="https://registrar.berkeley.edu/registration/visitor-and-exchange-programs/">Visitor and Exchange Programs</a></li>
+	<li id="menu-item-2919" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2919"><a href="https://registrar.berkeley.edu/registration/readmission/">Readmission</a></li>
+	<li id="menu-item-2918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2918"><a href="https://registrar.berkeley.edu/registration/suggested-classes/">Suggested Classes</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2917" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2917"><a href="https://registrar.berkeley.edu/registration/suggested-classes/fall/">Fall</a></li>
+		<li id="menu-item-2916" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2916"><a href="https://registrar.berkeley.edu/registration/suggested-classes/spring/">Spring</a></li>
+		<li id="menu-item-2915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2915"><a href="https://registrar.berkeley.edu/registration/suggested-classes/summer/">Summer</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-1791" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1791"><a href="https://registrar.berkeley.edu/veterans-benefits/">Veterans Benefits</a>
+<ul class="sub-menu">
+	<li id="menu-item-2021" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2021"><a href="https://registrar.berkeley.edu/veterans-benefits/va-educational-benefits/">VA Educational Benefits</a></li>
+	<li id="menu-item-2933" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2933"><a href="https://registrar.berkeley.edu/veterans-benefits/checklist-for-initiating-benefits-at-uc-berkeley/">Checklist for Initiating Benefits at UC Berkeley</a></li>
+	<li id="menu-item-2932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2932"><a href="https://registrar.berkeley.edu/veterans-benefits/what-to-expect-after-certification/">What to Expect After Certification</a></li>
+	<li id="menu-item-2931" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2931"><a href="https://registrar.berkeley.edu/veterans-benefits/cal-vet-college-fee-waiver/">Cal-Vet College Fee Waiver</a></li>
+</ul>
+</li>
+<li id="menu-item-1931" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1931"><a href="https://registrar.berkeley.edu/scheduling/">Scheduling</a>
+<ul class="sub-menu">
+	<li id="menu-item-1950" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1950"><a href="https://registrar.berkeley.edu/scheduling/academic-scheduling/">Academic Scheduling</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2751" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2751"><a href="https://registrar.berkeley.edu/scheduling/academic-scheduling/academic-scheduling-final-exam-guide-and-schedules/">Final Exam Guide and Schedules</a></li>
+		<li id="menu-item-2752" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2752"><a href="https://registrar.berkeley.edu/scheduling/academic-scheduling/academic-scheduling-policies/">Policies</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1962" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1962"><a href="https://registrar.berkeley.edu/scheduling/classroom-reservations/">Classroom Reservations</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1975"><a href="https://registrar.berkeley.edu/scheduling/classroom-reservations/registered-student-organizations/">Registered Student Organizations</a></li>
+		<li id="menu-item-2954" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2954"><a href="https://registrar.berkeley.edu/scheduling/faculty-and-staff/">Faculty and Staff</a></li>
+		<li id="menu-item-2955" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2955"><a href="https://registrar.berkeley.edu/scheduling/classroom-reservations/classroom-reservations-weekend-reservations/">Weekend Reservations</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2953" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2953"><a href="https://registrar.berkeley.edu/scheduling/schedulers-toolbox/">Scheduler’s Toolbox</a></li>
+</ul>
+</li>
+<li id="menu-item-2651" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2651"><a href="https://registrar.berkeley.edu/faculty-staff/">Faculty &#038; Staff</a>
+<ul class="sub-menu">
+	<li id="menu-item-2996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2996"><a href="https://registrar.berkeley.edu/faculty-staff/grading/">Grading</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2995"><a href="https://registrar.berkeley.edu/faculty-staff/grading/submitting-midterm-deficient-grades/">Submitting Midterm Deficient Grades</a></li>
+		<li id="menu-item-2994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2994"><a href="https://registrar.berkeley.edu/faculty-staff/grading/submitting-final-grades/">Submitting Final Grades</a></li>
+		<li id="menu-item-2993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2993"><a href="https://registrar.berkeley.edu/faculty-staff/grading/grade-changes-and-corrections/">Grade Changes and Corrections</a></li>
+		<li id="menu-item-2992" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2992"><a href="https://registrar.berkeley.edu/faculty-staff/grading/incomplete-grades/">Incomplete Grades</a></li>
+		<li id="menu-item-2991" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2991"><a href="https://registrar.berkeley.edu/faculty-staff/grading/how-students-see-grades/">How Students See Grades</a></li>
+		<li id="menu-item-2990" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2990"><a href="https://registrar.berkeley.edu/faculty-staff/grading/instructor-responsibility-for-student-privacy/">Instructor Responsibility for Student Privacy</a></li>
+		<li id="menu-item-2989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2989"><a href="https://registrar.berkeley.edu/faculty-staff/grading/grading-policies-reports/">Grading Policies &#038; Reports</a></li>
+		<li id="menu-item-2988" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2988"><a href="https://registrar.berkeley.edu/faculty-staff/grading/training-documentation/">Training &#038; Documentation</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-2662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2662"><a href="https://registrar.berkeley.edu/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-2719" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2719"><a href="https://registrar.berkeley.edu/about/contact-us/">Contact Us</a></li>
+	<li id="menu-item-2730" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2730"><a href="https://registrar.berkeley.edu/about/staff-list/">Staff List</a></li>
+</ul>
+</li>
+<li id="menu-item-2735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2735"><a href="https://registrar.berkeley.edu/service-adjustments/">Service Adjustments</a>
+<ul class="sub-menu">
+	<li id="menu-item-4186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4186"><a href="https://registrar.berkeley.edu/service-adjustments/modes-of-instruction/">Modes of Instruction</a></li>
+</ul>
+</li>
+<li id="menu-item-2656" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2656"><a href="https://registrar.berkeley.edu/forms/">Forms</a></li>
+<li id="menu-item-2667" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2667"><a href="https://registrar.berkeley.edu/academic-policies-procedures/">Academic Policies &#038; Procedures</a></li>
+<li id="menu-item-2670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2670"><a href="https://registrar.berkeley.edu/consumer-information-federal-disclosures/">Consumer Information – Federal Disclosures</a></li>
+<li id="menu-item-2673" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2673"><a href="https://registrar.berkeley.edu/feedback/">Feedback</a></li>
+<li id="menu-item-2681" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2681"><a href="https://registrar.berkeley.edu/make-a-gift/">Make a Gift</a></li>
+<li id="menu-item-2701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2701"><a href="https://registrar.berkeley.edu/certified-electronic-credential-overview/">Certified Electronic Credential Overview</a></li>
+<li id="menu-item-2749" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2749"><a href="https://registrar.berkeley.edu/quick-guides-videos-and-faqs/">Quick Guides, Videos, and FAQs</a></li>
+<li id="menu-item-2806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2806"><a href="https://registrar.berkeley.edu/credential-validation/">Credential Validation</a></li>
+<li id="menu-item-2957" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2957"><a href="https://registrar.berkeley.edu/cnp-self-assessment-tool/">CNP Self-Assessment Tool</a></li>
+<li id="menu-item-3000" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2999 current_page_item menu-item-has-children menu-item-3000"><a href="https://registrar.berkeley.edu/calendar/" aria-current="page">Calendar</a>
+<ul class="sub-menu">
+	<li id="menu-item-4425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4425"><a href="https://registrar.berkeley.edu/calendar/religious-holidays-religious-creed-policy/">Religious Holidays &#038; Religious Creed Policy</a></li>
+</ul>
+</li>
+<li id="menu-item-3276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3276"><a href="https://registrar.berkeley.edu/academic-calendar-more-information/">Academic Calendar More Information</a></li>
+<li id="menu-item-3287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3287"><a href="https://registrar.berkeley.edu/ferpa-privacy-disclosure/">FERPA (Privacy Disclosure)</a></li>
+<li id="menu-item-3315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3315"><a href="https://registrar.berkeley.edu/fee-archive/">Fee Archive</a></li>
+<li id="menu-item-3318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3318"><a href="https://registrar.berkeley.edu/spring-2020-policy-adjustments/">Spring 2020 Policy Adjustments</a></li>
+<li id="menu-item-3894" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3894"><a href="https://registrar.berkeley.edu/search/">Search</a></li>
+<li id="menu-item-3937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3937"><a href="https://registrar.berkeley.edu/chatbot/">Chatbot</a></li>
+<li id="menu-item-4171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4171"><a href="https://registrar.berkeley.edu/resources-and-support-for-staying-enrolled/">Resources and Support for Staying Enrolled</a></li>
+</ul></div></aside><hr class="top-hr"><aside id="text-9" class="widget second-sidebar widget_text"><div class="widget-title">Need More Help?</div>			<div class="textwidget"><p><a href="https://studentcentral.berkeley.edu/open-case">Open a case with Cal Student Central</a> or <a href="/about/contact-us">contact the Office of the Registrar</a>.</p>
+</div>
+		</aside>		</div><!-- #sidebar -->
+	
+	</div><!-- #secondary -->
+	</div><!-- #content --> 
+
+
+
+	</div><!-- #content -->
+	</div><!-- row -->
+
+	</div><!-- #container -->
+	<footer id="dept-footer">			            
+			 <div class="container">
+             	<div class="footer-sidebar-row row">              
+                              
+                        <section id="footer-sidebar-1" class="sidebar widget col-sm-3 zoom-social-icons-widget">
+                            
+		
+<ul class="zoom-social-icons-list zoom-social-icons-list--with-canvas zoom-social-icons-list--rounded zoom-social-icons-list--no-labels">
+
+		
+				<li class="zoom-social_icons-list__item">
+		<a class="zoom-social_icons-list__link" href="https://www.facebook.com/UCBerkeley/"  title="Facebook" >
+									
+						<span class="screen-reader-text">facebook</span>
+			
+						<span class="zoom-social_icons-list-span social-icon socicon socicon-facebook" data-hover-rule="background-color" data-hover-color="#063f75" style="background-color : #063f75; font-size: 20px; padding:5px" role='img' aria-label='Facebook'></span>
+			
+					</a>
+	</li>
+
+	
+				<li class="zoom-social_icons-list__item">
+		<a class="zoom-social_icons-list__link" href="https://www.youtube.com/user/ucberkeleycampuslife"  title="Default Label" >
+									
+						<span class="screen-reader-text">youtube</span>
+			
+						<span class="zoom-social_icons-list-span social-icon socicon socicon-youtube" data-hover-rule="background-color" data-hover-color="#063f75" style="background-color : #063f75; font-size: 20px; padding:5px" ></span>
+			
+					</a>
+	</li>
+
+	
+				<li class="zoom-social_icons-list__item">
+		<a class="zoom-social_icons-list__link" href="https://twitter.com/UCBerkeley"  title="Twitter" >
+									
+						<span class="screen-reader-text">twitter</span>
+			
+						<span class="zoom-social_icons-list-span social-icon socicon socicon-twitter" data-hover-rule="background-color" data-hover-color="#063f75" style="background-color : #063f75; font-size: 20px; padding:5px" ></span>
+			
+					</a>
+	</li>
+
+	
+				<li class="zoom-social_icons-list__item">
+		<a class="zoom-social_icons-list__link" href="http://instagram.com/ucberkeleyofficial/"  title="Instagram" >
+									
+						<span class="screen-reader-text">instagram</span>
+			
+						<span class="zoom-social_icons-list-span social-icon socicon socicon-instagram" data-hover-rule="background-color" data-hover-color="#063f75" style="background-color : #063f75; font-size: 20px; padding:5px" ></span>
+			
+					</a>
+	</li>
+
+	
+</ul>
+
+		                        </section>
+                                 
+                        <section id="footer-sidebar-2" class="sidebar widget col-sm-3 widget_text">
+                            			<div class="textwidget"><p>&nbsp;</p>
+</div>
+		                        </section>
+                                 
+                        <section id="footer-sidebar-3" class="sidebar widget col-sm-3 widget_nav_stacked_pills_menu">
+                            <div class="menu-footer-column-3-quick-links-container"><ul id="menu-footer-column-3-quick-links" class="menu nav nav-pills nav-stacked"><li id="menu-item-2665" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2665"><a href="https://registrar.berkeley.edu/forms/">Forms</a></li>
+<li id="menu-item-2664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2664"><a href="https://registrar.berkeley.edu/about/">About</a></li>
+<li id="menu-item-2677" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2677"><a href="https://registrar.berkeley.edu/academic-policies-procedures/">Academic Policies &#038; Procedures</a></li>
+<li id="menu-item-2676" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2676"><a href="https://registrar.berkeley.edu/consumer-information-federal-disclosures/">Consumer Information</a></li>
+<li id="menu-item-2678" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2678"><a href="https://ucpd.berkeley.edu/policies/clery-division">Clery Act</a></li>
+<li id="menu-item-2675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2675"><a href="https://registrar.berkeley.edu/feedback/">Feedback</a></li>
+</ul></div>                        </section>
+                                 
+                        <section id="footer-sidebar-4" class="sidebar widget col-sm-3 widget_nav_stacked_pills_menu">
+                            <div class="menu-privacy-container"><ul id="menu-privacy" class="menu nav nav-pills nav-stacked"><li id="menu-item-2683" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2683"><a href="https://registrar.berkeley.edu/make-a-gift/">Make a Gift</a></li>
+<li id="menu-item-543" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-543"><a href="https://security.berkeley.edu/privacy-statement-uc-berkeley-websites">Privacy Policy</a></li>
+<li id="menu-item-3697" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3697"><a href="https://dac.berkeley.edu/web-accessibility">Accessibility</a></li>
+<li id="menu-item-3953" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3953"><a href="https://ophd.berkeley.edu/policies-and-procedures/nondiscrimination-policy-statement">Nondiscrimination</a></li>
+</ul></div>                        </section>
+                   				</div><!-- .row -->
+            </div><!-- .container -->
+             </footer>
+
+<!-- </div>#page -->
+
+<footer id="universal-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-md-3">
+      	<div class="block logo">
+	        <a href="http://berkeley.edu"><img src="/wp-content/themes/berkeley_brand/img/logo-ucberkeley-white.png" alt="University of California Berkeley"></a>
+      	</div>
+      	
+      </div>
+      <div class="col-sm-8 col-md-9">
+	      
+      	<div class="copyright">
+      	  
+		        Copyright &copy;  2024 UC Regents; all rights reserved
+      	</div>
+      </div>      
+    </div>
+    
+  </div>
+</footer>
+
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = false;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+				<script>
+			var ajaxRevslider;
+			function rsCustomAjaxContentLoadingFunction() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content	= '';
+					var data	= {
+						action:			'revslider_ajax_call_front',
+						client_action:	'get_slider_html',
+						token:			'2484cb6475',
+						type:			obj.type,
+						id:				obj.id,
+						aspectratio:	obj.aspectratio
+					};
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:		'post',
+						url:		'https://registrar.berkeley.edu/wp-admin/admin-ajax.php',
+						dataType:	'json',
+						data:		data,
+						async:		false,
+						success:	function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error:		function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector + ' .rev_slider').revkill();
+				};
+
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION				
+				if (jQuery.fn.tpessential !== undefined) 					
+					if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') 
+						jQuery.fn.tpessential.defaults.ajaxTypes.push({type: 'revslider', func: ajaxRevslider, killfunc: ajaxRemoveRevslider, openAnimationSpeed: 0.3});   
+						// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+						// func: the Function Name which is Called once the Item with the Post Type has been clicked
+						// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+						// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)					
+			}
+			
+			var rsCustomAjaxContent_Once = false
+			if (document.readyState === "loading") 
+				document.addEventListener('readystatechange',function(){
+					if ((document.readyState === "interactive" || document.readyState === "complete") && !rsCustomAjaxContent_Once) {
+						rsCustomAjaxContent_Once = true;
+						rsCustomAjaxContentLoadingFunction();
+					}
+				});
+			else {
+				rsCustomAjaxContent_Once = true;
+				rsCustomAjaxContentLoadingFunction();
+			}					
+		</script>
+		<script> 
+  jQuery( document ).ready(function() {
+    String.prototype.filename=function(extension){
+        var s= this.replace(/\\/g, '/');
+        s= s.substring(s.lastIndexOf('/')+ 1);
+        return extension? s.replace(/[?#].+$/, ''): s.split('.')[0];
+    }
+    jQuery("img").each(function () { 
+        var alt = jQuery(this).attr('alt');
+    if(alt === undefined){
+            var namefile = jQuery(this).attr('src').filename();
+            var rep = namefile.replace(/[_#?%*$@!=]/g,'-');
+            var temp = rep.split('-');
+            var alt ='';
+            for (i = 0; i < temp.length; i++) { 
+              alt =  alt+' ';
+            }
+            jQuery(this).attr('alt',alt);
+        }
+    });
+});
+
+</script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N86J6JQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><link rel='stylesheet' id='rs-plugin-settings-css' href='https://registrar.berkeley.edu/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.6.12' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<script type='text/javascript' id='quform-js-extra'>
+/* <![CDATA[ */
+var quformL10n = [];
+quformL10n = {"pluginUrl":"https:\/\/registrar.berkeley.edu\/wp-content\/plugins\/quform","ajaxUrl":"https:\/\/registrar.berkeley.edu\/wp-admin\/admin-ajax.php","ajaxError":"Ajax error","errorMessageTitle":"There was a problem","removeFile":"Remove","supportPageCaching":true};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/plugins/quform/cache/quform.js?ver=1538693205' id='quform-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/themes/berkeley_brand-child/js/bootstrap.min.js?ver=3.1.1' id='bootstrap.js-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/themes/berkeley_brand-child/js/berkeley_brand-helper.js?ver=1.0.0' id='berkeley_brand-helper.js-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/themes/berkeley_brand-child/js/globalize.min.js' id='globalize-js-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/themes/berkeley_brand-child/js/imagesloaded.pkgd.min.js' id='imagesloaded-js-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/themes/berkeley_brand-child/js/jquery.ba-throttle-debounce.min.js' id='debounce-js-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/themes/berkeley_brand-child/js/modernizr.custom.js' id='modernizr-js-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/themes/berkeley_brand-child/js/owl.carousel.min.js' id='owl-js-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/themes/berkeley_brand-child/js/components.js' id='component-js-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/plugins/quadmenu/assets/frontend/pscrollbar/perfect-scrollbar.jquery.min.js?ver=3.0.6' id='pscrollbar-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/plugins/quadmenu/assets/frontend/owlcarousel/owl.carousel.min.js?ver=3.0.6' id='owlcarousel-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-includes/js/hoverIntent.min.js?ver=1.10.2' id='hoverIntent-js'></script>
+<script type='text/javascript' id='quadmenu-js-extra'>
+/* <![CDATA[ */
+var quadmenu = {"ajaxurl":"https:\/\/registrar.berkeley.edu\/wp-admin\/admin-ajax.php","gutter":"30"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/plugins/quadmenu/build/frontend/index.js?ver=453af3ebaa05b534a718' id='quadmenu-js'></script>
+<script type='text/javascript' src='https://registrar.berkeley.edu/wp-content/plugins/social-icons-widget-by-wpzoom/assets/js/social-icons-widget-frontend.js?ver=1705031042' id='zoom-social-icons-widget-frontend-js'></script>
+ 
+<script type="text/javascript" src="https://ai.ocelotbot.com/embed/standard/c8d753d9-a5c4-42ab-944f-dd7919363177?ha=right&amp;hv=16px&amp;va=bottom&amp;vv=16px&amp;ts=1&amp;bs=calloutBubble&amp;av=0"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-c379f09e81f0dcc0114","applicationID":"970550530","transactionName":"YgdRZ0cFXRUHVxFRWFtNclBBDVwISUQEX1IYAFJdUUlRAxRfAFRSTFMeQFc=","queueTime":0,"applicationTime":1060,"atts":"TkBSEQ8fThs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
