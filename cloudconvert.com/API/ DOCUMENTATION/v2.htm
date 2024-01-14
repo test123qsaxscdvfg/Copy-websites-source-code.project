@@ -1,0 +1,2256 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr" class="loaded">
+<head>
+    <!-- Meta Information -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+
+
+    <title>CloudConvert API</title>
+    <meta name="description" content=">File converter service - more than 200 different audio, video, document, ebook, archive, image, spreadsheet and presentation formats supported.">
+
+
+    <link rel="shortcut icon" href="/images/logo_flat_32.png">
+    <link rel="preconnect" href="https://api.cloudconvert.com">
+
+    
+
+
+
+<!-- CSS -->
+    <link href="/css/app.css?id=f0355e3da082a3efd8cb6c87576778b3" rel="stylesheet">
+
+
+    <script nonce="hS4uxDelnlnNrif7">
+        window.app = {
+            env: 'production',
+            url: 'https://cloudconvert.com',
+            apiUrl: 'https://api.cloudconvert.com',
+            liveUrl: 'https://cloudconvert.com',
+            sandboxUrl: 'https://sandbox.cloudconvert.com',
+            socketioUrl: 'https://socketio.cloudconvert.com',
+            routeName: 'apidocs.overview'
+        };
+    </script>
+
+
+
+
+            <script defer data-domain="cloudconvert.com" src="/js/script.js" nonce="hS4uxDelnlnNrif7"></script>
+        <script nonce="hS4uxDelnlnNrif7">window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    
+    
+
+</head>
+
+
+
+    <body data-open="click" data-menu="vertical-menu" class="vertical-layout vertical-menu menu-expanded fixed-navbar">
+
+    <div id="app">
+
+
+        <!-- navbar-fixed-top-->
+        <nav class="header-navbar navbar-expand-md  navbar navbar-with-menu fixed-top navbar-dark navbar-shadow bg-gradient-navbar">
+            <div class="navbar-wrapper">
+                <div class="navbar-header">
+                    <ul class="nav navbar-nav flex-row">
+                        <li class="nav-item mobile-menu d-md-none mr-auto"><a href="#"
+                                                                              class="nav-link nav-menu-main menu-toggle hidden-xs"><i
+                                        class="fa fa-bars"></i></a></li>
+                        <li class="nav-item"><a href="/" class="navbar-brand"><img alt="" width="51" height="32" src="/images/logo_flat_110_borderless.png" class="brand-logo hidden-xs-down">
+        <h2 class="brand-text">cloud<strong>convert</strong></h2></a></li>                        <li class="nav-item d-md-none"><a data-toggle="collapse" data-target="#navbar-mobile"
+                                                          class="nav-link open-navbar-container"><i
+                                        class="fa fa-ellipsis-v"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-container content">
+                    <div id="navbar-mobile" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav mr-auto float-left">
+                                                        <li class="nav-item d-none d-md-block"><a href="#"
+                                                                      class="nav-link nav-menu-main menu-toggle hidden-xs"><i
+                                            class="fa fa-bars"></i></a></li>
+                            <li class="dropdown nav-item mega-dropdown tools"><a href="/" data-toggle="dropdown"
+                                                     class="nav-link dropdown-toggle">Tools</a>
+
+    <div class="mega-dropdown-menu dropdown-menu bg-gradient-navbar">
+
+        <div class="container">
+            <ul class="row w-100">
+                <li class="col-lg-6 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-sync-alt"></i> Convert Files</h6>
+
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul class="list-2-columns">
+                                <li><a class="dropdown-item" href="/archive-converter">Archive Converter</a></li>
+                                <li><a class="dropdown-item" href="/audio-converter">Audio Converter</a></li>
+                                <li><a class="dropdown-item" href="/cad-converter">CAD Converter</a></li>
+                                <li><a class="dropdown-item" href="/document-converter">Document Converter</a></li>
+                                <li><a class="dropdown-item" href="/ebook-converter">Ebook Converter</a></li>
+                                <li><a class="dropdown-item" href="/font-converter">Font Converter</a></li>
+                                <li><a class="dropdown-item" href="/image-converter">Image Converter</a></li>
+                                <li><a class="dropdown-item" href="/presentation-converter">Presentation Converter</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/spreadsheet-converter">Spreadsheet Converter</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/vector-converter">Vector Converter</a></li>
+                                <li><a class="dropdown-item" href="/video-converter">Video Converter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </li>
+
+                <li class="col-lg-3 col-sm-12">
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress"></i> Optimize Files</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/compress-pdf">Compress PDF</a></li>
+                                <li><a class="dropdown-item" href="/compress-png">Compress PNG</a></li>
+                                <li><a class="dropdown-item" href="/compress-jpg">Compress JPG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-file-archive"></i> Archives</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/create-zip-archive">Create Archive</a></li>
+                                <li><a class="dropdown-item" href="/extract-zip-archive">Extract Archive</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-browser"></i> Capture Websites</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/save-website-pdf">Save Website as PDF</a></li>
+                                <li><a class="dropdown-item" href="/website-png-screenshot">Website PNG Screenshot</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/website-jpg-screenshot">Website JPG Screenshot</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress-alt"></i> Merge Files</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/merge-pdf">Merge PDF</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+</li>
+
+
+<li class="dropdown nav-item mega-dropdown"><a href="https://cloudconvert.com/api/v2" data-toggle="dropdown"
+                                               class="nav-link dropdown-toggle">API</a>
+
+
+    <div class="mega-dropdown-menu dropdown-menu bg-gradient-navbar">
+
+        <div class="container">
+            <ul class="row w-100">
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-sync-alt"></i>Convert Files</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/file-conversion">File Conversion
+                                        API</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/office-to-pdf">Office to PDF
+                                        API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/iwork-to-pdf">iWork to PDF
+                                        API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/pdf-to-office">PDF to Office
+                                        API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-browser"></i>Capture Websites</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/html-to-pdf">HTML to PDF API</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/website-screenshot">Website
+                                        Screenshot
+                                        API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress"></i>Optimize Files</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/compress-pdf">Compress PDF
+                                        API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/compress-images">Compress Images
+                                        API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-cubes"></i>Other APIs</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/merge-pdf">Merge PDF API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/thumbnails">Thumbnail API</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/watermark">Watermark API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-robot"></i>Automate</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/integrations">Integrations</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+                <li class="col-lg-3 col-sm-12">
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-book"></i> Documentation</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/api/v2">API
+                                        Documentation</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/api/v2/quickstart">Quickstart
+                                        Guide</a></li>
+
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/api/v2/jobs/builder">Job Builder</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+
+
+
+                </li>
+
+
+            </ul>
+
+        </div>
+    </div>
+
+</li>
+
+
+<li class="nav-item"><a href="https://cloudconvert.com/pricing" class="nav-link">Pricing</a></li>
+
+
+
+                        </ul>
+                        <ul class="nav navbar-nav float-right">
+                            <li class="nav-item">
+        <a class="nav-link" href="https://cloudconvert.com/register">Sign Up</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="https://cloudconvert.com/login">Login</a>
+    </li>
+
+
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- main menu-->
+        <div data-scroll-to-active="true" data-gumshoe="true"
+             class="main-menu menu-fixed menu-light menu-accordion menu-shadow menu-light">
+
+            <!-- main menu content-->
+            <div class="main-menu-content" data-gumshoe>
+                <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
+
+
+                    <li class=" navigation-header pr-1">
+                        <span>API Docs</span><i data-toggle="tooltip" data-placement="right"
+                                                data-original-title="API Documentation"
+                                                class="icon-ellipsis ft-minus"></i>
+
+
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2"><i class="fa fa-fw fa-home"></i><span
+                                    class="menu-title">Overview</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2#overview" class="menu-item">Introduction</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2#terminology" class="menu-item">Terminology</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2#authentication" class="menu-item">Authentication</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2#errors" class="menu-item">Errors</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2#changelog" class="menu-item">Changelog</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/quickstart"><i class="fa fa-fw fa-rocket"></i><span
+                                    class="menu-title">Quickstart Guide</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/quickstart#quickstart-overview" class="menu-item">Introduction</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/quickstart#quickstart-start" class="menu-item">Starting jobs</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/quickstart#quickstart-wait" class="menu-item">Wait for job completion</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/quickstart#quickstart-result" class="menu-item">Download output files</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/tasks"><i class="fa fa-fw fa-tasks"></i><span
+                                    class="menu-title">Tasks</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/tasks#tasks-create" class="menu-item">Create tasks</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/tasks#tasks-show" class="menu-item">Show a task</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/tasks#tasks-wait" class="menu-item">Wait for a task
+
+                                    <span class="badge badge-light badge-sm text-uppercase">Sync</span>
+
+                                </a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/tasks#tasks-list" class="menu-item">List tasks</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/tasks#tasks-cancel" class="menu-item">Cancel a task</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/tasks#tasks-retry" class="menu-item">Retry a task</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/tasks#tasks-delete" class="menu-item">Delete a task</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/tasks#operations-list"
+                                   class="menu-item">List possible operations</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/jobs"><i class="fa fa-fw fa-list-alt"></i><span
+                                    class="menu-title">Jobs</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/jobs#jobs-create" class="menu-item">Create job</a>
+                            </li>
+
+                            <li><a href="https://cloudconvert.com/api/v2/jobs#jobs-create-wait" class="menu-item">Create job and wait
+
+                                    <span class="badge badge-light badge-sm text-uppercase">Sync</span>
+
+                                </a>
+                            </li>
+
+                            <li><a href="https://cloudconvert.com/api/v2/jobs#jobs-show" class="menu-item">Show a job</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/jobs#jobs-wait" class="menu-item">Wait for a job
+
+                                    <span class="badge badge-light badge-sm text-uppercase">Sync</span>
+
+                                </a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/jobs#jobs-list" class="menu-item">List jobs</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/jobs#jobs-delete" class="menu-item">Delete a job</a>
+                            </li>
+                            <li ><a
+                                        href="https://cloudconvert.com/api/v2/jobs/builder" class="menu-item">Job Builder</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/convert"><i class="fa fa-fw fa-sync-alt"></i><span
+                                    class="menu-title">Convert Files</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/convert#convert-tasks" class="menu-item">Create
+                                    tasks</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/convert#convert-formats" class="menu-item">List
+                                    supported formats</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/capture-website"><i class="fa fa-fw fa-compress"></i><span
+                                    class="menu-title">Optimize Files</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/optimize#optimize-tasks"
+                                   class="menu-item">Create tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/watermark"><i class="fa fa-fw fa-stamp"></i><span
+                                    class="menu-title">Add Watermarks</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/watermark#watermark-tasks"
+                                   class="menu-item">Create tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/capture-website"><i class="fa fa-fw fa-browser"></i><span
+                                    class="menu-title">Capture Websites</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/capture-website#capture-website-tasks"
+                                   class="menu-item">Create tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/thumbnails"><i class="fa fa-fw fa-images"></i><span
+                                    class="menu-title">Create Thumbnails</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/thumbnails#thumbnail-tasks" class="menu-item">Create tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/metadata"><i class="fa fa-fw fa-file-search"></i><span
+                                    class="menu-title">File Metadata</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/metadata#metadata-extract" class="menu-item">Extract metadata</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/metadata#metadata-write" class="menu-item">Write metadata</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/merge"><i class="fa fa-fw fa-compress-alt"></i><span
+                                    class="menu-title">Merge Files</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/merge#merge-tasks" class="menu-item">Create tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/archive"><i class="fa fa-fw fa-file-archive"></i><span
+                                    class="menu-title">Create Archives</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/archive#archive-tasks" class="menu-item">Create tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/command"><i class="fa fa-fw fa-terminal"></i><span
+                                    class="menu-title">Execute Commands</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/command#command-tasks" class="menu-item">Create
+                                    tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/import"><i class="fa fa-fw fa-file-import"></i><span
+                                    class="menu-title">Import Files</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-url-tasks" class="menu-item">URL</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-upload-tasks" class="menu-item">Upload</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-base64-tasks" class="menu-item">Base64</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-raw-tasks" class="menu-item">Raw</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-s3-tasks" class="menu-item">S3</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-azure-blob-tasks" class="menu-item">Azure
+                                    Blob</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-google-cloud-storage-tasks"
+                                   class="menu-item">Google Cloud Storage</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-openstack-tasks"
+                                   class="menu-item">OpenStack</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-sftp-tasks"
+                                   class="menu-item">SFTP</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/export"><i class="fa fa-fw fa-file-export"></i><span
+                                    class="menu-title">Export Files</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/export#export-url-tasks" class="menu-item">URL</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/export#export-s3-tasks" class="menu-item">S3</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/export#export-azure-blob-tasks" class="menu-item">Azure
+                                    Blob</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/export#export-google-cloud-storage-tasks"
+                                   class="menu-item">Google Cloud Storage</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/export#export-openstack-tasks"
+                                   class="menu-item">OpenStack</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/export#export-sftp-tasks"
+                                   class="menu-item">SFTP</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/users"><i class="fa fa-fw fa-user"></i><span
+                                    class="menu-title">Users</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/users#users-show" class="menu-item">Show the current
+                                    user</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/webhooks"><i class="fa fa-fw fa-bell"></i><span
+                                    class="menu-title">Webhooks</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/webhooks#webhooks-events" class="menu-item">Events</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/webhooks#webhooks-create" class="menu-item">Create a webhook</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/webhooks#webhooks-list" class="menu-item">List webhooks</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/webhooks#webhooks-delete" class="menu-item">Delete a webhook</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/socket"><i class="fa fa-fw fa-bells"></i><span
+                                    class="menu-title">Socket</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/socket#socket" class="menu-item">Events</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/socket"><i class="fa fa-fw fa-link"></i><span
+                                    class="menu-title">Signed URLs</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/signed-urls#create" class="menu-item">Create signed URLs</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class=" navigation-header"><span>Support</span><i data-toggle="tooltip" data-placement="right"
+                                                                          data-original-title="Support"
+                                                                          class="icon-ellipsis ft-minus"></i>
+                    </li>
+                    <li class=" nav-item"><a href="https://cloudconvert.com/contact"><i class="ft-life-buoy"></i><span
+                                    class="menu-title">Contact</span></a>
+                    </li>
+                    <li class=" nav-item"><a href="https://cloudconvert.com/about"><i class="ft-life-buoy"></i><span
+                                    class="menu-title">About Us</span></a>
+                    </li>
+                    <li class=" nav-item"><a href="https://cloudconvert.com/security"><i class="ft-life-buoy"></i><span
+                                    class="menu-title">Security</span></a>
+                    </li>
+                    <li class=" nav-item"><a href="https://status.cloudconvert.com"><i class="ft-folder"></i><span
+                                    class="menu-title">Service Status</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /main menu content-->
+            <!-- main menu footer-->
+            <!-- main menu footer-->
+        </div>
+        <!-- / main menu-->
+
+
+        <api-docs inline-template>
+            <div class="app-content content api-docs">
+
+                <div class="api-docs-bg row content">
+                    <div class="col-md-6 col-sm-12 api-docs-bg-content"></div>
+                    <div class="col-md-6 col-sm-12 api-docs-bg-code"></div>
+                </div>
+
+                <div class="content-wrapper">
+
+
+                    <section class="row">
+                        <div class="col-md-6 col-sm-12">
+                            
+
+                        </div>
+                    </section>
+
+                    
+    <div class="content-body">
+
+
+        <a id="overview" class="anchor"></a>
+        <h1 class="content-header-title">API Documentation</h1>
+
+
+        <section class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+
+                    <div class="card-content">
+                        <div class="card-body">
+
+                            <p>
+                                Welcome to the CloudConvert API Documentation! This is the documentation for Version 2
+                                of the API (<code>/v2</code> prefix).
+                            </p>
+
+
+                            <p>
+                                On this page you will find some general information about the terminology and about
+                                formatting and authenticating requests. You can use the menu on the left to jump to
+                                the documentation of the endpoints directly. A good start is trying out the <a
+                                        href="https://cloudconvert.com/api/v2/jobs/builder">Job Builder</a>: It allows to
+                                generate and try out requests using a graphical interface.
+                            </p>
+
+
+                            <div class="text-center  mt-2">
+
+                                <a href="https://cloudconvert.com/api/v2/quickstart" class="btn btn-primary mr-1 mb-1">
+                                    <i class="fa fa-btn fa-rocket mr-1"></i> Quickstart Guide
+                                </a>
+
+                                <a href="https://cloudconvert.com/api/v2/jobs/builder" class="btn btn-primary mb-1">
+                                    <i class="fa fa-btn fa-list-alt mr-1"></i> Job Builder
+                                </a>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">SDKs</h4>
+
+                            <p>
+
+                                For API v2, there are official PHP, node.js, Python, Ruby, Java and .NET SDKs available.
+
+                            </p>
+
+
+                            <p class="text-center">
+
+                                <a href="https://github.com/cloudconvert/cloudconvert-php" target="_blank"
+                                   class="btn btn-outline-secondary mt-1">
+                                    <i class="fab fa-php"></i>
+                                    PHP
+                                </a>
+
+                                <a href="https://github.com/cloudconvert/cloudconvert-laravel" target="_blank"
+                                   class="btn btn-outline-secondary mt-1">
+                                    <i class="fab fa-laravel"></i>
+                                    Laravel
+                                </a>
+
+
+                                <a href="https://github.com/cloudconvert/cloudconvert-node" target="_blank"
+                                   class="btn btn-outline-secondary mt-1">
+                                    <i class="fab fa-node-js"></i>
+                                    node.js
+                                </a>
+
+                                <a href="https://github.com/cloudconvert/cloudconvert-ruby" target="_blank"
+                                   class="btn btn-outline-secondary mt-1">
+                                    <i class="fak fa-ruby"></i>
+                                    Ruby
+                                </a>
+
+
+                                <a href="https://github.com/cloudconvert/cloudconvert-python" target="_blank"
+                                   class="btn btn-outline-secondary mt-1">
+                                    <i class="fab fa-python"></i>
+                                    Python
+                                </a>
+
+
+                                <a href="https://github.com/cloudconvert/cloudconvert-java" target="_blank"
+                                   class="btn btn-outline-secondary mt-1">
+                                    <i class="fab fa-java"></i>
+                                    Java
+                                </a>
+
+
+                                <a href="https://github.com/cloudconvert/cloudconvert-dotnet" target="_blank"
+                                   class="btn btn-outline-secondary mt-1">
+                                    <i class="fak fa-dotnet"></i>
+                                    .NET
+                                </a>
+
+                                <a href="https://github.com/cloudconvert/cloudconvert-cli" target="_blank"
+                                   class="btn btn-outline-secondary mt-1">
+                                    <i class="fa fa-terminal"></i>
+                                    CLI
+                                </a>
+
+                            </p>
+
+
+                        </div>
+
+
+                        <div class="card-body">
+
+                            <h4 class="card-title mb-0">Integrations</h4>
+
+                        </div>
+
+
+                        <table class="table mb-0">
+
+
+                            <tr>
+                                <th scope="row">
+                                    Zapier
+                                </th>
+                                <td>
+                                    There is a <a
+                                            href="https://zapier.com/apps/cloudconvert"
+                                            target="_blank">Zapier Integration</a> of API v2 available. Zapier allows it
+                                    to connect CloudConvert with 5,000+ apps and create automated workflows using a
+                                    graphical interface.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    Microsoft Power Automate
+                                </th>
+                                <td>
+                                    Build automated processes with flows in <a
+                                            href="https://powerautomate.microsoft.com/en-us/connectors/details/shared_cloudconvert/cloudconvert/"
+                                            target="_blank">Microsoft Power Automate</a>. Power Automate
+                                    allows
+                                    to automate repetitive, mundane tasks with ease. You can build even complex
+                                    workflows involving multiple apps using "drag &
+                                    drop" in a
+                                    graphical interface.
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    Make
+                                </th>
+                                <td>
+                                    <a
+                                            href="https://www.make.com/en/integrations/cloudconvert?pc=cloudconvert&utm_source=cloudconvert&utm_medium=partner&utm_campaign=cloudconvert-partner-program"
+                                            target="_blank">Make</a> (formerly Integromat) is integrated with the
+                                    CloudConvert API v2.
+                                    Thanks to the handy Make scenario builder you can drag and drop your desired
+                                    apps together to create powerful workflows, without writing any code.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    n8n
+                                </th>
+                                <td>
+                                    n8n is an open source workflow automation tool. We have built a <a
+                                            href="https://github.com/cloudconvert/n8n-nodes-cloudconvert"
+                                            target="_blank">CloudConvert integration</a> as community node.
+                                </td>
+                            </tr>
+                        </table>
+
+
+                        <div class="card-body">
+
+
+                            <h4 class="card-title mt-2">Region Endpoints</h4>
+
+                            <p>
+                                By default, CloudConvert automatically selects the nearest processing region nearby you
+                                based on your IP
+                                address. You can use a specific region by using the region specific endpoints or <a href="https://cloudconvert.com/dashboard/region">setting
+                                    a fixed region</a> in your account settings.
+                            </p>
+
+
+                        </div>
+
+                        <table class="table">
+                            <tr>
+                                <th>Endpoint</th>
+                                <th>Region</th>
+                            </tr>
+                            <tr>
+                                <td class="text-nowrap">
+                                    <code>https://api.cloudconvert.com</code>
+                                </td>
+                                <td>
+                                    Automatically selects nearest processing region, unless overriden by <a href="https://cloudconvert.com/dashboard/region">account region settings</a>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-nowrap">
+                                    <code>https://eu-central.api.cloudconvert.com</code>
+                                </td>
+                                <td>
+                                    <code>eu-central</code> <region-flag region="eu-central"></region-flag>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-nowrap">
+                                    <code>https://us-east.api.cloudconvert.com</code>
+                                </td>
+                                <td>
+                                    <code>us-east</code> <region-flag region="us-east"></region-flag>
+                                </td>
+                            </tr>
+
+
+
+                        </table>
+
+
+                        <div class="card-body">
+
+
+                            <h4 class="card-title mt-2">Sandbox API</h4>
+
+                            <p>
+
+                                Besides the Live API, CloudConvert has a Sandbox API. The sandbox API allows to perform
+                                unlimited jobs and tasks without consuming your credits. The only limitation is that it
+                                only allows a <a href="https://cloudconvert.com/dashboard/api/v2/sandbox">limited set of
+                                    whitelisted files</a>. The sandbox API is meant to be used for
+                                development purposes and integration tests.
+
+                            </p>
+
+                            <p>
+
+                                The Base URL of the Sandbox API is <code>https://api.sandbox.cloudconvert.com</code>.
+
+                            </p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 api-docs-code">
+                <div class="card">
+
+                    <div class="card-content ">
+                        <div class="card-body">
+                            <h4 class="card-title">API Endpoint</h4>
+                            <pre><code class="bash definition">https://api.cloudconvert.com/v2</code></pre>
+                        </div>
+                    </div>
+
+
+                    <div class="card-content ">
+                        <div class="card-body border-top-bg">
+                            <h4 class="card-title">Example Request</h4>
+                            <pre><code class="bash curl">$ curl -X POST "https://api.cloudconvert.com/v2/jobs" \
+       -H "Authorization: Bearer API_KEY" \
+       -H "Content-type: application/json" \
+       -d '</code><code class="json">{
+  ...
+}</code><code class="bash curl">'</code></pre>
+                        </div>
+                    </div>
+
+
+                    <div class="card-content ">
+                        <div class="card-body border-top-bg">
+                            <h4 class="card-title">Example Response</h4>
+                            <pre><code class="json">HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  &quot;data&quot;: {
+    ...
+  }
+}
+</code></pre>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <a class="anchor" id="terminology"></a>
+        <h3 class="content-header-title">
+            Terminology
+        </h3>
+
+        <section class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+
+                    <div class="card-content">
+                        <div class="card-body">
+
+                            <h4 class="card-title">Jobs & Tasks</h4>
+
+                            <p>
+
+                                Processing files is done via <strong>jobs</strong> in the terminology of the
+                                CloudConvert
+                                REST API.
+                                Each job consists of one or more <strong>tasks</strong>.
+                            </p>
+                            <p>
+                                For example: The first task of a job
+                                could be importing the file from a S3 bucket. The second task could be converting this
+                                file to a different
+                                format and the final task of the job could be exporting the file again to a S3 bucket.
+                            </p>
+
+                            <p>
+                                It would also be possible
+                                to have multiple conversions and multiple export tasks within a single job. This is
+                                useful if you want to convert a file and
+                                create a thumbnail at the same time, for example.
+
+                            </p>
+
+
+                            <h4 class="card-title mt-3">Import & Export Tasks</h4>
+
+                            <p>
+                                An <strong>import task</strong> is a task that imports one or multiple files into
+                                CloudConvert for using them in other tasks. Examples for import tasks are downloading
+                                files from a URL or a S3 bucket. Imported files are only stored temporary.
+                                <strong>Export tasks</strong> are used to export one or multiple output files from
+                                CloudConvert, for
+                                example by generating public URLs or by storing them on your S3 bucket.
+                            </p>
+
+                            <p>
+                                Typically, each job has at least one import and one export task.
+                            </p>
+
+
+                            <h4 class="card-title mt-3">Engine & Engine Versions</h4>
+
+
+                            <p>
+                                For some tasks, there are multiple <strong>engines</strong> available. For example, it
+                                is possible to convert DOCX files with the <code>office</code> engine or the <code>libreoffice</code>
+                                engine. The available options differ based on the used engine. Also, you can set a
+                                <strong>engine version</strong> to use. For example, you can set a fixed LibreOffice
+                                version to use which makes sure that this version is used, even if we update the default
+                                version of LibreOffice. There is an API for each task type available that shows the
+                                available engines, versions and their options.
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <a class="anchor" id="authentication"></a>
+        <h3 class="content-header-title">
+            Authentication
+        </h3>
+
+        <section class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+
+                    <div class="card-content">
+                        <div class="card-body">
+
+                            <h4 class="card-title">API Keys</h4>
+
+                            <p>
+
+                                To authenticate requests, you need to <a href="https://cloudconvert.com/dashboard/api/v2/keys">create
+                                    an API key</a>. API keys do not expire unless you revoke them. Requests are
+                                authenticated using the <code>Authorization: Bearer API_KEY</code> header.
+                            </p>
+
+                            <p>
+                                When creating an API
+                                key you can select scopes to limit the access.
+                            </p>
+
+
+                        </div>
+
+                    </div>
+                    <div class="card-content">
+
+                        <div class="card-header">
+                            <h4 class="card-title mb-0">Available Scopes</h4>
+
+                        </div>
+
+                        <table class="table">
+                            <tr>
+                                <th colspan="2">User</th>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-nowrap">
+                                    <code>user.read</code>
+                                </th>
+                                <td>
+                                    Allows to read your account data, remaining credits and usage charts.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-nowrap">
+                                    <code>user.write</code>
+                                </th>
+                                <td>
+                                    Allows to update your account data.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th colspan="2">Tasks & Jobs</th>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-nowrap">
+                                    <code>task.read</code>
+                                </th>
+                                <td>
+                                    Allows to read tasks and jobs.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-nowrap">
+                                    <code>task.write</code>
+                                </th>
+                                <td>
+                                    Allows to create, update and delete tasks and jobs.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th colspan="2">Webhooks</th>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-nowrap">
+                                    <code>webhook.read</code>
+                                </th>
+                                <td>
+                                    Allows to read the webhook settings.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-nowrap">
+                                    <code>webhook.write</code>
+                                </th>
+                                <td>
+                                    Allows to update the webhook settings.
+                                </td>
+                            </tr>
+
+
+                        </table>
+
+                    </div>
+
+
+                    <div class="card-content">
+                        <div class="card-body">
+
+                            <h4 class="card-title mt-2">OAuth 2.0 clients</h4>
+
+
+                            <p>
+
+                                CloudConvert supports OAuth 2.0's <a
+                                        href="https://tools.ietf.org/html/rfc6749#section-4.1">authorization code grant
+                                    flow</a> and <a href="https://tools.ietf.org/html/rfc6749#section-4.2">implicit
+                                    grant flow</a> to issue access tokens on behalf of users.
+                                You can create your OAuth 2.0 client <a href="https://cloudconvert.com/dashboard/api/v2/clients">here</a>.
+                            </p>
+
+                            <p>
+                                Your web or mobile app should redirect users to the following URL:
+                                <code>https://cloudconvert.com/oauth/authorize</code>. Access token can be
+                                obtained via: <code>https://cloudconvert.com/oauth/token</code>.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <a class="anchor" id="errors"></a>
+        <h3 class="content-header-title">
+            Errors and Rate Limiting
+        </h3>
+
+
+        <section class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+
+                    <div class="card-content">
+                        <div class="card-body">
+
+
+                            <p>
+                                The CloudConvert API responses with standard HTTP status codes, such as <code>422</code>
+                                (invalid data), <code>500</code> (internal server error), <code>503</code> (temporary
+                                unavailable) or <code>429</code> (too many requests). An example response body of an
+                                <code>422</code> is given on the right.
+                            </p>
+
+                            <h4 class="card-title mt-2">Rate limiting</h4>
+
+                            <p>
+                                Some endpoints do enforce dynamic rate limiting. These endpoints return the <code>X-RateLimit-Limit</code>
+                                and <code>X-RateLimit-Remaining</code> headers. If the limit is reached,
+                                <code>429</code> error is returned and there is a <code>Retry-After</code> header with
+                                the time in seconds to wait for the next
+                                request.
+                            </p>
+
+                            <p>
+                                These endpoints are currently rate limited:
+                            </p>
+                            <ul>
+                                <li>
+                                    Creating tasks
+                                </li>
+                                <li>
+                                    Creating jobs
+                                </li>
+                            </ul>
+
+                            <h4 class="card-title mt-2">Failed jobs and tasks</h4>
+
+                            <p>
+                                Jobs and tasks that completed with an error, do have <code>status</code> set to
+                                <code>error</code>. Further information about the error can be obtained via the <code>message</code>
+                                and <code>code</code> attributes of the task resource.
+                            </p>
+
+                            <p>
+                                Please do not automatically retry tasks. CloudConvert internally already retries tasks
+                                if there are retryable
+                                errors (such as network errors).
+                            </p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 api-docs-code">
+                <div class="card">
+
+                    <div class="card-content ">
+                        <div class="card-body border-top-bg">
+                            <h4 class="card-title">Error Response</h4>
+                            <pre><code class="json">HTTP/1.1 422 Unprocessable Entity
+Content-Type: application/json
+
+{
+  &quot;message&quot;: &quot;The given data was invalid.&quot;,
+  &quot;code&quot;: &quot;INVALID_DATA&quot;,
+  &quot;errors&quot;: {
+    &quot;tasks&quot;: [
+      &quot;The tasks field is required.&quot;
+    ]
+  }
+}
+</code></pre>
+                        </div>
+                    </div>
+
+
+                    <div class="card-content ">
+                        <div class="card-body border-top-bg">
+                            <h4 class="card-title">Rate Limited Response</h4>
+                            <pre><code class="json">HTTP/1.1 429 Too Many Requests
+Content-Type: application/json
+X-RateLimit-Limit: 1000
+X-RateLimit-Remaining: 0
+Retry-After: 60
+
+{
+  &quot;message&quot;: &quot;Too many attempts&quot;,
+  &quot;code&quot;: &quot;TOO_MANY_REQUESTS&quot;
+}
+</code></pre>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <a class="anchor" id="changelog"></a>
+        <h3 class="content-header-title">
+            Changelog
+        </h3>
+
+        <section class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+
+                    <div class="card-content">
+
+
+                        <table class="table mb-0">
+
+                            <tr>
+                                <th scope="row">
+                                    08.01.2023
+                                </th>
+                                <td>
+                                    Updated <code>ffmpeg</code> and <code>pdftron</code> default versions.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    19.10.2023
+                                </th>
+                                <td>
+                                    Updated <code>chrome</code> and <code>pdftron</code> default versions.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    24.04.2023
+                                </th>
+                                <td>
+                                    Updated <code>chrome</code>, <code>imagemagick</code> and <code>mupdf</code> default
+                                    versions.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    09.03.2023
+                                </th>
+                                <td>
+                                    Updated <code>pdftron</code> default version.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    01.03.2023
+                                </th>
+                                <td>
+                                    Added a <code>sheet</code> option to Excel conversions which allows converting only
+                                    a specific worksheet by name.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    23.02.2023
+                                </th>
+                                <td>
+                                    Added experimental support for creating WebVTT files for <code>thumbnail</code>
+                                    tasks.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    14.02.2023
+                                </th>
+                                <td>
+                                    Updated <code>calibre</code>, <code>mupdf</code>, <code>ffmpeg</code>, <code>exiftool</code>
+                                    and <code>poppler</code> default versions.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    09.02.2023
+                                </th>
+                                <td>
+                                    Updated <code>libreoffice</code>, <code>inkscape</code> and <code>pandoc</code>
+                                    default versions.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" rowspan="2">
+                                    07.02.2023
+                                </th>
+                                <td>
+                                    Added new <code>tagging</code> parameter to the <code>export/s3</code> operation
+                                    which allows setting custom S3 tags.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>chrome</code> default version.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row" rowspan="2">
+                                    11.11.2022
+                                </th>
+                                <td>
+                                    Added new <code>timestamp</code> parameter to the thumbnail operation: Instead of
+                                    automatically selecting meaningful frames you can set a fixed timestamp for creating
+                                    the thumbnail.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>pdftron</code> default version.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    23.08.2022
+                                </th>
+                                <td>
+                                    Added new parameters to the watermark operation: <code>font_width_percent</code> and
+                                    <code>image_width_percent</code> allow it to set the watermark size based on a
+                                    percentage of the available space.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row" rowspan="3">
+                                    17.08.2022
+                                </th>
+                                <td>
+                                    Support WEBP output format for thumbnail operations.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>ffmpeg</code> default version to <code>5.1.0</code>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>libreoffice</code> default version.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row" rowspan="2">
+                                    04.08.2022
+                                </th>
+                                <td>
+                                    Added <code>include_markup</code> setting to Office to PDF conversions.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>calibre</code> default version.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" rowspan="2">
+                                    22.07.2022
+                                </th>
+                                <td>
+                                    Updated <code>inkscape</code> default version.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>mupdf</code> default version.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row" rowspan="2">
+                                    28.06.2022
+                                </th>
+                                <td>
+                                    Updated <code>office</code> default version.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>pdftron</code> default version.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" rowspan="2">
+                                    07.06.2022
+                                </th>
+                                <td>
+                                    Added a new endpoint for <a href="https://cloudconvert.com/api/v2/jobs#jobs-create-wait">synchronous
+                                        job creation</a>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Added a <code>redirect</code> query parameter to the <a
+                                            href="https://cloudconvert.com/api/v2/jobs#jobs-show">job status</a> endpoint which
+                                    makes the response redirect to the export URL.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row" rowspan="3">
+                                    19.05.2022
+                                </th>
+                                <td>
+                                    Add the new <code>watermark</code> operation to create watermarks for PDF, image and
+                                    video files. Several <code>convert</code> operations have new watermark parameters.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Added <code>fit</code> parameter to video conversions. It allows adjusting the
+                                    method of resizing videos.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>poppler</code> default version.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    11.05.2022
+                                </th>
+                                <td>
+                                    Deprecation of the <code>bcl</code> engine. It has been replaced by the superior
+                                    <code>pdftron-pdf2word</code> engine.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    21.04.2022
+                                </th>
+                                <td>
+                                    Updated default versions of <code>libreoffice</code>, <code>inkscape</code>, <code>ffmpeg</code>
+                                    and <code>qpdf</code>.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    13.04.2022
+                                </th>
+                                <td>
+                                    Changed the default engine for PDF to Office conversions to
+                                    <code>pdftron-pdf2word</code>, <code>pdftron-pdf2excel</code> and <code>pdftron-pdf2powerpoint</code>.
+                                    Read more about this in <a href="/blog/pdf-to-office">our blog post</a>.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    30.03.2022
+                                </th>
+                                <td>
+                                    Release of the Signed URL feature. Signed URLs allow converting files on demand only
+                                    using URL query parameters. Read the <a href="https://cloudconvert.com/api/v2/signed-urls">full
+                                        documentation about this feature</a> for details.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    28.03.2022
+                                </th>
+                                <td>
+                                    Changed the base URL for the <a href="https://cloudconvert.com/api/v2/jobs#jobs-wait">synchronous
+                                        API endpoints</a> to
+                                    <code>https://sync.api.cloudconvert.com</code> (endpoints to wait for job/task
+                                    completion). The old endpoints will continue to work
+                                    until further notice. We will notify affected customers when this changes.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    24.02.2022
+                                </th>
+                                <td>
+                                    Added <code>channels</code> and <code>sample_rate</code> options for audio
+                                    conversions.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row" rowspan="3">
+                                    21.02.2022
+                                </th>
+                                <td>
+                                    Added <code>flatten_signatures</code> option for optimize PDF operation.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>fontforge</code> default version.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    Added <code>woff2</code> converter for TTF -> WOFF2.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row" rowspan="2">
+                                    03.01.2022
+                                </th>
+                                <td>
+                                    API v1 shutoff as announced by the <a
+                                            href="https://cloudconvert.com/blog/api-v1-deprecation">deprecation
+                                        timeline</a>.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    Updated default version of <code>chrome</code> to version <code>97</code>.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    27.12.2021
+                                </th>
+                                <td>
+                                    Updated default version of <code>poppler</code>.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    02.12.2021
+                                </th>
+                                <td>
+                                    Add possibility to encrypt PDFs via PDF -> PDF conversions.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    30.11.2021
+                                </th>
+                                <td>
+                                    Updated default versions of <code>calibre</code>, <code>exiftool</code>, <code>mozjpeg</code>,
+                                    <code>pandoc</code> and <code>pngquant</code>.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" rowspan="4">
+                                    19.11.2021
+                                </th>
+                                <td>
+                                    Updated <code>ffmpeg</code> default version to <code>4.4.1</code>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>mupdf</code> default version to <code>1.19.0</code>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>imagemagick</code> default version to <code>7.1.0</code>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Added <code>inkscape</code> version to <code>1.1.1</code>.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    17.11.2021
+                                </th>
+                                <td>
+                                    Added the <code>bookmarks</code> option to DOC/DOCX -> PDF conversions to
+                                    automatically create bookmarks from headings.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    04.11.2021
+                                </th>
+                                <td>
+                                    Add dynamic webhooks when <a href="https://cloudconvert.com/api/v2/jobs#jobs-create">creating
+                                        jobs</a>.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    29.04.2021
+                                </th>
+                                <td>
+                                    Add the <a href="https://cloudconvert.com/api/v2/import#import-raw-tasks">raw import
+                                        method</a>.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row" rowspan="2">
+                                    08.03.2021
+                                </th>
+                                <td>
+                                    Updated <code>graphicsmagick</code> default version to <code>1.3.36</code>.
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    Updated <code>pdf2htmlex</code> default version to <code>0.18.8</code>.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row" rowspan="7">
+                                    05.03.2021
+                                </th>
+                                <td>
+                                    Updated <code>imagemagick</code> default version to <code>7.0.11</code>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>3heights</code> default version to <code>6.12</code>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>poppler</code> default version to <code>20.09</code>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>ffmpeg</code> default version to <code>4.3.2</code>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>chrome</code> default version to <code>90</code>.
+                                    Starting from Chrome version 90, the <code>device_scale_factor</code> defaults to
+                                    <code>2</code> which creates HDPI / retina screenshots. For the old behavior, set
+                                    <code>device_scale_factor</code> to <code>1</code>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>inkscape</code> default version to <code>1.0.2</code>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Updated <code>libreoffice</code> default version to <code>7.0.4</code>.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row" rowspan="2">
+                                    03.03.2021
+                                </th>
+                                <td>
+                                    Added the new <a href="https://cloudconvert.com/api/v2/metadata#metadata-write">metadata/write</a>
+                                    operation to write metadata.
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    Release of the <a href="https://github.com/cloudconvert/cloudconvert-dotnet"
+                                                      target="_blank">.NET SDK</a>.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    05.02.2021
+                                </th>
+                                <td>
+
+                                    Added the <code>use_print_areas</code> setting for Excel conversions. When enabling
+                                    this setting, it only converts the selected print area of a worksheet.
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    29.01.2021
+                                </th>
+                                <td>
+
+                                    Added a new <code>device_scale_factor</code> setting for HTML -> PNG/JPG
+                                    conversions. It allows to create "retina" / hDPI screenshots by increasing the value
+                                    to 2.
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    18.01.2021
+                                </th>
+                                <td>
+
+                                    Added a new <code>transparent_background</code> setting for HTML -> PNG conversions
+                                    to use transparent instead of white background.
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    17.11.2020
+                                </th>
+                                <td>
+
+                                    New <code>chrome</code> default version <code>88</code>.
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row" rowspan="3">
+                                    30.10.2020
+                                </th>
+                                <td>
+                                    Updated the default <code>chrome</code> version to <code>87</code>. Deprecated
+                                    versions <code>80</code> and older.
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    Updated the default <code>libreoffice</code> version to <code>7.0.2</code>.
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Updated the default <code>inkscape</code> version to <code>1.0.1</code>.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    13.10.2020
+                                </th>
+                                <td>
+                                    Add the <a href="https://cloudconvert.com/api/v2/import#import-base64-tasks">base64 import
+                                        method</a>.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    8.10.2020
+                                </th>
+                                <td>
+                                    Add <a href="https://cloudconvert.com/api/v2/metadata">Metadata operation</a> to extract file
+                                    metadata such as page numbers or image/video resolution.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    16.9.2020
+                                </th>
+                                <td>
+                                    There is a new <code>timeout</code> parameter for tasks. It allows to set a timeout
+                                    in seconds after the task will be automatically cancelled.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row" rowspan="2">
+                                    20.6.2020
+                                </th>
+                                <td>
+                                    We have added the new <a href="https://cloudconvert.com/api/v2/thumbnails">Thumbnail API</a>
+                                    which allows to create thumbnails of nearly any video, documents or image format.
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    We have upgraded the <code>libreoffice</code> and <code>imagemagick</code> engine to
+                                    versions.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    5.6.2020
+                                </th>
+                                <td>
+
+                                    The <code>chrome</code> engine was updated. Additionally, we have added <code>header_template</code>
+                                    and <code>footer_template</code> options to enable custom headers/footers.
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    8.3.2020
+                                </th>
+                                <td>
+
+                                    We have added the option to assign webhook endpoints to specific API keys. This
+                                    makes it easier to separate production, staging and testing
+                                    environments. You can assign API keys to webhooks in your <a
+                                            href="https://cloudconvert.com/dashboard/api/v2/webhooks">webhook settings</a>.
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    7.1.2020
+                                </th>
+                                <td>
+
+                                    Updated the default engine versions of <code>imagemagick</code>,
+                                    <code>libreoffice</code>, <code>calibre</code> and <code>3heights</code>.
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+
+                                </th>
+
+                                <td>
+                                    Release of API v2.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    21.12.2019
+                                </th>
+                                <td>
+
+                                    Upload requests from <code>import/upload</code> tasks do now require to follow
+                                    redirects using the <code>Location</code> header. Most HTTP clients should do this
+                                    by default. We have updated the documentation regarding this.
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    16.11.2019
+                                </th>
+                                <td>
+
+                                    Added <code>/tasks/{ID}/wait</code> and <code>/jobs/{ID}/wait</code> endpoints.
+                                    These endpoints can be used to wait until a task/job completes.
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    5.11.2019
+                                </th>
+                                <td>
+
+                                    New <code>chrome</code> version <code>78</code>. Chrome versions below
+                                    <code>77</code> got deprecated.
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    1.10.2019
+                                </th>
+                                <td>
+
+                                    New option <code>archive_multiple_files</code> for <code>export/url</code> tasks
+                                    allow it to automatically ZIP multiple output files.
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    12.9.2019
+                                </th>
+                                <td>
+
+                                    Add operation to create archives.
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" rowspan="2">
+                                    9.9.2019
+                                </th>
+                                <td>
+
+                                    The default engine for <code>svg</code> to <code>png</code>/<code>jpg</code> was
+                                    changed to <code>chrome</code>.
+
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td>
+
+                                    The default engine for <code>pdf</code> to <code>jpg</code>/<code>tiff</code> was
+                                    changed to <code>poppler</code>.
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    3.9.2019
+                                </th>
+                                <td>
+
+                                    The <code>payload</code> attribute is not included in task responses any more by
+                                    default. It can be shown manually using the <code>?include=payload</code> query
+                                    parameter.
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    21.8.2019
+                                </th>
+                                <td>
+
+                                    Upgraded the <code>poppler</code> engine to version <code>0.71.0</code>.
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    13.8.2019
+                                </th>
+                                <td>
+
+                                    Upgraded the <code>mupdf</code> engine to version <code>1.16.1</code>.
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    7.8.2019
+                                </th>
+                                <td>
+
+                                    Added optimize PNG and JPG feature.
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    6.8.2019
+                                </th>
+                                <td>
+
+                                    Added new <code>optimize</code> task endpoint with PDF compressing feature.
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row" rowspan="2">
+                                    31.7.2019
+                                </th>
+                                <td>
+
+                                    Added versions <code>76</code> and <code>77</code> of the <code>chrome</code>
+                                    engine.
+
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td>
+
+                                    The <code>office</code> default version was updated to <code>2019</code>.
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    15.7.2019
+                                </th>
+                                <td>
+
+                                    The <code>calibre</code> default version was updated to <code>3.45</code>.
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row" rowspan="2">
+                                    11.7.2019
+                                </th>
+                                <td>
+                                    Added support for <code>pot</code> and <code>potx</code> files.
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td>
+
+                                    Jobs do now have an optional <code>tag</code> parameter. You can use it to link
+                                    CloudConvert jobs with IDs withing your application scope.
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row" rowspan="2">
+                                    28.6.2019
+                                </th>
+                                <td>
+
+                                    The <code>ghostsript</code> default version was updated to <code>9.27</code>.
+                                    The old version was marked as deprecated.
+
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td>
+
+                                    We now automatically sent deprecation warning mails if you are using an engine that
+                                    was marked as deprecated.
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    23.6.2019
+                                </th>
+                                <td>
+                                    By default we hide now all credentials in API responses (such as GET <code>/v2/task/ID</code>).
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    19.6.2019
+                                </th>
+                                <td>
+                                    We have added a <code>ignore_error</code> option when creating jobs. This allows to
+                                    continue jobs even if specific tasks are failing.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">
+                                    27.5.2019
+                                </th>
+                                <td>
+                                    Preview release of API v2.
+                                </td>
+                            </tr>
+
+
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+
+    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </api-docs>
+
+    </div>
+
+
+    
+            <script src="/js/app.js?id=0b1b08800f264bc46859c1a43fe1a13c"></script>
+    
+
+
+
+</body>
+</html>
+
+
+
+

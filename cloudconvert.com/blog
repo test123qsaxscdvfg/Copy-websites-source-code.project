@@ -1,0 +1,644 @@
+
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr" class="loaded">
+<head>
+    <!-- Meta Information -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+
+
+    <title>CloudConvert Blog</title>
+    <meta name="description" content=">File converter service - more than 200 different audio, video, document, ebook, archive, image, spreadsheet and presentation formats supported.">
+
+
+    <link rel="shortcut icon" href="/images/logo_flat_32.png">
+    <link rel="preconnect" href="https://api.cloudconvert.com">
+
+    
+
+
+
+    <link rel="alternate" type="application/atom+xml" href="https://cloudconvert.com/blog/feed" title="CloudConvert Blog">
+
+
+<!-- CSS -->
+    <link href="/css/app.css?id=f0355e3da082a3efd8cb6c87576778b3" rel="stylesheet">
+
+
+    <script nonce="Qnw6JB50feng1YtN">
+        window.app = {
+            env: 'production',
+            url: 'https://cloudconvert.com',
+            apiUrl: 'https://api.cloudconvert.com',
+            liveUrl: 'https://cloudconvert.com',
+            sandboxUrl: 'https://sandbox.cloudconvert.com',
+            socketioUrl: 'https://socketio.cloudconvert.com',
+            routeName: 'blog'
+        };
+    </script>
+
+
+
+
+            <script defer data-domain="cloudconvert.com" src="/js/script.js" nonce="Qnw6JB50feng1YtN"></script>
+        <script nonce="Qnw6JB50feng1YtN">window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    
+    
+
+</head>
+
+
+
+    <body data-open="click" data-menu="horizontal-menu" class="horizontal-layout horizontal-menu menu-expanded fixed-navbar">
+
+    <div id="app">
+
+
+
+        <!-- navbar-fixed-top-->
+        <nav class="header-navbar  navbar-expand-md  navbar navbar-with-menu fixed-top navbar-dark  bg-gradient-navbar">
+            <div class="navbar-wrapper container">
+                <div class="navbar-header">
+                    <ul class="nav navbar-nav  flex-row">
+                        <li class="nav-item mobile-menu d-md-none mr-auto"></li>
+                        <li class="nav-item"><a href="/" class="navbar-brand"><img alt="" width="51" height="32" src="/images/logo_flat_110_borderless.png" class="brand-logo hidden-xs-down">
+        <h2 class="brand-text">cloud<strong>convert</strong></h2></a></li>                        <li class="nav-item d-md-none"><a data-toggle="collapse" data-target="#navbar-mobile" class="nav-link open-navbar-container"><i class="fa fa-ellipsis-v"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-container content container">
+                    <div id="navbar-mobile" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav mr-auto float-left">
+                                                        <li class="dropdown nav-item mega-dropdown tools"><a href="/" data-toggle="dropdown"
+                                                     class="nav-link dropdown-toggle">Tools</a>
+
+    <div class="mega-dropdown-menu dropdown-menu bg-gradient-navbar">
+
+        <div class="container">
+            <ul class="row w-100">
+                <li class="col-lg-6 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-sync-alt"></i> Convert Files</h6>
+
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul class="list-2-columns">
+                                <li><a class="dropdown-item" href="/archive-converter">Archive Converter</a></li>
+                                <li><a class="dropdown-item" href="/audio-converter">Audio Converter</a></li>
+                                <li><a class="dropdown-item" href="/cad-converter">CAD Converter</a></li>
+                                <li><a class="dropdown-item" href="/document-converter">Document Converter</a></li>
+                                <li><a class="dropdown-item" href="/ebook-converter">Ebook Converter</a></li>
+                                <li><a class="dropdown-item" href="/font-converter">Font Converter</a></li>
+                                <li><a class="dropdown-item" href="/image-converter">Image Converter</a></li>
+                                <li><a class="dropdown-item" href="/presentation-converter">Presentation Converter</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/spreadsheet-converter">Spreadsheet Converter</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/vector-converter">Vector Converter</a></li>
+                                <li><a class="dropdown-item" href="/video-converter">Video Converter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </li>
+
+                <li class="col-lg-3 col-sm-12">
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress"></i> Optimize Files</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/compress-pdf">Compress PDF</a></li>
+                                <li><a class="dropdown-item" href="/compress-png">Compress PNG</a></li>
+                                <li><a class="dropdown-item" href="/compress-jpg">Compress JPG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-file-archive"></i> Archives</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/create-zip-archive">Create Archive</a></li>
+                                <li><a class="dropdown-item" href="/extract-zip-archive">Extract Archive</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-browser"></i> Capture Websites</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/save-website-pdf">Save Website as PDF</a></li>
+                                <li><a class="dropdown-item" href="/website-png-screenshot">Website PNG Screenshot</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/website-jpg-screenshot">Website JPG Screenshot</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress-alt"></i> Merge Files</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/merge-pdf">Merge PDF</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+</li>
+
+
+<li class="dropdown nav-item mega-dropdown"><a href="https://cloudconvert.com/api/v2" data-toggle="dropdown"
+                                               class="nav-link dropdown-toggle">API</a>
+
+
+    <div class="mega-dropdown-menu dropdown-menu bg-gradient-navbar">
+
+        <div class="container">
+            <ul class="row w-100">
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-sync-alt"></i>Convert Files</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/file-conversion">File Conversion
+                                        API</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/office-to-pdf">Office to PDF
+                                        API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/iwork-to-pdf">iWork to PDF
+                                        API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/pdf-to-office">PDF to Office
+                                        API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-browser"></i>Capture Websites</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/html-to-pdf">HTML to PDF API</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/website-screenshot">Website
+                                        Screenshot
+                                        API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress"></i>Optimize Files</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/compress-pdf">Compress PDF
+                                        API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/compress-images">Compress Images
+                                        API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-cubes"></i>Other APIs</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/merge-pdf">Merge PDF API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/thumbnails">Thumbnail API</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/watermark">Watermark API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-robot"></i>Automate</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/integrations">Integrations</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+                <li class="col-lg-3 col-sm-12">
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-book"></i> Documentation</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/api/v2">API
+                                        Documentation</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/api/v2/quickstart">Quickstart
+                                        Guide</a></li>
+
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/api/v2/jobs/builder">Job Builder</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+
+
+
+                </li>
+
+
+            </ul>
+
+        </div>
+    </div>
+
+</li>
+
+
+<li class="nav-item"><a href="https://cloudconvert.com/pricing" class="nav-link">Pricing</a></li>
+
+
+
+                        </ul>
+                        <ul class="nav navbar-nav float-right">
+                            <li class="nav-item">
+        <a class="nav-link" href="https://cloudconvert.com/register">Sign Up</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="https://cloudconvert.com/login">Login</a>
+    </li>
+
+
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+        <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+    
+
+            <div class="app-content content  center-layout">
+                <div class="content-wrapper container">
+
+                    
+
+                        <div class="container blog">
+
+
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+
+                    
+                        <div class="post-header">
+
+
+                    <span class="text-muted text-uppercase">
+                Jan 9, 2024
+
+                                    </span>
+
+                            <h1><a href="https://cloudconvert.com/blog/iso-27001-certification">ISO 27001 Certification</a></h1>
+
+                        </div>
+
+
+                        <div class="inline_html" contenteditable="false"><div class="embedded_image">
+<img src="https://cloudconvert.com/images/iso27001.png">
+</div></div><p>CloudConvert is excited to share that we've achieved ISO 27001 certification from TÜV Süd, highlighting our strong commitment to data security and secure management principles. This certification validate we follow top-notch international standards for keeping your data safe and secure. When you use CloudConvert, you can be confident that your data is handled responsibly and with the highest level of security.</p><p>Check out the certificate and read more on our <a href="https://cloudconvert.com/security" rel="noopener noreferrer">Security Overview </a>page.</p>
+
+
+                        <hr class="m-3">
+
+
+                    
+                        <div class="post-header">
+
+
+                    <span class="text-muted text-uppercase">
+                Dec 8, 2023
+
+                                    </span>
+
+                            <h1><a href="https://cloudconvert.com/blog/improved-team-management">Improved Team Management</a></h1>
+
+                        </div>
+
+
+                        <p>We have released a significant update for <a href="https://cloudconvert.com/blog/cloudconvert-for-teams" rel="noopener noreferrer">CloudConvert for Teams</a>, introducing enhanced team management capabilities through fine-granular roles:</p><div class="embedded_image" contenteditable="false" data-layout="default"><img alt="" src="https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/wink/images/GHlMjfedvMu4j64im55JBKOzwoTmdcauxMfGyQHp.png"></div><p>The new <strong>Member</strong> role allows teams to collaborate when building and managing CloudConvert API integrations. Team members can use shared Jobs, Tasks, API keys, webhooks, signed URLs and generally the complete CloudConvert functionality. </p><p>The <strong>Consumer</strong> role is the old basic role for all team members. The role allows users to utilize shared team billing credits. However, all of their Jobs, Tasks, API keys, and other data remain private and isolated from the rest of the team.</p><p>The <strong>Billing</strong> role allows management of the plan, billing contact, payment method and invoices.</p><p>The <strong>Admin</strong> role allows full access and team management, such as adding and removing team members. Unlike before, where the role of "Owner" was singular, teams can now have multiple admins with equal rights.</p>
+
+
+                        <hr class="m-3">
+
+
+                    
+                        <div class="post-header">
+
+
+                    <span class="text-muted text-uppercase">
+                Aug 2, 2022
+
+                                    </span>
+
+                            <h1><a href="https://cloudconvert.com/blog/cloudconvert-microsoft-power-automate">CloudConvert + Microsoft Power Automate</a></h1>
+
+                        </div>
+
+
+                        <p>We are happy to announce that CloudConvert is now integrated with the <a href="https://powerautomate.microsoft.com/" rel="noopener noreferrer">Microsoft Power Automate</a> platform.</p><p>Microsoft Power Automate allows it to build cloud-based workflows without writing any code by using <a href="https://powerautomate.microsoft.com/en-us/connectors/" rel="noopener noreferrer">thousands of connectors</a>. </p><p>For example, you can connect CloudConvert with SharePoint or OneDrive to automate even complex tasks.</p><div class="embedded_image" contenteditable="false" data-layout="default"><img alt="" src="https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/wink/images/YuegVpZNoSDr4J5Ws5SyazmukjGZPLw2RZ8ZLEju.png"></div><p>Currently, the following actions are available on the Power Automate Platform:</p><ul><li>Convert File</li><li>Compress File</li><li>Capture Website Screenshot</li></ul><p>Depending on your feedback further actions from the CloudConvert API will follow. You can find the documentation of the connector <a href="https://docs.microsoft.com/de-de/connectors/cloudconvert/" rel="noopener noreferrer">here</a>.</p>
+
+
+                        <hr class="m-3">
+
+
+                    
+                        <div class="post-header">
+
+
+                    <span class="text-muted text-uppercase">
+                May 23, 2022
+
+                                    </span>
+
+                            <h1><a href="https://cloudconvert.com/blog/add-watermarks-to-pdfs-images-or-videos">Add Watermarks to PDFs, Images or Videos</a></h1>
+
+                        </div>
+
+
+                        <p>As of now there is a new <a href="https://cloudconvert.com/apis/watermark" rel="noopener noreferrer">Watermark API</a> for the CloudConvert service. This new feature allows it to add watermarks or stamps to PDF documents, to images (PNG, JPG...) or videos (MP4, MOV...).</p><p>Both adding simple texts or any images as watermark is supported. A typical use case would be to add your company name or logo to files.</p><h3>Adding Watermark Text</h3><div class="embedded_image" contenteditable="false" data-layout="default"><img alt="" src="https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/wink/images/ZZ9BQ0S3Y4juKzDTG0wk8BWIedUm9UaOY96Y80Iu.png"></div><p>As a first example, we would like to add a red "Top Secret" watermark above an <a href="https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf" rel="noopener noreferrer">example PDF file</a>. Therefore, we do send the following payload to the <code>https://api.cloudconvert.com/v2/jobs</code> endpoint:</p><pre class="ql-syntax" spellcheck="false">{
+    <span class="hljs-attr">"tasks"</span>: {
+        <span class="hljs-attr">"import-file"</span>: {
+            <span class="hljs-attr">"operation"</span>: <span class="hljs-string">"import/url"</span>,
+            <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf"</span>
+        },
+        <span class="hljs-attr">"add-watermark"</span>: {
+            <span class="hljs-attr">"operation"</span>: <span class="hljs-string">"watermark"</span>,
+            <span class="hljs-attr">"input"</span>: [
+                <span class="hljs-string">"import-file"</span>
+            ],
+            <span class="hljs-attr">"input_format"</span>: <span class="hljs-string">"pdf"</span>,
+            <span class="hljs-attr">"layer"</span>: <span class="hljs-string">"above"</span>,
+            <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Top Secret"</span>,
+            <span class="hljs-attr">"font_size"</span>: <span class="hljs-number">100</span>,
+            <span class="hljs-attr">"font_color"</span>: <span class="hljs-string">"#ff0400"</span>,
+            <span class="hljs-attr">"font_name"</span>: <span class="hljs-string">"Helvetica Bold"</span>,
+            <span class="hljs-attr">"position_vertical"</span>: <span class="hljs-string">"center"</span>,
+            <span class="hljs-attr">"position_horizontal"</span>: <span class="hljs-string">"center"</span>,
+            <span class="hljs-attr">"opacity"</span>: <span class="hljs-number">50</span>,
+            <span class="hljs-attr">"rotation"</span>: <span class="hljs-number">-45</span>
+        },
+        <span class="hljs-attr">"export-watermarked-file"</span>: {
+            <span class="hljs-attr">"operation"</span>: <span class="hljs-string">"export/url"</span>,
+            <span class="hljs-attr">"input"</span>: [
+                <span class="hljs-string">"add-watermark"</span>
+            ],
+        }
+    }
+}
+</pre><p>The job contains 3 tasks: </p><ol><li>Importing the <a href="https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf" rel="noopener noreferrer">input PDF file</a>.</li><li>Adding the watermark by setting the text, font size, font name and other parameters.</li><li>And the export task which creates a public URL to the <a href="https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies_top_secret.pdf" rel="noopener noreferrer">output file</a>.</li></ol><h3>Adding Watermark Images</h3><div class="embedded_image" contenteditable="false" data-layout="default"><img alt="" src="https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/wink/images/kj3D82YMRG20eeS8bw12eZ0tWElZ9koHMP59JV1J.png"></div><p>Now we are adding a <a href="https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/logo.png" rel="noopener noreferrer">logo PNG image</a> to the bottom right of a <a href="https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf" rel="noopener noreferrer">PDF file</a>.</p><p>Therefore, we do send the following payload to the <code>https://api.cloudconvert.com/v2/jobs</code> endpoint:</p><pre class="ql-syntax" spellcheck="false">{
+    <span class="hljs-attr">"tasks"</span>: {
+        <span class="hljs-attr">"import-file"</span>: {
+            <span class="hljs-attr">"operation"</span>: <span class="hljs-string">"import/url"</span>,
+            <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf"</span>
+        },
+        <span class="hljs-attr">"import-logo"</span>: {
+            <span class="hljs-attr">"operation"</span>: <span class="hljs-string">"import/url"</span>,
+            <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/logo.png"</span>
+        },
+        <span class="hljs-attr">"add-watermark"</span>: {
+            <span class="hljs-attr">"operation"</span>: <span class="hljs-string">"watermark"</span>,
+            <span class="hljs-attr">"input"</span>: [
+                <span class="hljs-string">"import-file"</span>
+            ],
+            <span class="hljs-attr">"input_format"</span>: <span class="hljs-string">"pdf"</span>,
+            <span class="hljs-attr">"layer"</span>: <span class="hljs-string">"above"</span>,
+            <span class="hljs-attr">"image"</span>: [
+                <span class="hljs-string">"import-logo"</span>
+            ],
+            <span class="hljs-attr">"image_width"</span>: <span class="hljs-number">500</span>,
+            <span class="hljs-attr">"position_vertical"</span>: <span class="hljs-string">"bottom"</span>,
+            <span class="hljs-attr">"position_horizontal"</span>: <span class="hljs-string">"right"</span>,
+            <span class="hljs-attr">"margin_vertical"</span>: <span class="hljs-number">25</span>,
+            <span class="hljs-attr">"margin_horizontal"</span>: <span class="hljs-number">25</span>,
+            <span class="hljs-attr">"opacity"</span>: <span class="hljs-number">75</span>
+        },
+        <span class="hljs-attr">"export-watermarked-file"</span>: {
+            <span class="hljs-attr">"operation"</span>: <span class="hljs-string">"export/url"</span>,
+            <span class="hljs-attr">"input"</span>: [
+                <span class="hljs-string">"add-watermark"</span>
+            ]
+        }
+    }
+}
+</pre><p>The job contains 4 tasks:</p><ol><li>Importing the <a href="https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf" rel="noopener noreferrer">input PDF file</a>.</li><li>Importing the <a href="https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/logo.png" rel="noopener noreferrer">logo PNG image</a>.</li><li>The watermark task which sets <code>input</code> to first import task and <code>image</code> to the second import task. Also, there are parameters for the vertical/horizontal position and the spacing to the page boundaries. </li><li>The export task creates a public URL to the <a href="https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies_logo.pdf" rel="noopener noreferrer">output file</a>.</li></ol><p>Of course, this feature can be combined with other operations. For example, you could first convert files from Word to PDF and then add the watermark within a single job. Also, this can be used together with converting videos or creating thumbnails.</p><p>Checkout the <a href="https://cloudconvert.com/api/v2/watermark" rel="noopener noreferrer">full documentation </a>of the watermark operation. The <a href="https://cloudconvert.com/api/v2/jobs/builder#Watermark" rel="noopener noreferrer">Job Builder</a> has been updated to generate ready-to-use API payloads and code snippets for the watermark feature.</p>
+
+
+                        <hr class="m-3">
+
+
+                    
+                        <div class="post-header">
+
+
+                    <span class="text-muted text-uppercase">
+                Apr 19, 2022
+
+                                    </span>
+
+                            <h1><a href="https://cloudconvert.com/blog/pdf-to-office">Industry leading PDF to Office conversions</a></h1>
+
+                        </div>
+
+
+                        <p>We are glad to announce that CloudConvert now offers the best possible, industry leading conversions for <a href="https://cloudconvert.com/pdf-to-docx" rel="noopener noreferrer">PDF to Word</a>, <a href="https://cloudconvert.com/pdf-to-xlsx" rel="noopener noreferrer">PDF to Excel</a> and <a href="https://cloudconvert.com/pdf-to-pptx" rel="noopener noreferrer">PDF to PowerPoint</a>.</p><p>Without question, restoring PDFs into MS Office formats is a challenging and non-trivial task. CloudConvert has partnered with <a href="https://www.pdftron.com/" rel="noopener noreferrer">PDFTron</a> from Canada to offer this functionality. PDFTron recently acquired Solid Documents, the provider of the best available PDF to Office conversion technology with unparalleled accuracy in terms of formatting and content preservation.</p><div class="embedded_image" contenteditable="false" data-layout="default"><img alt="" src="https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/wink/images/WGMX1b2x85MsyGixm5O0bciXCYW52XF5Oz8uBOEE.png"></div><p>Through this partnership, CloudConvert can now build on the same technology used in many professional document applications, such as Adobe Acrobat or Foxit.</p><p>As of today, this feature is available to CloudConvert customers. The new PDF to Office conversion types come at a different <a href="https://cloudconvert.com/pricing" rel="noopener noreferrer">pricing</a> and do cost <strong>4 conversion minutes</strong> as base per file.</p>
+
+
+                        <hr class="m-3">
+
+
+                    
+                        <div class="post-header">
+
+
+                    <span class="text-muted text-uppercase">
+                Mar 30, 2022
+
+                                    </span>
+
+                            <h1><a href="https://cloudconvert.com/blog/signed-urls">Signed URLs - On demand, single click file conversions</a></h1>
+
+                        </div>
+
+
+                        <p>CloudConvert now offers a new and convenient way to convert files on demand: <a href="https://cloudconvert.com/api/v2/signed-urls" rel="noopener noreferrer">Signed URLs</a>. These URLs allow dynamic, on-demand file conversion and will automatically cache the results. </p><p>There are a lot of use cases for such dynamic file conversions: For example, a "Download as PDF" button on a website which dynamically creates a PDF version of the current page. Another use case is a thumbnail image of a DOCX file which is created automatically and on-demand.</p><p> As a demo, you can just <a href="https://s.cloudconvert.com/c1f013af-bfb6-4816-8162-8c643c424628?job=eyJ0YXNrcyI6eyJpbXBvcnQtaXQiOnsib3BlcmF0aW9uIjoiY2FwdHVyZS13ZWJzaXRlIiwidXJsIjoiaHR0cHM6XC9cL2Nsb3VkY29udmVydC5jb21cL2Jsb2dcL3NpZ25lZC11cmxzIiwib3V0cHV0X2Zvcm1hdCI6InBuZyIsImZpbGVuYW1lIjoic2lnbmVkLXVybC1kZW1vLnBuZyJ9LCJleHBvcnQtaXQiOnsib3BlcmF0aW9uIjoiZXhwb3J0XC91cmwiLCJpbnB1dCI6ImltcG9ydC1pdCIsImlubGluZSI6dHJ1ZX19LCJ0YWciOm51bGwsIndlYmhvb2tfdXJsIjpudWxsfQ&amp;cache_key=cached-post&amp;s=9bc0e5ddf3ff3107b599980dd29d39a7abbe55f4fa9ad1263642982b49c32773" rel="noopener noreferrer"><strong>click on this signed URL</strong></a> which is a dynamically created PNG version of this blog post!</p><p>Technically, you first need to <a href="https://cloudconvert.com/dashboard/api/v2/signed-urls" rel="noopener noreferrer">create a signed URL</a> base using your dashboard. Using this signed URL base you then can create dynamic signed URLs using URL parameters. To secure the URL a signature is required. </p><p>As of today, all of our official SDKs have been updated to support this new feature. Check out the <a href="https://cloudconvert.com/api/v2/signed-urls" rel="noopener noreferrer">full documentation</a> about signed URLs.</p>
+
+
+                        <hr class="m-3">
+
+
+                    
+
+                    <div class="text-center">
+
+                        <nav>
+        <ul class="pagination">
+            
+                            <li class="page-item disabled" aria-disabled="true">
+                    <span class="page-link">&laquo; Previous</span>
+                </li>
+            
+            
+                            <li class="page-item">
+                    <a class="page-link" href="https://cloudconvert.com/blog?page=2" rel="next">Next &raquo;</a>
+                </li>
+                    </ul>
+    </nav>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+    </div>
+                </div>
+
+
+
+            </div>
+
+        <div class="container">
+
+    <footer class="footer mb-0">
+
+        <div>
+            <div class="row">
+
+                <div class="col-md align-self-center">
+
+                    <div class="row">
+
+                        <div class="col-6 col-md-auto mr-md-3 mt-1">
+                            <h6 class="text-bold-600">Company</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://cloudconvert.com/about">About Us</a></li>
+                                <li><a href="https://cloudconvert.com/security">Security</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-auto mr-md-3 mt-1">
+                            <h6 class="text-bold-600">Resources</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://cloudconvert.com/blog">Blog</a></li>
+                                <li>
+                                    <a href="https://status.cloudconvert.com" target="_blank" rel="noopener">Status</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-auto mr-md-3 mt-1">
+                            <h6 class="text-bold-600">Legal</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://cloudconvert.com/privacy">Privacy</a></li>
+                                <li ><a href="https://cloudconvert.com/terms">Terms</a></li>
+                                <li><a href="https://cloudconvert.com/about#imprint">Imprint</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-auto mr-md-3 mt-1">
+                            <h6 class="text-bold-600">Contact</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://cloudconvert.com/contact">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-auto text-center text-md-right mt-2 mt-md-2">
+
+
+                    <p>
+                        © 2024 Lunaweb GmbH <br><span class="text-muted d-none d-lg-inline d-xl-inline d-md-inline mt-1">Made in Munich, Germany  </span>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <footer-stats
+                :initial-files="1814402908"
+                :initial-bytes="15562962062183747"
+                :diff-files="36"
+                :diff-bytes="785159894"
+                :interval="5"
+        ></footer-stats>
+
+    </footer>
+
+</div>
+
+        </div>
+
+
+
+    
+            <script src="/js/app.js?id=0b1b08800f264bc46859c1a43fe1a13c"></script>
+    
+
+    
+</body>
+</html>
+
+
+
+
