@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr" class="loaded">
+<head>
+    <!-- Meta Information -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+
+
+    <title>Quickstart Guide | CloudConvert API</title>
+    <meta name="description" content=">File converter service - more than 200 different audio, video, document, ebook, archive, image, spreadsheet and presentation formats supported.">
+
+
+    <link rel="shortcut icon" href="/images/logo_flat_32.png">
+    <link rel="preconnect" href="https://api.cloudconvert.com">
+
+    
+
+
+
+<!-- CSS -->
+    <link href="/css/app.css?id=f0355e3da082a3efd8cb6c87576778b3" rel="stylesheet">
+
+
+    <script nonce="5FaEcNlWxP9rEpn4">
+        window.app = {
+            env: 'production',
+            url: 'https://cloudconvert.com',
+            apiUrl: 'https://api.cloudconvert.com',
+            liveUrl: 'https://cloudconvert.com',
+            sandboxUrl: 'https://sandbox.cloudconvert.com',
+            socketioUrl: 'https://socketio.cloudconvert.com',
+            routeName: 'apidocs.quickstart'
+        };
+    </script>
+
+
+
+
+            <script defer data-domain="cloudconvert.com" src="/js/script.js" nonce="5FaEcNlWxP9rEpn4"></script>
+        <script nonce="5FaEcNlWxP9rEpn4">window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    
+    
+
+</head>
+
+
+
+    <body data-open="click" data-menu="vertical-menu" class="vertical-layout vertical-menu menu-expanded fixed-navbar">
+
+    <div id="app">
+
+
+        <!-- navbar-fixed-top-->
+        <nav class="header-navbar navbar-expand-md  navbar navbar-with-menu fixed-top navbar-dark navbar-shadow bg-gradient-navbar">
+            <div class="navbar-wrapper">
+                <div class="navbar-header">
+                    <ul class="nav navbar-nav flex-row">
+                        <li class="nav-item mobile-menu d-md-none mr-auto"><a href="#"
+                                                                              class="nav-link nav-menu-main menu-toggle hidden-xs"><i
+                                        class="fa fa-bars"></i></a></li>
+                        <li class="nav-item"><a href="/" class="navbar-brand"><img alt="" width="51" height="32" src="/images/logo_flat_110_borderless.png" class="brand-logo hidden-xs-down">
+        <h2 class="brand-text">cloud<strong>convert</strong></h2></a></li>                        <li class="nav-item d-md-none"><a data-toggle="collapse" data-target="#navbar-mobile"
+                                                          class="nav-link open-navbar-container"><i
+                                        class="fa fa-ellipsis-v"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-container content">
+                    <div id="navbar-mobile" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav mr-auto float-left">
+                                                        <li class="nav-item d-none d-md-block"><a href="#"
+                                                                      class="nav-link nav-menu-main menu-toggle hidden-xs"><i
+                                            class="fa fa-bars"></i></a></li>
+                            <li class="dropdown nav-item mega-dropdown tools"><a href="/" data-toggle="dropdown"
+                                                     class="nav-link dropdown-toggle">Tools</a>
+
+    <div class="mega-dropdown-menu dropdown-menu bg-gradient-navbar">
+
+        <div class="container">
+            <ul class="row w-100">
+                <li class="col-lg-6 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-sync-alt"></i> Convert Files</h6>
+
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul class="list-2-columns">
+                                <li><a class="dropdown-item" href="/archive-converter">Archive Converter</a></li>
+                                <li><a class="dropdown-item" href="/audio-converter">Audio Converter</a></li>
+                                <li><a class="dropdown-item" href="/cad-converter">CAD Converter</a></li>
+                                <li><a class="dropdown-item" href="/document-converter">Document Converter</a></li>
+                                <li><a class="dropdown-item" href="/ebook-converter">Ebook Converter</a></li>
+                                <li><a class="dropdown-item" href="/font-converter">Font Converter</a></li>
+                                <li><a class="dropdown-item" href="/image-converter">Image Converter</a></li>
+                                <li><a class="dropdown-item" href="/presentation-converter">Presentation Converter</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/spreadsheet-converter">Spreadsheet Converter</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/vector-converter">Vector Converter</a></li>
+                                <li><a class="dropdown-item" href="/video-converter">Video Converter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </li>
+
+                <li class="col-lg-3 col-sm-12">
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress"></i> Optimize Files</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/compress-pdf">Compress PDF</a></li>
+                                <li><a class="dropdown-item" href="/compress-png">Compress PNG</a></li>
+                                <li><a class="dropdown-item" href="/compress-jpg">Compress JPG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-file-archive"></i> Archives</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/create-zip-archive">Create Archive</a></li>
+                                <li><a class="dropdown-item" href="/extract-zip-archive">Extract Archive</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-browser"></i> Capture Websites</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/save-website-pdf">Save Website as PDF</a></li>
+                                <li><a class="dropdown-item" href="/website-png-screenshot">Website PNG Screenshot</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/website-jpg-screenshot">Website JPG Screenshot</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress-alt"></i> Merge Files</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/merge-pdf">Merge PDF</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+</li>
+
+
+<li class="dropdown nav-item mega-dropdown"><a href="https://cloudconvert.com/api/v2" data-toggle="dropdown"
+                                               class="nav-link dropdown-toggle">API</a>
+
+
+    <div class="mega-dropdown-menu dropdown-menu bg-gradient-navbar">
+
+        <div class="container">
+            <ul class="row w-100">
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-sync-alt"></i>Convert Files</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/file-conversion">File Conversion
+                                        API</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/office-to-pdf">Office to PDF
+                                        API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/iwork-to-pdf">iWork to PDF
+                                        API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/pdf-to-office">PDF to Office
+                                        API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-browser"></i>Capture Websites</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/html-to-pdf">HTML to PDF API</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/website-screenshot">Website
+                                        Screenshot
+                                        API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress"></i>Optimize Files</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/compress-pdf">Compress PDF
+                                        API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/compress-images">Compress Images
+                                        API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-cubes"></i>Other APIs</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/merge-pdf">Merge PDF API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/thumbnails">Thumbnail API</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/watermark">Watermark API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-robot"></i>Automate</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/integrations">Integrations</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+                <li class="col-lg-3 col-sm-12">
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-book"></i> Documentation</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/api/v2">API
+                                        Documentation</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/api/v2/quickstart">Quickstart
+                                        Guide</a></li>
+
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/api/v2/jobs/builder">Job Builder</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+
+
+
+                </li>
+
+
+            </ul>
+
+        </div>
+    </div>
+
+</li>
+
+
+<li class="nav-item"><a href="https://cloudconvert.com/pricing" class="nav-link">Pricing</a></li>
+
+
+
+                        </ul>
+                        <ul class="nav navbar-nav float-right">
+                            <li class="nav-item">
+        <a class="nav-link" href="https://cloudconvert.com/register">Sign Up</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="https://cloudconvert.com/login">Login</a>
+    </li>
+
+
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- main menu-->
+        <div data-scroll-to-active="true" data-gumshoe="true"
+             class="main-menu menu-fixed menu-light menu-accordion menu-shadow menu-light">
+
+            <!-- main menu content-->
+            <div class="main-menu-content" data-gumshoe>
+                <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
+
+
+                    <li class=" navigation-header pr-1">
+                        <span>API Docs</span><i data-toggle="tooltip" data-placement="right"
+                                                data-original-title="API Documentation"
+                                                class="icon-ellipsis ft-minus"></i>
+
+
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2"><i class="fa fa-fw fa-home"></i><span
+                                    class="menu-title">Overview</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2#overview" class="menu-item">Introduction</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2#terminology" class="menu-item">Terminology</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2#authentication" class="menu-item">Authentication</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2#errors" class="menu-item">Errors</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2#changelog" class="menu-item">Changelog</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/quickstart"><i class="fa fa-fw fa-rocket"></i><span
+                                    class="menu-title">Quickstart Guide</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/quickstart#quickstart-overview" class="menu-item">Introduction</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/quickstart#quickstart-start" class="menu-item">Starting jobs</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/quickstart#quickstart-wait" class="menu-item">Wait for job completion</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/quickstart#quickstart-result" class="menu-item">Download output files</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/tasks"><i class="fa fa-fw fa-tasks"></i><span
+                                    class="menu-title">Tasks</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/tasks#tasks-create" class="menu-item">Create tasks</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/tasks#tasks-show" class="menu-item">Show a task</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/tasks#tasks-wait" class="menu-item">Wait for a task
+
+                                    <span class="badge badge-light badge-sm text-uppercase">Sync</span>
+
+                                </a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/tasks#tasks-list" class="menu-item">List tasks</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/tasks#tasks-cancel" class="menu-item">Cancel a task</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/tasks#tasks-retry" class="menu-item">Retry a task</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/tasks#tasks-delete" class="menu-item">Delete a task</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/tasks#operations-list"
+                                   class="menu-item">List possible operations</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/jobs"><i class="fa fa-fw fa-list-alt"></i><span
+                                    class="menu-title">Jobs</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/jobs#jobs-create" class="menu-item">Create job</a>
+                            </li>
+
+                            <li><a href="https://cloudconvert.com/api/v2/jobs#jobs-create-wait" class="menu-item">Create job and wait
+
+                                    <span class="badge badge-light badge-sm text-uppercase">Sync</span>
+
+                                </a>
+                            </li>
+
+                            <li><a href="https://cloudconvert.com/api/v2/jobs#jobs-show" class="menu-item">Show a job</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/jobs#jobs-wait" class="menu-item">Wait for a job
+
+                                    <span class="badge badge-light badge-sm text-uppercase">Sync</span>
+
+                                </a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/jobs#jobs-list" class="menu-item">List jobs</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/jobs#jobs-delete" class="menu-item">Delete a job</a>
+                            </li>
+                            <li ><a
+                                        href="https://cloudconvert.com/api/v2/jobs/builder" class="menu-item">Job Builder</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/convert"><i class="fa fa-fw fa-sync-alt"></i><span
+                                    class="menu-title">Convert Files</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/convert#convert-tasks" class="menu-item">Create
+                                    tasks</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/convert#convert-formats" class="menu-item">List
+                                    supported formats</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/capture-website"><i class="fa fa-fw fa-compress"></i><span
+                                    class="menu-title">Optimize Files</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/optimize#optimize-tasks"
+                                   class="menu-item">Create tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/watermark"><i class="fa fa-fw fa-stamp"></i><span
+                                    class="menu-title">Add Watermarks</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/watermark#watermark-tasks"
+                                   class="menu-item">Create tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/capture-website"><i class="fa fa-fw fa-browser"></i><span
+                                    class="menu-title">Capture Websites</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/capture-website#capture-website-tasks"
+                                   class="menu-item">Create tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/thumbnails"><i class="fa fa-fw fa-images"></i><span
+                                    class="menu-title">Create Thumbnails</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/thumbnails#thumbnail-tasks" class="menu-item">Create tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/metadata"><i class="fa fa-fw fa-file-search"></i><span
+                                    class="menu-title">File Metadata</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/metadata#metadata-extract" class="menu-item">Extract metadata</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/metadata#metadata-write" class="menu-item">Write metadata</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/merge"><i class="fa fa-fw fa-compress-alt"></i><span
+                                    class="menu-title">Merge Files</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/merge#merge-tasks" class="menu-item">Create tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/archive"><i class="fa fa-fw fa-file-archive"></i><span
+                                    class="menu-title">Create Archives</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/archive#archive-tasks" class="menu-item">Create tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/command"><i class="fa fa-fw fa-terminal"></i><span
+                                    class="menu-title">Execute Commands</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/command#command-tasks" class="menu-item">Create
+                                    tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/import"><i class="fa fa-fw fa-file-import"></i><span
+                                    class="menu-title">Import Files</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-url-tasks" class="menu-item">URL</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-upload-tasks" class="menu-item">Upload</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-base64-tasks" class="menu-item">Base64</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-raw-tasks" class="menu-item">Raw</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-s3-tasks" class="menu-item">S3</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-azure-blob-tasks" class="menu-item">Azure
+                                    Blob</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-google-cloud-storage-tasks"
+                                   class="menu-item">Google Cloud Storage</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-openstack-tasks"
+                                   class="menu-item">OpenStack</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/import#import-sftp-tasks"
+                                   class="menu-item">SFTP</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/export"><i class="fa fa-fw fa-file-export"></i><span
+                                    class="menu-title">Export Files</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/export#export-url-tasks" class="menu-item">URL</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/export#export-s3-tasks" class="menu-item">S3</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/export#export-azure-blob-tasks" class="menu-item">Azure
+                                    Blob</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/export#export-google-cloud-storage-tasks"
+                                   class="menu-item">Google Cloud Storage</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/export#export-openstack-tasks"
+                                   class="menu-item">OpenStack</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/export#export-sftp-tasks"
+                                   class="menu-item">SFTP</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/users"><i class="fa fa-fw fa-user"></i><span
+                                    class="menu-title">Users</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/users#users-show" class="menu-item">Show the current
+                                    user</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/webhooks"><i class="fa fa-fw fa-bell"></i><span
+                                    class="menu-title">Webhooks</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/webhooks#webhooks-events" class="menu-item">Events</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/webhooks#webhooks-create" class="menu-item">Create a webhook</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/webhooks#webhooks-list" class="menu-item">List webhooks</a>
+                            </li>
+                            <li><a href="https://cloudconvert.com/api/v2/webhooks#webhooks-delete" class="menu-item">Delete a webhook</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/socket"><i class="fa fa-fw fa-bells"></i><span
+                                    class="menu-title">Socket</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/socket#socket" class="menu-item">Events</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="https://cloudconvert.com/api/v2/socket"><i class="fa fa-fw fa-link"></i><span
+                                    class="menu-title">Signed URLs</span></a>
+                        <ul class="menu-content menu-expanded">
+                            <li><a href="https://cloudconvert.com/api/v2/signed-urls#create" class="menu-item">Create signed URLs</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class=" navigation-header"><span>Support</span><i data-toggle="tooltip" data-placement="right"
+                                                                          data-original-title="Support"
+                                                                          class="icon-ellipsis ft-minus"></i>
+                    </li>
+                    <li class=" nav-item"><a href="https://cloudconvert.com/contact"><i class="ft-life-buoy"></i><span
+                                    class="menu-title">Contact</span></a>
+                    </li>
+                    <li class=" nav-item"><a href="https://cloudconvert.com/about"><i class="ft-life-buoy"></i><span
+                                    class="menu-title">About Us</span></a>
+                    </li>
+                    <li class=" nav-item"><a href="https://cloudconvert.com/security"><i class="ft-life-buoy"></i><span
+                                    class="menu-title">Security</span></a>
+                    </li>
+                    <li class=" nav-item"><a href="https://status.cloudconvert.com"><i class="ft-folder"></i><span
+                                    class="menu-title">Service Status</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /main menu content-->
+            <!-- main menu footer-->
+            <!-- main menu footer-->
+        </div>
+        <!-- / main menu-->
+
+
+        <api-docs inline-template>
+            <div class="app-content content api-docs">
+
+                <div class="api-docs-bg row content">
+                    <div class="col-md-6 col-sm-12 api-docs-bg-content"></div>
+                    <div class="col-md-6 col-sm-12 api-docs-bg-code"></div>
+                </div>
+
+                <div class="content-wrapper">
+
+
+                    <section class="row">
+                        <div class="col-md-6 col-sm-12">
+                            
+
+                        </div>
+                    </section>
+
+                    
+
+
+
+
+    <div class="content-body">
+
+
+        <a id="quickstart-overview" class="anchor"></a>
+        <h1 class="content-header-title">Quickstart Guide</h1>
+
+
+        <section class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+
+                    <div class="card-content">
+                        <div class="card-body">
+
+                            <p>
+
+                                This guide leads you through a typical implementation of the CloudConvert API. This
+                                contains starting a job, wait for job completion and handle the result of the job. The
+                                quickstart guide can be
+                                seen as an entry point. For a more in deep documentation please use the menu on the left
+                                to directly jump to a specific topic.
+
+                            </p>
+
+                            <p>
+                                You can find example requests and code examples for our SDKs in the right column. Please
+                                use the
+                                buttons to switch between the SDKs.
+                            </p>
+
+
+
+                            <p class="text-center">
+
+
+                                <a @click.prevent="codingLanguage='raw'" href="" :class="['btn', codingLanguage=='raw' ? 'btn-secondary' : 'btn-outline-secondary','mt-1']">
+                                    <i class="fa fa-code"></i>
+                                    Raw Requests
+                                </a>
+
+                                <a @click.prevent="codingLanguage='curl'" href="" :class="['btn', codingLanguage=='curl' ? 'btn-secondary' : 'btn-outline-secondary','mt-1']">
+                                    <i class="fa fa-terminal"></i>
+                                    cURL
+                                </a>
+
+                                <a @click.prevent="codingLanguage='php'" href="" :class="['btn', codingLanguage=='php' ? 'btn-secondary' : 'btn-outline-secondary','mt-1']">
+                                    <i class="fab fa-php"></i>
+                                    PHP
+                                </a>
+
+                                <a @click.prevent="codingLanguage='nodejs'" href="" :class="['btn', codingLanguage=='nodejs' ? 'btn-secondary' : 'btn-outline-secondary','mt-1']">
+                                    <i class="fab fa-node-js"></i>
+                                    node.js
+                                </a>
+
+                                <a @click.prevent="codingLanguage='ruby'" href="" :class="['btn', codingLanguage=='ruby' ? 'btn-secondary' : 'btn-outline-secondary','mt-1']">
+                                    <i class="fak fa-ruby"></i>
+                                    Ruby
+                                </a>
+
+
+                                <a @click.prevent="codingLanguage='python'" href="" :class="['btn', codingLanguage=='python' ? 'btn-secondary' : 'btn-outline-secondary','mt-1']">
+                                    <i class="fab fa-python"></i>
+                                    Python
+                                </a>
+
+                                <a @click.prevent="codingLanguage='java'" href="" :class="['btn', codingLanguage=='java' ? 'btn-secondary' : 'btn-outline-secondary','mt-1']">
+                                    <i class="fab fa-java"></i>
+                                    Java
+                                </a>
+
+                                <a @click.prevent="codingLanguage='dotnet'" href="" :class="['btn', codingLanguage=='dotnet' ? 'btn-secondary' : 'btn-outline-secondary','mt-1']">
+                                    <i class="fak fa-dotnet"></i>
+                                    .NET
+                                </a>
+
+
+                            </p>
+
+
+                            <p v-if="codingLanguage=='php'" class="mt-2 mb-0">
+                                The full documentation for the PHP SDK is available at <a href="https://github.com/cloudconvert/cloudconvert-php" target="_blank">GitHub</a>.
+                            </p>
+                            <p v-else-if="codingLanguage=='nodejs'" class="mt-2 mb-0">
+                                The full documentation for the node.js SDK is available at <a href="https://github.com/cloudconvert/cloudconvert-node" target="_blank">GitHub</a>.
+                            </p>
+                            <p v-else-if="codingLanguage=='ruby'" class="mt-2 mb-0">
+                                The full documentation for the Ruby SDK is available at <a href="https://github.com/cloudconvert/cloudconvert-ruby" target="_blank">GitHub</a>.
+                            </p>
+                            <p v-else-if="codingLanguage=='python'" class="mt-2 mb-0">
+                                The full documentation for the Python SDK is available at <a href="https://github.com/cloudconvert/cloudconvert-python" target="_blank">GitHub</a>.
+                            </p>
+                            <p v-else-if="codingLanguage=='java'" class="mt-2 mb-0">
+                                The full documentation for the Java SDK is available at <a href="https://github.com/cloudconvert/cloudconvert-java" target="_blank">GitHub</a>.
+                            </p>
+                            <p v-else-if="codingLanguage=='dotnet'" class="mt-2 mb-0">
+                                The full documentation for the .NET SDK is available at <a href="https://github.com/cloudconvert/cloudconvert-dotnet" target="_blank">GitHub</a>.
+                            </p>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 api-docs-code">
+
+                <div class="card">
+
+                    <div class="card-content">
+                        <div class="card-body">
+
+                            <span class="float-xl-right display-inline-block mb-1">
+                                <coding-language-switch v-model="codingLanguage" dropdown></coding-language-switch>
+                            </span>
+
+                            <div v-show="codingLanguage === 'php'">
+                                <h4 class="card-title">PHP Code</h4>
+                                <pre v-highlightjs><code
+                                            class="php">// composer require cloudconvert/cloudconvert-php
+
+use \CloudConvert\CloudConvert;
+use \CloudConvert\Models\Job;
+use \CloudConvert\Models\Task;
+
+
+$cloudconvert = new CloudConvert([
+    &#039;api_key&#039; =&gt; &#039;API_KEY&#039;,
+    &#039;sandbox&#039; =&gt; false
+]);
+</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'nodejs'">
+                                <h4 class="card-title">node.js Code</h4>
+                                <pre v-highlightjs><code
+                                            class="javascript">// npm install --save cloudconvert
+
+import CloudConvert from &#039;cloudconvert&#039;;
+
+const cloudConvert = new CloudConvert(&#039;api_key&#039;);
+</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'ruby'">
+                                <h4 class="card-title">Ruby Code</h4>
+                                <pre v-highlightjs><code
+                                            class="ruby"># Add to your Gemfile: gem &quot;cloudconvert&quot;
+
+cloudconvert = CloudConvert::Client.new(api_key: &quot;API_KEY&quot;, sandbox: false)</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'python'">
+                                <h4 class="card-title">Python Code</h4>
+                                <pre v-highlightjs><code
+                                            class="python">  # pip install cloudconvert
+
+  import cloudconvert
+ 
+  cloudconvert.configure(api_key = &#039;API_KEY&#039;, sandbox = False)</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'java'">
+                                <h4 class="card-title">Java Code</h4>
+                                <pre v-highlightjs><code
+                                            class="java">import com.cloudconvert.client.CloudConvertClient;
+
+final CloudConvertClient cloudConvertClient =
+    new CloudConvertClient(new StringSettingsProvider(&quot;api-url&quot;, &quot;webhook-signing-secret&quot;));
+</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'dotnet'">
+                                <h4 class="card-title">C# Code</h4>
+                                <pre v-highlightjs><code
+                                            class="csharp">/// dotnet add package CloudConvert.API
+
+using CloudConvert.API;
+using CloudConvert.API.Models.ExportOperations;
+using CloudConvert.API.Models.ImportOperations;
+using CloudConvert.API.Models.JobModels;
+using CloudConvert.API.Models.TaskOperations;
+
+var CloudConvert = new CloudConvertAPI(&quot;api_key&quot;);</code></pre>
+                            </div>
+
+
+                            <div v-show="codingLanguage === 'raw' || codingLanguage === 'curl'">
+
+                                <h4 class="card-title">API Base URL</h4>
+                                <pre v-highlightjs><code class="bash definition">https://api.cloudconvert.com/v2</code></pre>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <a class="anchor" id="quickstart-start"></a>
+        <h3 class="content-header-title">
+            Starting Jobs
+        </h3>
+        <section class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+
+                    <div class="card-content">
+                        <div class="card-body">
+
+                            <p>
+                                On the right you can find the creation of a typical job. It downloads a file from an URL
+                                (<code>import/url</code> operation), converts this file to PDF and creates a URL to
+                                converted file (<code>export/url</code> operation).
+                            </p>
+
+                            <p>
+                                If you are using a storage provide like S3, Azure, Google Cloud or OpenStack we
+                                recommend using the corresponding <a href="https://cloudconvert.com/api/v2/import">import</a> and
+                                <a href="https://cloudconvert.com/api/v2/export">export</a> operations. CloudConvert can take
+                                care of fetching and storing files from/to your storage.
+                            </p>
+
+
+                            <p>
+                                Depending on the input and output format, the available options for the
+                                <code>convert</code> operation do vary. You can use the Job Builder to generate
+                                the payload of your job. It shows all available operations and the possible options.
+                            </p>
+
+                            <div class="text-center  mt-2">
+
+                                <a href="https://cloudconvert.com/api/v2/jobs/builder" class="btn btn-primary">
+                                    <i class="fa fa-btn fa-list-alt mr-1"></i> Job Builder
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 api-docs-code">
+                <div class="card">
+
+                    <div class="card-content ">
+                        <div class="card-body">
+
+                            <span class="float-xl-right display-inline-block mb-1">
+                                <coding-language-switch v-model="codingLanguage" dropdown></coding-language-switch>
+                            </span>
+
+                            <div v-show="codingLanguage === 'raw'">
+                                <h4 class="card-title">Create job request</h4>
+                                <pre v-highlightjs><code
+                                            class="bash definition">POST https://api.cloudconvert.com/v2/jobs</code></pre>
+
+                                <h4 class="card-title mt-3">Request Body</h4>
+                                <pre v-highlightjs><code class="json">{
+  &quot;tasks&quot;: {
+    &quot;import-my-file&quot;: {
+      &quot;operation&quot;: &quot;import/url&quot;,
+      &quot;url&quot;: &quot;https://my.url/file.docx&quot;
+    },
+    &quot;convert-my-file&quot;: {
+      &quot;operation&quot;: &quot;convert&quot;,
+      &quot;input&quot;: &quot;import-my-file&quot;,
+      &quot;output_format&quot;: &quot;pdf&quot;
+    },
+    &quot;export-my-file&quot;: {
+      &quot;operation&quot;: &quot;export/url&quot;,
+      &quot;input&quot;: &quot;convert-my-file&quot;
+    }
+  }
+}
+</code></pre>
+
+                                <h4 class="card-title mt-3">Example Response</h4>
+                                <pre><code class="json">{
+  &quot;data&quot;: {
+    &quot;id&quot;: &quot;6559c281-ed85-4728-80db-414561c631e9&quot;,
+    &quot;status&quot;: &quot;processing&quot;,
+    &quot;tasks&quot;: [
+      ...
+    ]
+  }
+}
+</code></pre>
+
+                            </div>
+
+                            <div v-show="codingLanguage === 'curl'">
+                                <h4 class="card-title">cURL Command</h4>
+                                <pre><code class="bash curl">$ curl -X POST "https://api.cloudconvert.com/v2/jobs" \
+       -H "Authorization: Bearer API_KEY" \
+       -H "Content-type: application/json" \
+       -d '</code><code class="json">{
+  &quot;tasks&quot;: {
+    &quot;import-my-file&quot;: {
+      &quot;operation&quot;: &quot;import/url&quot;,
+      &quot;url&quot;: &quot;https://my.url/file.docx&quot;
+    },
+    &quot;convert-my-file&quot;: {
+      &quot;operation&quot;: &quot;convert&quot;,
+      &quot;input&quot;: &quot;import-my-file&quot;,
+      &quot;output_format&quot;: &quot;pdf&quot;
+    },
+    &quot;export-my-file&quot;: {
+      &quot;operation&quot;: &quot;export/url&quot;,
+      &quot;input&quot;: &quot;convert-my-file&quot;
+    }
+  }
+}</code><code class="bash curl">'</code></pre>
+
+                                <h4 class="card-title mt-3">Example Response</h4>
+                                <pre><code class="json">{
+  &quot;data&quot;: {
+    &quot;id&quot;: &quot;6559c281-ed85-4728-80db-414561c631e9&quot;,
+    &quot;status&quot;: &quot;processing&quot;,
+    &quot;tasks&quot;: [
+      ...
+    ]
+  }
+}
+</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'php'">
+                                <h4 class="card-title">PHP Code</h4>
+                                <pre v-highlightjs><code
+                                            class="php">$job = (new Job())
+    -&gt;addTask(
+        (new Task(&#039;import/url&#039;, &#039;import-my-file&#039;))
+            -&gt;set(&#039;url&#039;, &#039;https://my.url/file.docx&#039;)
+    )
+    -&gt;addTask(
+        (new Task(&#039;convert&#039;, &#039;convert-my-file&#039;))
+            -&gt;set(&#039;input&#039;, &#039;import-my-file&#039;)
+            -&gt;set(&#039;output_format&#039;, &#039;pdf&#039;)
+    )
+    -&gt;addTask(
+        (new Task(&#039;export/url&#039;, &#039;export-my-file&#039;))
+            -&gt;set(&#039;input&#039;, &#039;convert-my-file&#039;)
+    );
+
+$cloudconvert-&gt;jobs()-&gt;create($job);
+</code></pre>
+                            </div>
+
+
+                            <div v-show="codingLanguage === 'nodejs'">
+                                <h4 class="card-title">node.js Code</h4>
+                                <pre v-highlightjs><code class="javascript">let job = await cloudConvert.jobs.create({
+    &quot;tasks&quot;: {
+        &quot;import-my-file&quot;: {
+            &quot;operation&quot;: &quot;import/url&quot;,
+            &quot;url&quot;: &quot;https://my.url/file.docx&quot;
+        },
+        &quot;convert-my-file&quot;: {
+            &quot;operation&quot;: &quot;convert&quot;,
+            &quot;input&quot;: &quot;import-my-file&quot;,
+            &quot;output_format&quot;: &quot;pdf&quot;
+        },
+        &quot;export-my-file&quot;: {
+            &quot;operation&quot;: &quot;export/url&quot;,
+            &quot;input&quot;: &quot;convert-my-file&quot;
+        }
+    }
+});
+</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'ruby'">
+                                <h4 class="card-title">Ruby Code</h4>
+                                <pre v-highlightjs><code
+                                            class="ruby">job = cloudconvert.jobs.create({
+  tasks: [
+    {
+      name: &quot;import-my-file&quot;,
+      operation: &quot;import/url&quot;,
+      url: &quot;https://my-url&quot;
+    },
+    {
+      name: &quot;convert-my-file&quot;,
+      operation: &quot;convert&quot;,
+      input: &quot;import-my-file&quot;,
+      output_format: &quot;pdf&quot;,
+      some_other_option: &quot;value&quot;
+    },
+    {
+      name: &quot;export-my-file&quot;,
+      operation: &quot;export/url&quot;,
+      input: &quot;convert-my-file&quot;
+    },
+  ]
+})</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'python'">
+                                <h4 class="card-title">Python Code</h4>
+                                <pre v-highlightjs><code class="python">job = cloudconvert.Job.create(payload={
+     &quot;tasks&quot;: {
+         &#039;import-my-file&#039;: {
+              &#039;operation&#039;: &#039;import/url&#039;,
+              &#039;url&#039;: &#039;https://my-url&#039;
+         },
+         &#039;convert-my-file&#039;: {
+             &#039;operation&#039;: &#039;convert&#039;,
+             &#039;input&#039;: &#039;import-my-file&#039;,
+             &#039;output_format&#039;: &#039;pdf&#039;,
+             &#039;some_other_option&#039;: &#039;value&#039;
+         },
+         &#039;export-my-file&#039;: {
+             &#039;operation&#039;: &#039;export/url&#039;,
+             &#039;input&#039;: &#039;convert-my-file&#039;
+         }
+     }
+ })</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'java'">
+                                <h4 class="card-title">Java Code</h4>
+                                <pre v-highlightjs><code class="java">final JobResponse createJobResponse = cloudConvertClient.jobs().create(
+    ImmutableMap.of(
+        &quot;import-my-file&quot;,
+            new UrlImportRequest()
+                .setUrl(&quot;import-url&quot;),
+        &quot;convert-my-file&quot;,
+            new ConvertFilesTaskRequest()
+                .setInput(&quot;import-my-file&quot;)
+                .setOutputFormat(&quot;pdf&quot;),
+        &quot;export-my-file&quot;,
+            new UrlExportRequest()
+                .setInput(&quot;convert-my-file&quot;)
+    )
+).getBody();</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'dotnet'">
+                                <h4 class="card-title">C# Code</h4>
+                                <pre v-highlightjs><code class="csharp">var job = await CloudConvert.CreateJobAsync(new JobCreateRequest
+      {
+        Tasks = new
+        {
+          import_it = new ImportUrlCreateRequest
+          {
+            Url = &quot;https://my.url/file.docx&quot;
+          },
+          convert = new ConvertCreateRequest
+          {
+            Input = &quot;import_it&quot;,
+            Input_Format = &quot;docx&quot;,
+            Output_Format = &quot;pdf&quot;
+          },
+          export_it = new ExportUrlCreateRequest
+          {
+            Input = &quot;convert&quot;
+          }
+        }
+      });</code></pre>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <a class="anchor" id="quickstart-wait"></a>
+        <h3 class="content-header-title">
+            Wait for job completion
+        </h3>
+
+
+        <section class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+
+                    <div class="card-content">
+                        <div class="card-body">
+
+                            <p>
+                                We recommend using <a href="https://cloudconvert.com/api/v2/webhooks">webhooks</a> to get
+                                notified when a job completes.
+                                Alternatively, you can use the <a href="https://cloudconvert.com/api/v2/jobs#jobs-wait">synchronous API endpoint</a> to wait for job
+                                completion, as shown on the right.
+                            </p>
+
+                            <p>
+                                In general, please avoid to block your application until a CloudConvert job completes.
+                                There might be cases in which specific files cause longer
+                                processing times than
+                                usual. Using an asynchronous approach with <a href="https://cloudconvert.com/api/v2/webhooks">webhooks</a>
+                                is beneficial in such cases.
+                            </p>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 api-docs-code">
+                <div class="card">
+
+                    <div class="card-content ">
+                        <div class="card-body">
+
+                            <span class="float-xl-right display-inline-block mb-1">
+                                <coding-language-switch v-model="codingLanguage" dropdown></coding-language-switch>
+                            </span>
+
+                            <div v-show="codingLanguage === 'raw'">
+                                <h4 class="card-title">Wait for job request</h4>
+                                <pre v-highlightjs><code
+                                            class="bash definition">GET https://sync.api.cloudconvert.com/v2/jobs/6559c281-ed85-4728-80db-414561c631e9</code></pre>
+
+                                <h4 class="card-title mt-3">Example Response</h4>
+                                <pre><code class="json">{
+  &quot;data&quot;: {
+    &quot;id&quot;: &quot;6559c281-ed85-4728-80db-414561c631e9&quot;,
+    &quot;status&quot;: &quot;finished&quot;,
+    &quot;tasks&quot;: [
+      {
+        &quot;id&quot;: &quot;7f110c42-3245-41cf-8555-37087c729ed2&quot;,
+        &quot;name&quot;: &quot;import-my-file&quot;,
+        &quot;operation&quot;: &quot;import/url&quot;,
+        &quot;status&quot;: &quot;finished&quot;
+      },
+      {
+        &quot;id&quot;: &quot;7a142bd0-fa20-493e-abf5-99cc9b5fd7e9&quot;,
+        &quot;name&quot;: &quot;convert-my-file&quot;,
+        &quot;operation&quot;: &quot;convert&quot;,
+        &quot;status&quot;: &quot;finished&quot;
+      },
+      {
+        &quot;id&quot;: &quot;36af6f54-1c01-45cc-bcc3-97dd23d2f93d&quot;,
+        &quot;name&quot;: &quot;export-my-file&quot;,
+        &quot;operation&quot;: &quot;export/url&quot;,
+        &quot;status&quot;: &quot;finished&quot;,
+        &quot;result&quot;: {
+          &quot;files&quot;: [
+            {
+              &quot;filename&quot;: &quot;file.pdf&quot;,
+              &quot;url&quot;: &quot;https://storage.cloudconvert.com/eed87242-577e-4e3e-8178-9edbe51975dd/file.pdf?temp_url_sig=79c2db4d884926bbcc5476d01b4922a19137aee9&amp;temp_url_expires=1545962104&quot;
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+</code></pre>
+
+                            </div>
+
+                            <div v-show="codingLanguage === 'curl'">
+                                <h4 class="card-title">cURL Command</h4>
+                                <pre><code class="bash curl">$ curl -g "https://api.cloudconvert.com/v2/jobs/6559c281-ed85-4728-80db-414561c631e9/wait" \
+       -H "Authorization: Bearer API_KEY"</code></pre>
+
+                                <h4 class="card-title mt-3">Example Response</h4>
+                                <pre><code class="json">{
+  &quot;data&quot;: {
+    &quot;id&quot;: &quot;6559c281-ed85-4728-80db-414561c631e9&quot;,
+    &quot;status&quot;: &quot;finished&quot;,
+    &quot;tasks&quot;: [
+      {
+        &quot;id&quot;: &quot;7f110c42-3245-41cf-8555-37087c729ed2&quot;,
+        &quot;name&quot;: &quot;import-my-file&quot;,
+        &quot;operation&quot;: &quot;import/url&quot;,
+        &quot;status&quot;: &quot;finished&quot;
+      },
+      {
+        &quot;id&quot;: &quot;7a142bd0-fa20-493e-abf5-99cc9b5fd7e9&quot;,
+        &quot;name&quot;: &quot;convert-my-file&quot;,
+        &quot;operation&quot;: &quot;convert&quot;,
+        &quot;status&quot;: &quot;finished&quot;
+      },
+      {
+        &quot;id&quot;: &quot;36af6f54-1c01-45cc-bcc3-97dd23d2f93d&quot;,
+        &quot;name&quot;: &quot;export-my-file&quot;,
+        &quot;operation&quot;: &quot;export/url&quot;,
+        &quot;status&quot;: &quot;finished&quot;,
+        &quot;result&quot;: {
+          &quot;files&quot;: [
+            {
+              &quot;filename&quot;: &quot;file.pdf&quot;,
+              &quot;url&quot;: &quot;https://storage.cloudconvert.com/eed87242-577e-4e3e-8178-9edbe51975dd/file.pdf?temp_url_sig=79c2db4d884926bbcc5476d01b4922a19137aee9&amp;temp_url_expires=1545962104&quot;
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+</code></pre>
+
+                            </div>
+
+                            <div v-show="codingLanguage === 'php'">
+                                <h4 class="card-title">PHP Code</h4>
+                                <pre v-highlightjs><code
+                                            class="php">$cloudconvert-&gt;jobs()-&gt;wait($job);
+</code></pre>
+                            </div>
+
+
+                            <div v-show="codingLanguage === 'nodejs'">
+                                <h4 class="card-title">node.js Code</h4>
+                                <pre v-highlightjs><code class="javascript">job = await cloudConvert.jobs.wait(job.id);
+</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'ruby'">
+                                <h4 class="card-title">Ruby Code</h4>
+                                <pre v-highlightjs><code
+                                            class="ruby">job = cloudconvert.jobs.wait(job.id)</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'python'">
+                                <h4 class="card-title">Python Code</h4>
+                                <pre v-highlightjs><code class="python">job = cloudconvert.Job.wait(id=job[&#039;id&#039;])</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'java'">
+                                <h4 class="card-title">Java Code</h4>
+                                <pre v-highlightjs><code class="java">final JobResponse waitJobResponse =
+    cloudConvertClient.jobs().wait(createJobResponse.getId()).getBody();</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'dotnet'">
+                                <h4 class="card-title">C# Code</h4>
+                                <pre v-highlightjs><code class="csharp">var job = await CloudConvertAPI.WaitJobAsync(job.Data.Id); // Wait for job completion</code></pre>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <a class="anchor" id="quickstart-result"></a>
+        <h3 class="content-header-title">
+            Download output files
+        </h3>
+
+
+        <section class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+
+                    <div class="card-content">
+                        <div class="card-body">
+
+                            <p>
+                                Our example is using the <code>export/url</code> operation to generate a download URL of
+                                output file. This URL can be found in the response of the <code>/jobs/{ID}</code>
+                                status endpoint, or alternatively, in the body of the <a
+                                        href="https://cloudconvert.com/api/v2/webhooks">webhook</a> payload.
+                                You can add the <code>?redirect=true</code> query parameter to the status endpoint to get redirected to the export URL.
+                                Please note that export URLs are valid for 24
+                                hours only.
+                            </p>
+
+                            <p>
+                                If you are using an <a href="https://cloudconvert.com/api/v2/export">export</a> method like S3 or
+                                Azure, you don't need to manually download output files, of course.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 api-docs-code">
+                <div class="card">
+
+                    <div class="card-content ">
+                        <div class="card-body">
+
+                            <span class="float-xl-right display-inline-block mb-1">
+                                <coding-language-switch v-model="codingLanguage" dropdown></coding-language-switch>
+                            </span>
+
+                            <div v-show="codingLanguage === 'raw'">
+
+                                <h4 class="card-title mt-3">Download file</h4>
+                                <pre v-highlightjs><code
+                                            class="bash definition">GET https://sync.api.cloudconvert.com/v2/jobs/6559c281-ed85-4728-80db-414561c631e9?redirect=true</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'curl'">
+
+                                <h4 class="card-title mt-3">cURL download command</h4>
+                                <pre><code class="bash curl">$ curl -O "https://storage.cloudconvert.com/eed87242-577e-4e3e-8178-9edbe51975dd/data.txt?temp_url_sig=79c2db4d884926bbcc5476d01b4922a19137aee9&temp_url_expires=1545962104"</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'php'">
+                                <h4 class="card-title">PHP Code</h4>
+                                <pre v-highlightjs><code
+                                            class="php">$file = $job-&gt;getExportUrls()[0];
+
+$source = $cloudconvert-&gt;getHttpTransport()-&gt;download($file-&gt;url)-&gt;detach();
+$dest = fopen(&#039;output/&#039; . $file-&gt;filename, &#039;w&#039;);
+
+stream_copy_to_stream($source, $dest);
+</code></pre>
+                            </div>
+
+
+                            <div v-show="codingLanguage === 'nodejs'">
+                                <h4 class="card-title">node.js Code</h4>
+                                <pre v-highlightjs><code class="javascript">const file = cloudconvert.jobs.getExportUrls(job)[0];
+
+const writeStream = fs.createWriteStream(&#039;./out/&#039; + file.filename);
+
+http.get(file.url, function(response) {
+    response.pipe(writeStream);
+});
+
+await new Promise((resolve, reject) =&gt; {
+    writeStream.on(&#039;finish&#039;, resolve);
+    writeStream.on(&#039;error&#039;, reject);
+});
+</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'ruby'">
+                                <h4 class="card-title">Ruby Code</h4>
+                                <pre v-highlightjs><code
+                                            class="ruby">export_task = job.tasks.where(operation: &quot;export/url&quot;).where(status: &quot;finished&quot;).first
+
+file = task.result.files.first
+
+cloudconvert.download(file.url, destination: &quot;/path/to/destination&quot;)</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'python'">
+                                <h4 class="card-title">Python Code</h4>
+                                <pre v-highlightjs><code class="python">for task in job[&quot;tasks&quot;]:
+    if task.get(&quot;name&quot;) == &quot;export-it&quot; and task.get(&quot;status&quot;) == &quot;finished&quot;:
+        export_task = task
+
+file = export_task.get(&quot;result&quot;).get(&quot;files&quot;)[0]
+cloudconvert.download(filename=file[&#039;filename&#039;], url=file[&#039;url&#039;])
+</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'java'">
+                                <h4 class="card-title">Java Code</h4>
+                                <pre v-highlightjs><code class="java">// Get an export/url task id
+final TaskResponse exportUrlTask =
+    waitJobResponse.getTasks().stream().filter(
+         taskResponse -&gt; taskResponse.getName().equals(&quot;export-my-file&quot;)
+    ).findFirst().get();
+
+// Get a url of export/url task
+final String exportUrl =
+    exportUrlTask
+        .getResult()
+        .getFiles()
+        .get(0)
+        .get(&quot;url&quot;);
+
+// Get file as input stream using url of export/url task
+final InputStream inputStream =
+    cloudConvertClient.files().download(exportUrl).getBody();</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'dotnet'">
+                                <h4 class="card-title">C# Code</h4>
+                                <pre v-highlightjs><code class="csharp">var exportTask = job.Data.Tasks.FirstOrDefault(t =&gt; t.Name == &quot;export_it&quot;);
+
+var fileExport = exportTask.Result.Files.FirstOrDefault();
+
+using (var client = new WebClient()) client.DownloadFile(fileExport.Url, fileExport.Filename);</code></pre>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+
+
+
+                </div>
+
+
+            </div>
+        </api-docs>
+
+    </div>
+
+
+    
+            <script src="/js/app.js?id=0b1b08800f264bc46859c1a43fe1a13c"></script>
+    
+
+
+
+</body>
+</html>
+
+
+
+

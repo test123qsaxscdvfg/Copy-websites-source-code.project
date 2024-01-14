@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr" class="loaded">
+<head>
+    <!-- Meta Information -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+
+
+    <title>Watermark API | CloudConvert</title>
+    <meta name="description" content=">Add watermarks or stamps to PDF documents, images or videos. Both adding simple texts or any images as watermark is supported.">
+
+
+    <link rel="shortcut icon" href="/images/logo_flat_32.png">
+    <link rel="preconnect" href="https://api.cloudconvert.com">
+
+    
+
+
+
+<!-- CSS -->
+    <link href="/css/app.css?id=f0355e3da082a3efd8cb6c87576778b3" rel="stylesheet">
+
+
+    <script nonce="QYZ49jKoHqYBnrsu">
+        window.app = {
+            env: 'production',
+            url: 'https://cloudconvert.com',
+            apiUrl: 'https://api.cloudconvert.com',
+            liveUrl: 'https://cloudconvert.com',
+            sandboxUrl: 'https://sandbox.cloudconvert.com',
+            socketioUrl: 'https://socketio.cloudconvert.com',
+            routeName: 'apis.watermark'
+        };
+    </script>
+
+
+
+
+            <script defer data-domain="cloudconvert.com" src="/js/script.js" nonce="QYZ49jKoHqYBnrsu"></script>
+        <script nonce="QYZ49jKoHqYBnrsu">window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    
+    
+
+</head>
+
+
+
+    <body data-open="click" data-menu="horizontal-menu"
+          class="horizontal-layout horizontal-menu menu-expanded fixed-navbar product">
+
+
+    <div id="app">
+
+        <product-page inline-template>
+
+            <div>
+
+
+                <!-- navbar-fixed-top-->
+                <nav class="header-navbar  navbar-expand-md  navbar navbar-with-menu fixed-top navbar-dark  bg-gradient-navbar"
+                     style="align-items: baseline; flex-flow: wrap;">
+                    <div class="navbar-wrapper container">
+                        <div class="navbar-header">
+                            <ul class="nav navbar-nav  flex-row">
+                                <li class="nav-item mobile-menu d-md-none mr-auto"></li>
+                                <li class="nav-item"><a href="/" class="navbar-brand"><img alt="" width="51" height="32" src="/images/logo_flat_110_borderless.png" class="brand-logo hidden-xs-down">
+        <h2 class="brand-text">cloud<strong>convert</strong></h2></a></li>                                <li class="nav-item d-md-none"><a data-toggle="collapse" data-target="#navbar-mobile"
+                                                                  class="nav-link open-navbar-container"><i
+                                                class="fa fa-ellipsis-v"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="navbar-container content container">
+                            <div id="navbar-mobile" class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav mr-auto float-left">
+                                                                        <li class="dropdown nav-item mega-dropdown tools"><a href="/" data-toggle="dropdown"
+                                                     class="nav-link dropdown-toggle">Tools</a>
+
+    <div class="mega-dropdown-menu dropdown-menu bg-gradient-navbar">
+
+        <div class="container">
+            <ul class="row w-100">
+                <li class="col-lg-6 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-sync-alt"></i> Convert Files</h6>
+
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul class="list-2-columns">
+                                <li><a class="dropdown-item" href="/archive-converter">Archive Converter</a></li>
+                                <li><a class="dropdown-item" href="/audio-converter">Audio Converter</a></li>
+                                <li><a class="dropdown-item" href="/cad-converter">CAD Converter</a></li>
+                                <li><a class="dropdown-item" href="/document-converter">Document Converter</a></li>
+                                <li><a class="dropdown-item" href="/ebook-converter">Ebook Converter</a></li>
+                                <li><a class="dropdown-item" href="/font-converter">Font Converter</a></li>
+                                <li><a class="dropdown-item" href="/image-converter">Image Converter</a></li>
+                                <li><a class="dropdown-item" href="/presentation-converter">Presentation Converter</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/spreadsheet-converter">Spreadsheet Converter</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/vector-converter">Vector Converter</a></li>
+                                <li><a class="dropdown-item" href="/video-converter">Video Converter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </li>
+
+                <li class="col-lg-3 col-sm-12">
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress"></i> Optimize Files</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/compress-pdf">Compress PDF</a></li>
+                                <li><a class="dropdown-item" href="/compress-png">Compress PNG</a></li>
+                                <li><a class="dropdown-item" href="/compress-jpg">Compress JPG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-file-archive"></i> Archives</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/create-zip-archive">Create Archive</a></li>
+                                <li><a class="dropdown-item" href="/extract-zip-archive">Extract Archive</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-browser"></i> Capture Websites</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/save-website-pdf">Save Website as PDF</a></li>
+                                <li><a class="dropdown-item" href="/website-png-screenshot">Website PNG Screenshot</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/website-jpg-screenshot">Website JPG Screenshot</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress-alt"></i> Merge Files</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="/merge-pdf">Merge PDF</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+</li>
+
+
+<li class="dropdown nav-item mega-dropdown"><a href="https://cloudconvert.com/api/v2" data-toggle="dropdown"
+                                               class="nav-link dropdown-toggle">API</a>
+
+
+    <div class="mega-dropdown-menu dropdown-menu bg-gradient-navbar">
+
+        <div class="container">
+            <ul class="row w-100">
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-sync-alt"></i>Convert Files</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/file-conversion">File Conversion
+                                        API</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/office-to-pdf">Office to PDF
+                                        API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/iwork-to-pdf">iWork to PDF
+                                        API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/pdf-to-office">PDF to Office
+                                        API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-browser"></i>Capture Websites</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/html-to-pdf">HTML to PDF API</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/website-screenshot">Website
+                                        Screenshot
+                                        API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-compress"></i>Optimize Files</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/compress-pdf">Compress PDF
+                                        API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/compress-images">Compress Images
+                                        API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+                <li class="col-lg-3 col-sm-12">
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-cubes"></i>Other APIs</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/merge-pdf">Merge PDF API</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/thumbnails">Thumbnail API</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/apis/watermark">Watermark API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-robot"></i>Automate</h6>
+
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/integrations">Integrations</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+                <li class="col-lg-3 col-sm-12">
+
+
+                    <h6 class="dropdown-menu-header text-uppercase"><i class="fa fa-book"></i> Documentation</h6>
+                    <ul>
+                        <li class="menu-list">
+                            <ul>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/api/v2">API
+                                        Documentation</a></li>
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/api/v2/quickstart">Quickstart
+                                        Guide</a></li>
+
+                                <li><a class="dropdown-item" href="https://cloudconvert.com/api/v2/jobs/builder">Job Builder</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+
+
+
+                </li>
+
+
+            </ul>
+
+        </div>
+    </div>
+
+</li>
+
+
+<li class="nav-item"><a href="https://cloudconvert.com/pricing" class="nav-link">Pricing</a></li>
+
+
+
+                                </ul>
+                                <ul class="nav navbar-nav float-right">
+                                    <li class="nav-item">
+        <a class="nav-link" href="https://cloudconvert.com/register">Sign Up</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="https://cloudconvert.com/login">Login</a>
+    </li>
+
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </nav>
+
+
+                <div class="bg-gradient-navbar product-dark-section product-header">
+
+                    <div class="container text-center">
+
+
+                        <h1>Watermark API</h1>
+
+                        <p class="mb-3 mt-1">
+                            Add watermarks or stamps to PDF documents, images or videos.
+                        </p>
+
+
+                        <a class="btn btn-lg btn-primary mb-1" href="https://cloudconvert.com/api/v2/watermark">
+                            API Documentation
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="app-content content  center-layout">
+                    <div class="content-wrapper container">
+
+
+                        <div class="row">
+
+                            <div class="col-sm row my-2">
+
+                                <div class="col-4 align-self-center text-center font-large-4">
+
+                                    <i class="fa fa-stamp"></i>
+
+                                </div>
+                                <div class="col-8">
+
+
+                                    <h3>Use Text or Images as Watermark</h3>
+
+                                    <p class="mb-0">
+                                        The CloudConvert API allows to use both dynamic texts or PNG images as
+                                        watermark.
+                                        A typical use case is to add your company name or logo to files. You can find
+                                        some examples below.
+                                    </p>
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="col-sm row my-2">
+
+
+                                <div class="col-4 align-self-center text-center font-large-4">
+
+                                    <i class="fa fa-file-pdf"></i>
+
+                                </div>
+                                <div class="col-8">
+                                    <h3>Add Watermarks to PDFs</h3>
+                                    <p class="mb-0">
+
+                                        The watermark can be either placed <i>above</i> (default) or <i>below</i> the
+                                        text of your PDF document. You can define the watermark position and also only
+                                        select specific pages. Check out the <a
+                                                href="https://cloudconvert.com/api/v2/watermark">API docs</a> for all available
+                                        parameters.
+                                    </p>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm row my-2">
+
+                                <div class="col-4 align-self-center text-center font-large-4">
+
+                                    <i class="fa fa-file-image"></i>
+
+                                </div>
+                                <div class="col-8">
+                                    <h3>Add Watermarks to Images</h3>
+                                    <p class="mb-0">
+
+                                        CloudConvert supports nearly any image format such as PNG, JPG, GIF and many
+                                        more. You can customize the size, position,
+                                        opacity, margin and rotation of the watermark.
+                                    </p>
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="col-sm row my-2">
+
+
+                                <div class="col-4 align-self-center text-center font-large-4">
+
+                                    <i class="fa fa-file-video"></i>
+
+                                </div>
+                                <div class="col-8">
+                                    <h3>Add Watermarks to Videos</h3>
+                                    <p class="mb-0">
+                                        Adding a watermark to a video requires re-encoding the video. CloudConvert
+                                        automatically selects reasonable codec settings to avoid any loss in quality. However, this
+                                        is fully customizable and you can set your own encoding settings if you wish so.
+                                    </p>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="row">
+
+
+                            <div class="col-sm row my-2">
+
+    <div class="col-4 align-self-center text-center font-large-4">
+
+        <i class="fa fa-bell"></i>
+
+    </div>
+    <div class="col-8">
+        <h3>Async or Sync</h3>
+        <p class="mb-0">
+            By default, the CloudConvert API converts your files asynchronously and we
+            notify you via <a href="https://cloudconvert.com/api/v2/webhooks">webhooks</a> when we
+            are done. Depending on your needs there is also a synchronous API to convert
+            files on-the-fly.
+        </p>
+    </div>
+
+
+</div>
+                            <div class="col-sm row my-2">
+
+
+    <div class="col-4 align-self-center text-center font-large-4">
+
+        <i class="fa fa-file-export"></i>
+
+    </div>
+    <div class="col-8">
+        <h3>Storage Integration</h3>
+        <p class="mb-0">
+
+            CloudConvert directly fetches the input files from your object storage
+            and then stores the output file at the same place.
+            We are integrated with your existing and trusted storage provider, such as <a
+                    href="https://cloudconvert.com/api/v2/import#import-s3-tasks">S3</a>, <a
+                    href="https://cloudconvert.com/api/v2/import#import-azure-blob-tasks">Azure</a>,
+            <a
+                    href="https://cloudconvert.com/api/v2/import#import-google-cloud-storage-tasks">Google
+                Cloud</a> or
+            many others.
+
+
+        </p>
+    </div>
+
+
+</div>
+
+                        </div>
+
+
+                        <div class="row">
+
+                            <div class="col-sm row my-2">
+
+    <div class="col-4 align-self-center text-center font-large-4">
+
+        <i class="fa fa-project-diagram"></i>
+
+    </div>
+    <div class="col-8">
+        <h3>Custom Workflows</h3>
+        <p class="mb-0">
+            Our API uses the concept of <a href="https://cloudconvert.com/api/v2/jobs">Jobs</a> and
+            allows to do multiple operations with one single API call. For example, it is
+            possible to <a href="https://cloudconvert.com/apis/file-conversion">convert</a> the same file to multiple output
+            formats, adding a <a href="https://cloudconvert.com/apis/watermark">watermark</a> and creating a <a href="https://cloudconvert.com/apis/thumbnails">thumbnail</a> with one single Job!
+        </p>
+    </div>
+
+
+</div>
+                            <div class="col-sm row my-2">
+
+
+    <div class="col-4 align-self-center text-center font-large-4">
+
+        <i class="fa fa-smile"></i>
+
+    </div>
+    <div class="col-8">
+        <h3>Developer Friendly</h3>
+        <p class="mb-0">
+            Our extensive <a href="https://cloudconvert.com/api/v2">
+                API Documentation
+            </a> helps to get you started quickly. There is a <a
+                    href="https://cloudconvert.com/api/v2/jobs/builder">
+                Job Builder
+            </a> which generates ready-to-use request payloads and code snippets for you.
+            We do provide free and timely support, directly from the builders of
+            CloudConvert.
+        </p>
+    </div>
+
+
+</div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="bg-gradient-navbar product-dark-section">
+
+                    <div class="container">
+
+
+                        <p class="text-center mb-3">
+
+
+                            <a @click.prevent="codingLanguage='raw'" href=""
+   :class="['btn', codingLanguage=='raw' ? 'btn-light' : 'btn-outline-light']">
+    <i class="fa fa-code"></i>
+    Raw Request
+</a>
+
+<a @click.prevent="codingLanguage='php'" href=""
+   :class="['btn', codingLanguage=='php' ? 'btn-light' : 'btn-outline-light']">
+    <i class="fab fa-php"></i>
+    PHP
+</a>
+
+<a @click.prevent="codingLanguage='nodejs'" href=""
+   :class="['btn', codingLanguage=='nodejs' ? 'btn-light' : 'btn-outline-light']">
+    <i class="fab fa-node-js"></i>
+    node.js
+</a>
+
+<a @click.prevent="codingLanguage='ruby'" href=""
+   :class="['btn', codingLanguage=='ruby' ? 'btn-light' : 'btn-outline-light']">
+    <i class="fak fa-ruby"></i>
+    Ruby
+</a>
+
+
+<a @click.prevent="codingLanguage='python'" href=""
+   :class="['btn', codingLanguage=='python' ? 'btn-light' : 'btn-outline-light']">
+    <i class="fab fa-python"></i>
+    Python
+</a>
+
+<a @click.prevent="codingLanguage='java'" href=""
+   :class="['btn', codingLanguage=='java' ? 'btn-light' : 'btn-outline-light']">
+    <i class="fab fa-java"></i>
+    Java
+</a>
+
+<a @click.prevent="codingLanguage='dotnet'" href=""
+   :class="['btn', codingLanguage=='dotnet' ? 'btn-light' : 'btn-outline-light']">
+    <i class="fak fa-dotnet"></i>
+    .NET
+</a>
+
+
+                        </p>
+
+
+                        <h2 class="text-center my-3">Adding Watermark Texts</h2>
+
+
+                        <div class="row justify-content-md-center">
+
+
+                            <div class="col-md-4 text-center px-5">
+
+
+                                <img src="https://cloudconvert.com/images/product/watermark-text.png" alt="Watermark Text"
+                                     class="w-100 shadow rounded">
+
+                            </div>
+
+
+                            <div v-show="codingLanguage === 'raw' " class="col-md-6">
+
+                            <pre v-highlightjs><code
+                                        class="bash definition">POST https://sync.api.cloudconvert.com/v2/jobs</code></pre>
+
+                                <pre v-highlightjs><code
+                                            class="json">{
+  &quot;tasks&quot;: {
+    &quot;import-file&quot;: {
+      &quot;operation&quot;: &quot;import/url&quot;,
+      &quot;url&quot;: &quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf&quot;
+    },
+    &quot;add-watermark&quot;: {
+      &quot;operation&quot;: &quot;watermark&quot;,
+      &quot;input&quot;: [
+        &quot;import-file&quot;
+      ],
+      &quot;input_format&quot;: &quot;pdf&quot;,
+      &quot;layer&quot;: &quot;above&quot;,
+      &quot;text&quot;: &quot;Top Secret&quot;,
+      &quot;font_width_percent&quot;: 90,
+      &quot;font_color&quot;: &quot;#ff0400&quot;,
+      &quot;font_name&quot;: &quot;Helvetica Bold&quot;,
+      &quot;position_vertical&quot;: &quot;center&quot;,
+      &quot;position_horizontal&quot;: &quot;center&quot;,
+      &quot;opacity&quot;: 50,
+      &quot;rotation&quot;: -45
+    },
+    &quot;export-watermarked-file&quot;: {
+      &quot;operation&quot;: &quot;export/url&quot;,
+      &quot;input&quot;: [
+        &quot;add-watermark&quot;
+      ]
+    }
+  },
+  &quot;redirect&quot;: true
+}</code></pre>
+
+                            </div>
+
+                            <div v-show="codingLanguage === 'php'" class="col-md-6">
+                            <pre v-highlightjs><code
+                                        class="php">&lt;?php
+$job = (new Job())
+    -&gt;addTask(
+        (new Task(&#039;import/url&#039;, &#039;import-file&#039;))
+            -&gt;set(&#039;url&#039;, &#039;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf&#039;)
+    )
+    -&gt;addTask(
+        (new Task(&#039;watermark&#039;, &#039;add-watermark&#039;))
+            -&gt;set(&#039;input&#039;, &#039;import-file&#039;)
+            -&gt;set(&#039;input_format&#039;, &#039;pdf&#039;)
+            -&gt;set(&#039;layer&#039;, &#039;above&#039;)
+            -&gt;set(&#039;text&#039;, &#039;Top Secret&#039;)
+            -&gt;set(&#039;font_width_percent&#039;, 90)
+            -&gt;set(&#039;font_color&#039;, &#039;#ff0400&#039;)
+            -&gt;set(&#039;font_name&#039;, &#039;Helvetica Bold&#039;)
+            -&gt;set(&#039;position_vertical&#039;, &#039;center&#039;)
+            -&gt;set(&#039;position_horizontal&#039;, &#039;center&#039;)
+            -&gt;set(&#039;opacity&#039;, 50)
+            -&gt;set(&#039;rotation&#039;, -4)
+    )
+    -&gt;addTask(
+        (new Task(&#039;export/url&#039;, &#039;export-watermarked-file&#039;))
+            -&gt;set(&#039;input&#039;, &#039;add-watermark&#039;)
+    );
+
+$cloudconvert-&gt;jobs()-&gt;create($job);</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'nodejs'" class="col-md-6">
+                            <pre v-highlightjs><code
+                                        class="javascript">let exampleJob = await cloudConvert.jobs.create({
+    &quot;tasks&quot;: {
+        &quot;import-file&quot;: {
+            &quot;operation&quot;: &quot;import/url&quot;,
+            &quot;url&quot;: &quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf&quot;
+        },
+        &quot;add-watermark&quot;: {
+            &quot;operation&quot;: &quot;watermark&quot;,
+            &quot;input&quot;: [
+                &quot;import-file&quot;
+            ],
+            &quot;input_format&quot;: &quot;pdf&quot;,
+            &quot;layer&quot;: &quot;above&quot;,
+            &quot;text&quot;: &quot;Top Secret&quot;,
+            &quot;font_width_percent&quot;: 90,
+            &quot;font_color&quot;: &quot;#ff0400&quot;,
+            &quot;font_name&quot;: &quot;Helvetica Bold&quot;,
+            &quot;position_vertical&quot;: &quot;center&quot;,
+            &quot;position_horizontal&quot;: &quot;center&quot;,
+            &quot;opacity&quot;: 50,
+            &quot;rotation&quot;: -45
+        },
+        &quot;export-watermarked-file&quot;: {
+            &quot;operation&quot;: &quot;export/url&quot;,
+            &quot;input&quot;: [
+                &quot;add-watermark&quot;
+            ]
+        }
+    }
+});
+
+job = await cloudConvert.jobs.wait(job.id);
+</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'ruby'" class="col-md-6">
+                            <pre v-highlightjs><code
+                                        class="ruby">job = cloudconvert.jobs.create({
+  tasks: [
+      {
+        name: &quot;imprt-file&quot;,
+        operation: &quot;import/url&quot;,
+        url: &quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf&quot;
+      },
+      {
+        name: &quot;add-watermark&quot;,
+        operation: &quot;watermark&quot;,
+        input: [
+          &quot;import-file&quot;
+        ],
+        input_format: &quot;pdf&quot;,
+        layer: &quot;above&quot;,
+        text: &quot;Top Secret&quot;,
+        font_width_percent: 90,
+        font_color: &quot;#ff0400&quot;,
+        font_name: &quot;Helvetica Bold&quot;,
+        position_vertical: &quot;center&quot;,
+        position_horizontal: &quot;center&quot;,
+        opacity: 50,
+        rotation: -45
+      },
+      {
+        name: &quot;export-watermarked-file&quot;,
+        operation: &quot;export/url&quot;,
+        input: [
+          &quot;add-watermark&quot;
+        ]
+      }
+  ]
+})</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'python'" class="col-md-6">
+                            <pre v-highlightjs><code
+                                        class="python">job = cloudconvert.Job.create(payload={
+     &quot;tasks&quot;: {
+        &quot;import-file&quot;: {
+          &quot;operation&quot;: &quot;import/url&quot;,
+          &quot;url&quot;: &quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf&quot;
+        },
+        &quot;add-watermark&quot;: {
+          &quot;operation&quot;: &quot;watermark&quot;,
+          &quot;input&quot;: [
+            &quot;import-file&quot;
+          ],
+          &quot;input_format&quot;: &quot;pdf&quot;,
+          &quot;layer&quot;: &quot;above&quot;,
+          &quot;text&quot;: &quot;Top Secret&quot;,
+          &quot;font_width_percent&quot;: 90,
+          &quot;font_color&quot;: &quot;#ff0400&quot;,
+          &quot;font_name&quot;: &quot;Helvetica Bold&quot;,
+          &quot;position_vertical&quot;: &quot;center&quot;,
+          &quot;position_horizontal&quot;: &quot;center&quot;,
+          &quot;opacity&quot;: 50,
+          &quot;rotation&quot;: -45
+        },
+        &quot;export-watermarked-file&quot;: {
+          &quot;operation&quot;: &quot;export/url&quot;,
+          &quot;input&quot;: [
+            &quot;add-watermark&quot;
+          ]
+        }
+     }
+ })</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'java'" class="col-md-6">
+                            <pre v-highlightjs><code
+                                        class="java">final JobResponse createJobResponse = cloudConvertClient.jobs().create(
+    ImmutableMap.of(
+        &quot;import-file&quot;,
+            new UrlImportRequest()
+                .setUrl(&quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf&quot;),
+        &quot;add-watermark&quot;,
+            new AddWatermarkTaskRequest()
+                .setInput(&quot;import-file&quot;)
+                .setInputFormat(&quot;pdf&quot;),
+                .set(&quot;layer&quot;, &quot;above&quot;),
+                .set( &quot;text&quot;, &quot;Top Secret&quot;)
+                .set(&quot;font_width_percent&quot;, 90)
+                .set(&quot;font_color&quot;, &quot;#ff0400&quot;)
+                .set(&quot;font_name&quot;, &quot;Helvetica Bold&quot;)
+                .set(&quot;position_vertical&quot;, &quot;center&quot;)
+                .set(&quot;position_horizontal&quot;, &quot;center&quot;)
+                .set(&quot;opacity&quot;, 50)
+                .set(&quot;rotation&quot;, -45)
+        &quot;export-watermarked-file&quot;,
+            new UrlExportRequest()
+                .setInput(&quot;add-watermark&quot;)
+    )
+).getBody();</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'dotnet'" class="col-md-6">
+                            <pre v-highlightjs><code
+                                        class="csharp">var job = await CloudConvert.CreateJobAsync(new JobCreateRequest
+      {
+        Tasks = new
+        {
+          import-file = new ImportUrlCreateRequest
+          {
+            Url = &quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf&quot;
+          },
+          add-watermark = new WatermarkCreateRequest
+          {
+            Input = &quot;import-file&quot;,
+            Input_Format = &quot;pdf&quot;,
+            Options = new Dictionary&lt;string, object&gt; {
+                          { &quot;layer&quot;: &quot;above&quot; },
+                          { &quot;text&quot;: &quot;Top Secret&quot; },
+                          { &quot;font_width_percent&quot;: 90 },
+                          { &quot;font_color&quot;: &quot;#ff0400&quot; },
+                          { &quot;font_name&quot;: &quot;Helvetica Bold&quot; },
+                          { &quot;position_vertical&quot;: &quot;center&quot; },
+                          { &quot;position_horizontal&quot;: &quot;center&quot; },
+                          { &quot;opacity&quot;: 50 },
+                          { &quot;rotation&quot;: -45 }
+                        }
+          },
+          export-watermarked-file = new ExportUrlCreateRequest
+          {
+            Input = &quot;add-watermark&quot;
+          }
+        }
+      });</code></pre>
+                            </div>
+
+
+                        </div>
+
+
+                        <h2 class="text-center my-3">Adding Watermark Images</h2>
+
+
+                        <div class="row justify-content-md-center">
+
+
+                            <div class="col-md-4 text-center px-5">
+
+
+                                <img src="https://cloudconvert.com/images/product/watermark-image.png" alt="Watermark Image"
+                                     class="w-100 shadow rounded">
+
+                            </div>
+
+
+                            <div v-show="codingLanguage === 'raw' " class="col-md-6">
+
+                            <pre v-highlightjs><code
+                                        class="bash definition">POST https://api.cloudconvert.com/v2/jobs</code></pre>
+
+                                <pre v-highlightjs><code
+                                            class="json">{
+  &quot;tasks&quot;: {
+    &quot;import-file&quot;: {
+      &quot;operation&quot;: &quot;import/url&quot;,
+      &quot;url&quot;: &quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf&quot;
+    },
+    &quot;import-logo&quot;: {
+      &quot;operation&quot;: &quot;import/url&quot;,
+      &quot;url&quot;: &quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/logo.png&quot;
+    },
+    &quot;add-watermark&quot;: {
+      &quot;operation&quot;: &quot;watermark&quot;,
+      &quot;input&quot;: [
+        &quot;import-file&quot;
+      ],
+      &quot;input_format&quot;: &quot;pdf&quot;,
+      &quot;layer&quot;: &quot;above&quot;,
+      &quot;image&quot;: [
+        &quot;import-logo&quot;
+      ],
+      &quot;image_width_percent&quot;: 10,
+      &quot;position_vertical&quot;: &quot;bottom&quot;,
+      &quot;position_horizontal&quot;: &quot;right&quot;,
+      &quot;margin_vertical&quot;: 25,
+      &quot;margin_horizontal&quot;: 25,
+      &quot;opacity&quot;: 75
+    },
+    &quot;export-watermarked-file&quot;: {
+      &quot;operation&quot;: &quot;export/url&quot;,
+      &quot;input&quot;: [
+        &quot;add-watermark&quot;
+      ]
+    }
+  },
+  &quot;redirect&quot;: true
+}</code></pre>
+
+                            </div>
+
+                            <div v-show="codingLanguage === 'php'" class="col-md-6">
+                            <pre v-highlightjs><code
+                                        class="php">&lt;?php
+$job = (new Job())
+    -&gt;addTask(
+        (new Task(&#039;import/url&#039;, &#039;import-file&#039;))
+            -&gt;set(&#039;url&#039;, &#039;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf&#039;)
+    )
+    -&gt;addTask(
+        (new Task(&#039;import/url&#039;, &#039;import-logo&#039;))
+            -&gt;set(&#039;url&#039;, &#039;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/logo.png&#039;)
+    )
+    -&gt;addTask(
+        (new Task(&#039;watermark&#039;, &#039;add-watermark&#039;))
+            -&gt;set(&#039;input&#039;, &#039;import-file&#039;)
+            -&gt;set(&#039;input_format&#039;, &#039;pdf&#039;)
+            -&gt;set(&#039;layer&#039;, &#039;above&#039;)
+            -&gt;set(&#039;image&#039;, &#039;import-logo&#039;)
+            -&gt;set(&#039;image_width_percent&#039;, 10)
+            -&gt;set(&#039;position_vertical&#039;, &#039;center&#039;)
+            -&gt;set(&#039;position_horizontal&#039;, &#039;center&#039;)
+            -&gt;set(&#039;margin_vertical&#039;, 25)
+            -&gt;set(&#039;margin_horizontal&#039;, 25)
+            -&gt;set(&#039;opacity&#039;, 75)
+    )
+    -&gt;addTask(
+        (new Task(&#039;export/url&#039;, &#039;export-watermarked-file&#039;))
+            -&gt;set(&#039;input&#039;, &#039;add-watermark&#039;)
+    );
+
+$cloudconvert-&gt;jobs()-&gt;create($job);</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'nodejs'" class="col-md-6">
+                            <pre v-highlightjs><code
+                                        class="javascript">let exampleJob = await cloudConvert.jobs.create({
+    &quot;tasks&quot;: {
+        &quot;import-file&quot;: {
+            &quot;operation&quot;: &quot;import/url&quot;,
+            &quot;url&quot;: &quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf&quot;
+        },
+        &quot;import-logo&quot;: {
+            &quot;operation&quot;: &quot;import/url&quot;,
+            &quot;url&quot;: &quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/logo.png&quot;
+        },
+        &quot;add-watermark&quot;: {
+            &quot;operation&quot;: &quot;watermark&quot;,
+            &quot;input&quot;: [
+                &quot;import-file&quot;
+            ],
+            &quot;input_format&quot;: &quot;pdf&quot;,
+            &quot;layer&quot;: &quot;above&quot;,
+            &quot;image&quot;: [
+                &quot;import-logo&quot;
+            ],
+            &quot;image_width_percent&quot;: 10,
+            &quot;position_vertical&quot;: &quot;bottom&quot;,
+            &quot;position_horizontal&quot;: &quot;right&quot;,
+            &quot;margin_vertical&quot;: 25,
+            &quot;margin_horizontal&quot;: 25,
+            &quot;opacity&quot;: 75
+        },
+        &quot;export-watermarked-file&quot;: {
+            &quot;operation&quot;: &quot;export/url&quot;,
+            &quot;input&quot;: [
+                &quot;add-watermark&quot;
+            ]
+        }
+    }
+});
+
+job = await cloudConvert.jobs.wait(job.id);
+</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'ruby'" class="col-md-6">
+                            <pre v-highlightjs><code
+                                        class="ruby">job = cloudconvert.jobs.create({
+  tasks: [
+      {
+        name: &quot;imprt-file&quot;,
+        operation: &quot;import/url&quot;,
+        url: &quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf&quot;
+      },
+      {
+        name: &quot;imprt-logo&quot;,
+        operation: &quot;import/url&quot;,
+        url: &quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/logo.png&quot;
+      },
+      {
+        name: &quot;add-watermark&quot;,
+        operation: &quot;watermark&quot;,
+        input: [
+          &quot;import-file&quot;
+        ],
+        input_format: &quot;pdf&quot;,
+        layer: &quot;above&quot;,
+        image: [
+          &quot;import-logo&quot;
+        ],
+        image_width_percent: 10,
+        position_vertical: &quot;center&quot;,
+        position_horizontal: &quot;center&quot;,
+        margin_vertical: 25,
+        margin_horizontal: 25,
+        opacity: 75,
+      },
+      {
+        name: &quot;export-watermarked-file&quot;,
+        operation: &quot;export/url&quot;,
+        input: [
+          &quot;add-watermark&quot;
+        ]
+      }
+  ]
+})</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'python'" class="col-md-6">
+                            <pre v-highlightjs><code
+                                        class="python">job = cloudconvert.Job.create(payload={
+     &quot;tasks&quot;: {
+       &quot;import-file&quot;: {
+         &quot;operation&quot;: &quot;import/url&quot;,
+         &quot;url&quot;: &quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf&quot;
+       },
+       &quot;import-logo&quot;: {
+         &quot;operation&quot;: &quot;import/url&quot;,
+         &quot;url&quot;: &quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/logo.png&quot;
+       },
+       &quot;add-watermark&quot;: {
+         &quot;operation&quot;: &quot;watermark&quot;,
+         &quot;input&quot;: [
+           &quot;import-file&quot;
+         ],
+         &quot;input_format&quot;: &quot;pdf&quot;,
+         &quot;layer&quot;: &quot;above&quot;,
+         &quot;image&quot;: [
+           &quot;import-logo&quot;
+         ],
+         &quot;image_width_percent&quot;: 10,
+         &quot;position_vertical&quot;: &quot;bottom&quot;,
+         &quot;position_horizontal&quot;: &quot;right&quot;,
+         &quot;margin_vertical&quot;: 25,
+         &quot;margin_horizontal&quot;: 25,
+         &quot;opacity&quot;: 75
+       },
+       &quot;export-watermarked-file&quot;: {
+         &quot;operation&quot;: &quot;export/url&quot;,
+         &quot;input&quot;: [
+           &quot;add-watermark&quot;
+         ]
+       }
+     }
+ })</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'java'" class="col-md-6">
+                            <pre v-highlightjs><code
+                                        class="java">final JobResponse createJobResponse = cloudConvertClient.jobs().create(
+    ImmutableMap.of(
+        &quot;import-file&quot;,
+            new UrlImportRequest()
+                .setUrl(&quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf&quot;),
+        &quot;import-logo&quot;,
+            new UrlImportRequest()
+                .setUrl(&quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/logo.png&quot;),
+        &quot;add-watermark&quot;,
+            new AddWatermarkTaskRequest()
+                .setInput(&quot;import-file&quot;)
+                .setInputFormat(&quot;pdf&quot;),
+                .set(&quot;layer&quot;, &quot;above&quot;),
+                .set(&quot;image&quot;, &quot;import-logo&quot;)
+                .set(&quot;image_width_percent&quot;, 10)
+                .set(&quot;position_vertical&quot;, &quot;center&quot;)
+                .set(&quot;position_horizontal&quot;, &quot;center&quot;)
+                .set(&quot;margin_vertical&quot;, 25)
+                .set(&quot;margin_horizontal&quot;, 25)
+                .set(&quot;opacity&quot;, 50)
+        &quot;export-watermarked-file&quot;,
+            new UrlExportRequest()
+                .setInput(&quot;add-watermark&quot;)
+    )
+).getBody();</code></pre>
+                            </div>
+
+                            <div v-show="codingLanguage === 'dotnet'" class="col-md-6">
+                            <pre v-highlightjs><code
+                                        class="csharp">var job = await CloudConvert.CreateJobAsync(new JobCreateRequest
+      {
+        Tasks = new
+        {
+          import-file = new ImportUrlCreateRequest
+          {
+            Url = &quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/zombies.pdf&quot;
+          },
+          import-logo = new ImportUrlCreateRequest
+          {
+            Url = &quot;https://cloudconvert-blog.s3.eu-central-1.amazonaws.com/public/test-files/logo.png&quot;
+          },
+          add-watermark = new WatermarkCreateRequest
+          {
+            Input = &quot;import-file&quot;,
+            Input_Format = &quot;pdf&quot;,
+            Options = new Dictionary&lt;string, object&gt; {
+                          { &quot;layer&quot;: &quot;above&quot; },
+                          { &quot;image_width_percent&quot;: 10 },
+                          { &quot;image&quot;: &quot;import-logo&quot; },
+                          { &quot;position_vertical&quot;: &quot;bottom&quot; },
+                          { &quot;position_horizontal&quot;: &quot;right&quot; },
+                          { &quot;margin_vertical&quot;: 25 },
+                          { &quot;margin_horizontal&quot;: 25 },
+                          { &quot;opacity&quot;: 50 },
+                        }
+          },
+          export-watermarked-file = new ExportUrlCreateRequest
+          {
+            Input = &quot;add-watermark&quot;
+          }
+        }
+      });</code></pre>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="text-center">
+
+                            <p class="mt-1">
+                                Use our Job Builder to generate ready-to-use requests and code snippet for the
+                                CloudConvert API.
+                            </p>
+                            <a class="btn btn-lg btn-primary my-1" href="https://cloudconvert.com/api/v2/jobs/builder">
+                                Job Builder
+                            </a>
+
+                            <a class="btn btn-lg btn-outline-light ml-1 my-1" href="https://cloudconvert.com/api/v2">
+                                API Documentation
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="app-content content  center-layout">
+                    <div class="content-wrapper container text-center py-5">
+
+
+                        <strong class="text-uppercase text-light">On-demand, transparent pricing</strong>
+
+
+<h2 class="py-1 font-large-1">
+    Starting at <span class="text-primary font-large-2" v-text="perMinuteCents"
+                      v-if="pricePerMinute">0.00</span> per file
+</h2>
+
+
+<p>
+
+</p>
+
+
+<div class="row justify-content-md-center">
+
+    <div class="col-md-2 align-self-center text-md-right">
+        When Converting
+        <strong class="text-primary" v-text="minutes.toLocaleString()"></strong> Files
+    </div>
+
+    <div class="col-md-2">
+
+        <div ref="slider" class="slider-lg  mt-1  mb-1"></div>
+
+    </div>
+
+    <div class="col-md-2 align-self-center">
+
+
+        <b-form-radio-group
+                buttons
+                button-variant="outline-primary"
+                @change="getPlan()"
+                size="sm"
+                :options="[ { text: 'Monthly', value: 'subscription' }, { text: 'One-Time', value: 'package' } ]"
+                :disabled="loading"
+                v-model="type">
+        </b-form-radio-group>
+
+    </div>
+
+</div>
+
+
+<p class="my-3">
+    Corresponds to a
+    <span v-if="type==='package'">one-time</span><span v-else>monthly</span> payment of <strong
+            v-if="price" v-text="formattedPrice"></strong>.
+    Checkout the full <a href="https://cloudconvert.com/pricing">pricing</a> information.
+</p>
+
+
+                    </div>
+                </div>
+
+
+                <div class="container">
+
+    <footer class="footer mb-0">
+
+        <div>
+            <div class="row">
+
+                <div class="col-md align-self-center">
+
+                    <div class="row">
+
+                        <div class="col-6 col-md-auto mr-md-3 mt-1">
+                            <h6 class="text-bold-600">Company</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://cloudconvert.com/about">About Us</a></li>
+                                <li><a href="https://cloudconvert.com/security">Security</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-auto mr-md-3 mt-1">
+                            <h6 class="text-bold-600">Resources</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://cloudconvert.com/blog">Blog</a></li>
+                                <li>
+                                    <a href="https://status.cloudconvert.com" target="_blank" rel="noopener">Status</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-auto mr-md-3 mt-1">
+                            <h6 class="text-bold-600">Legal</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://cloudconvert.com/privacy">Privacy</a></li>
+                                <li ><a href="https://cloudconvert.com/terms">Terms</a></li>
+                                <li><a href="https://cloudconvert.com/about#imprint">Imprint</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-auto mr-md-3 mt-1">
+                            <h6 class="text-bold-600">Contact</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://cloudconvert.com/contact">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-auto text-center text-md-right mt-2 mt-md-2">
+
+
+                    <p>
+                        © 2024 Lunaweb GmbH <br><span class="text-muted d-none d-lg-inline d-xl-inline d-md-inline mt-1">Made in Munich, Germany  </span>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <footer-stats
+                :initial-files="1814406271"
+                :initial-bytes="15563021178304297"
+                :diff-files="39"
+                :diff-bytes="1153013599"
+                :interval="5"
+        ></footer-stats>
+
+    </footer>
+
+</div>
+
+            </div>
+
+
+        </product-page>
+
+    </div>
+
+
+    </body>
+
+
+    
+            <script src="/js/app.js?id=0b1b08800f264bc46859c1a43fe1a13c"></script>
+    
+
+
+</body>
+</html>
+
+
+
+
